@@ -1,0 +1,83 @@
+Project Resnik Pin Connections
+
+uC	32 GPIO
+---
+I2C:
+	SDA
+	SCL
+		SDA_CTRL
+
+SPI:
+	MOSI 
+	MISO
+	SCK
+		SD_CS
+
+UART:
+	TX0
+	RX0
+	TX1
+	RX1
+
+Interrupt:
+	Global Interrupt (Input, PCINT)
+	LogButton (Input, PCINT)	--PA4 (FIXEDish) //Keep convention w/Margay, not hardcore fixed
+	RTCInt (Input, Interrupt)
+
+LEDs:
+	AliveLED
+	RedLED
+	GreenLED
+	BlueLED
+
+SD, CardDected (Input)
+HP Ctrl, C0 (Output)		--PC2 (FIXED)
+HP Ctrl, C1 (Output)		--PC3 (FIXED)
+BusPowerSwitch, Primary Bus, EN (Output)	--PC6 (Flex)
+BusPowerSwitch, Secondary Bus, EN (Output) 	--PC7 (Flex)
+
+GPIO0, Primary Bus (I/O)	--PD4 (FIXED)
+GPIO1, Primary Bus (I/O)	--
+GPIO2, Secondary Bus (I/O)	--PB3 (FIXED)
+GPIO3, Secondary Bus (I/O)	--
+
+Feather, GPIO 	--PA5
+Feather, CTS  	--PA6
+Feather, RTS	--PA7
+
+
+IO Exp	16 GPIO
+------
+
+MPPT, CHRG (Input)
+MPPT, FAULT (Input)
+MPPT, SHDN (Output)
+Feather PowerOn (Output)
+ADC, OnBoard, Alert/RDY (Input, Interrupt)
+ADC, OffBoard, Alert/RDY (Input, Interrupt)
+Vusb (Input)
+LevelShifter, Primary Bus, EN (Output)
+LevelShifter, Secondary Bus, EN (Output)
+BMS, CTR (Output)
+BusPowerSwitch, Primary Bus, Fault (Input)
+BusPowerSwitch, Secondary Bus, Fault (Input)
+HighPowerBoost, LBO (Input, Interrupt?)
+HighPowerBuck, PG (Input)
+LowPowerLDO_3v3, PG (Input)
+
+
+ADC Onboard
+-----------
+
+I_MPPT
+I_Bat
+V_Prime
+V_Li
+
+ADC Offboard
+------------
+
+A0
+A1
+A2
+A3
