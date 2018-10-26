@@ -14878,6 +14878,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="J8" library="bschulz" deviceset="JST_2MM_MALE" device=""/>
 <part name="F1" library="bschulz" deviceset="PPTC" device="1.5A"/>
 <part name="U33" library="bschulz" deviceset="TCA9555" device="RTW"/>
+<part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16676,10 +16677,10 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <text x="134.62" y="114.3" size="1.778" layer="91">Jump SDA channels together, prevents using occupied addresses on the external I2C port</text>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="12.7" y="55.88"/>
-<instance part="J2" gate="G$1" x="12.7" y="27.94"/>
-<instance part="J4" gate="G$1" x="58.42" y="55.88"/>
-<instance part="J3" gate="G$1" x="53.34" y="35.56"/>
+<instance part="J1" gate="G$1" x="22.86" y="45.72" rot="R180"/>
+<instance part="J2" gate="G$1" x="22.86" y="15.24" rot="R180"/>
+<instance part="J4" gate="G$1" x="55.88" y="55.88" rot="R180"/>
+<instance part="J3" gate="G$1" x="60.96" y="25.4" rot="R180"/>
 <instance part="MS1" gate="G$1" x="116.84" y="66.04" rot="R270"/>
 <instance part="SUPPLY4" gate="G$1" x="198.12" y="58.42"/>
 <instance part="U$15" gate="G$1" x="195.58" y="48.26" rot="R270"/>
@@ -16807,6 +16808,31 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="213.36" y1="73.66" x2="218.44" y2="73.66" width="0.1524" layer="91"/>
 <label x="218.44" y="73.66" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="10"/>
+<wire x1="12.7" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="10.16" y="10.16" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
+<label x="10.16" y="55.88" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<label x="48.26" y="55.88" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<label x="48.26" y="38.1" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GND"/>
+<wire x1="111.76" y1="53.34" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
+<label x="106.68" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -16819,6 +16845,11 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="U$2" gate="G$1" pin="DATA_OUT"/>
 <wire x1="25.4" y1="104.14" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
 <label x="25.4" y="99.06" size="0.8128" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOMISO"/>
+<wire x1="111.76" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
+<label x="104.14" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -16840,6 +16871,11 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="ISP2" gate="G$1" pin="RST"/>
 <wire x1="119.38" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
 <label x="111.76" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO9"/>
+<wire x1="154.94" y1="33.02" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="157.48" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOG_INT" class="0">
@@ -16873,12 +16909,22 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="27.94" y1="104.14" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 <label x="27.94" y="99.06" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOMOSI"/>
+<wire x1="111.76" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<label x="99.06" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCK_BUF" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="SCLK"/>
 <wire x1="30.48" y1="104.14" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
 <label x="30.48" y="99.06" size="0.8128" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOSCK"/>
+<wire x1="111.76" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<label x="99.06" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_CS_BUF" class="0">
@@ -16923,6 +16969,11 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="109.22" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <label x="99.06" y="114.3" size="1.778" layer="95"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOSDA"/>
+<wire x1="154.94" y1="22.86" x2="160.02" y2="22.86" width="0.1524" layer="91"/>
+<label x="157.48" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_PRIME" class="0">
@@ -16970,6 +17021,240 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="218.44" y="76.2" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="ADC_0" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
+<label x="10.16" y="33.02" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VREF" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<label x="10.16" y="30.48" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCK_OUT" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="12.7" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<label x="10.16" y="27.94" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="CS_OUT" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="12.7" y1="20.32" x2="10.16" y2="20.32" width="0.1524" layer="91"/>
+<label x="10.16" y="20.32" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL_OUT_PRIME" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="7"/>
+<wire x1="12.7" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+<label x="10.16" y="17.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SDA_OUT_PRIME" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="8"/>
+<wire x1="12.7" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
+<label x="10.16" y="15.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VBUS_PRIME" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="9"/>
+<wire x1="12.7" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+<label x="10.16" y="12.7" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<label x="10.16" y="58.42" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC_1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="8"/>
+<wire x1="12.7" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
+<label x="10.16" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DAC_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="12.7" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<label x="10.16" y="43.18" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TX_OUT_PRIME" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="12.7" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<label x="10.16" y="50.8" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RX_OUT_PRIME" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="12.7" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
+<label x="10.16" y="53.34" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MOSI_OUT" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="12.7" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
+<label x="10.16" y="25.4" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MISO_OUT" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="12.7" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
+<label x="10.16" y="22.86" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VBUS_SEC" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<label x="48.26" y="58.42" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="48.26" y="35.56" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SDA_OUT_SEC" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="50.8" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<label x="48.26" y="33.02" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL_OUT_SEC" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<label x="48.26" y="30.48" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TX_OUT_SEC" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<label x="48.26" y="50.8" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RX_OUT_SEC" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="3"/>
+<wire x1="50.8" y1="53.34" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
+<label x="48.26" y="53.34" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO_3_OUT" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="8"/>
+<wire x1="50.8" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<label x="48.26" y="20.32" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO_0_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="12.7" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<label x="10.16" y="45.72" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO_1_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="12.7" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
+<label x="10.16" y="48.26" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO_2_OUT" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="7"/>
+<wire x1="50.8" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
+<label x="48.26" y="22.86" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC_3" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="6"/>
+<wire x1="50.8" y1="25.4" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
+<label x="48.26" y="25.4" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ADC_2" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="5"/>
+<wire x1="50.8" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<label x="48.26" y="27.94" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIORX"/>
+<wire x1="111.76" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<label x="106.68" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOTX"/>
+<wire x1="111.76" y1="25.4" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<label x="106.68" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOSCL"/>
+<wire x1="154.94" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
+<label x="157.48" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_BAT" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="VBAT"/>
+<wire x1="154.94" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<label x="157.48" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_CTS" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO6"/>
+<wire x1="154.94" y1="30.48" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
+<label x="157.48" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_RTS" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO5"/>
+<wire x1="154.94" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
+<label x="157.48" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_GPIO" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOA5"/>
+<wire x1="111.76" y1="38.1" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
+<label x="91.44" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V_AUX" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="USB"/>
+<wire x1="154.94" y1="45.72" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
+<label x="157.48" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -17001,9 +17286,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="83.82" y="81.28" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U26" gate="G$1" pin="A2"/>
-<wire x1="88.9" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
-<label x="83.82" y="38.1" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U26" gate="G$1" pin="A5"/>
+<wire x1="88.9" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+<label x="83.82" y="30.48" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -17172,9 +17457,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="83.82" y="83.82" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U26" gate="G$1" pin="A1"/>
-<wire x1="88.9" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
-<label x="83.82" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U26" gate="G$1" pin="A6"/>
+<wire x1="88.9" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
+<label x="83.82" y="27.94" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA_OB" class="0">
@@ -17226,9 +17511,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="83.82" y="73.66" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U26" gate="G$1" pin="A5"/>
-<wire x1="88.9" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
-<label x="83.82" y="30.48" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U26" gate="G$1" pin="A2"/>
+<wire x1="88.9" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<label x="83.82" y="38.1" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RX_EXT" class="0">
@@ -17238,9 +17523,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="83.82" y="71.12" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U26" gate="G$1" pin="A6"/>
-<wire x1="88.9" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
-<label x="83.82" y="27.94" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U26" gate="G$1" pin="A1"/>
+<wire x1="88.9" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
+<label x="83.82" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA_OUT_PRIME" class="0">
@@ -17300,60 +17585,32 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="187.96" y="83.82" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO_2_OUT" class="0">
+<net name="GPIO_3_OUT" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="B3"/>
 <wire x1="111.76" y1="33.02" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
 <label x="116.84" y="33.02" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO_3_OUT" class="0">
-<segment>
-<pinref part="U26" gate="G$1" pin="B4"/>
-<wire x1="111.76" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
-<label x="116.84" y="30.48" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GPIO_2" class="0">
+<net name="GPIO_3" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="A3"/>
 <wire x1="88.9" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 <label x="83.82" y="35.56" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO_3" class="0">
-<segment>
-<pinref part="U26" gate="G$1" pin="A4"/>
-<wire x1="88.9" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
-<label x="83.82" y="33.02" size="0.8128" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="TX_OUT_SEC" class="0">
-<segment>
-<pinref part="U26" gate="G$1" pin="B5"/>
-<wire x1="111.76" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
-<label x="116.84" y="27.94" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="RX_OUT_SEC" class="0">
-<segment>
-<pinref part="U26" gate="G$1" pin="B6"/>
-<wire x1="111.76" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
-<label x="116.84" y="25.4" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SDA_OUT_SEC" class="0">
-<segment>
-<pinref part="U26" gate="G$1" pin="B1"/>
-<wire x1="111.76" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
-<label x="116.84" y="38.1" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SCL_OUT_SEC" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="B2"/>
 <wire x1="111.76" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
 <label x="116.84" y="35.56" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SDA_OUT_SEC" class="0">
+<segment>
+<pinref part="U26" gate="G$1" pin="B6"/>
+<wire x1="111.76" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<label x="116.84" y="25.4" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BUS_LOGIC_EN_SEC" class="0">
@@ -17414,6 +17671,34 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="U27" gate="G$1" pin="A1"/>
 <wire x1="160.02" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
 <label x="154.94" y="83.82" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RX_OUT_SEC" class="0">
+<segment>
+<pinref part="U26" gate="G$1" pin="B1"/>
+<wire x1="111.76" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<label x="116.84" y="38.1" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO_2" class="0">
+<segment>
+<pinref part="U26" gate="G$1" pin="A4"/>
+<wire x1="88.9" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<label x="83.82" y="33.02" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL_OUT_SEC" class="0">
+<segment>
+<pinref part="U26" gate="G$1" pin="B5"/>
+<wire x1="111.76" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
+<label x="116.84" y="27.94" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO_2_OUT" class="0">
+<segment>
+<pinref part="U26" gate="G$1" pin="B4"/>
+<wire x1="111.76" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
+<label x="116.84" y="30.48" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -17940,6 +18225,25 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <text x="116.84" y="81.28" size="1.778" layer="91">Pin 7</text>
 <text x="124.46" y="25.4" size="1.778" layer="91">Ext Int1</text>
 <text x="124.46" y="22.86" size="1.778" layer="91">Ext Int0</text>
+<text x="106.68" y="116.84" size="1.778" layer="91">Add:
+GPIO1
+GPIO3</text>
+<text x="215.9" y="76.2" size="1.778" layer="91">ADD:
+MPPT, CHRG (Input)
+MPPT, FAULT (Input)
+MPPT, SHDN (Output)
+Feather PowerOn (Output)
+ADC, OnBoard, Alert/RDY (Input, Interrupt)
+ADC, OffBoard, Alert/RDY (Input, Interrupt)
+Vusb (Input)
+LevelShifter, Primary Bus, EN (Output)
+LevelShifter, Secondary Bus, EN (Output)
+BMS, CTR (Output)
+BusPowerSwitch, Primary Bus, Fault (Input)
+BusPowerSwitch, Secondary Bus, Fault (Input)
+HighPowerBoost, LBO (Input, Interrupt?)
+HighPowerBuck, PG (Input)
+LowPowerLDO_3v3, PG (Input)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="66.04" y="60.96"/>
@@ -17973,6 +18277,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </instance>
 <instance part="C28" gate="G$1" x="17.78" y="101.6" rot="R90"/>
 <instance part="U33" gate="G$1" x="167.64" y="86.36"/>
+<instance part="GND64" gate="1" x="152.4" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -17989,6 +18294,11 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="IC1" gate="G$1" pin="(PCINT16/SCL)PC0"/>
 <wire x1="91.44" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
 <label x="96.52" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U33" gate="G$1" pin="SCL"/>
+<wire x1="154.94" y1="81.28" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="144.78" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -18093,6 +18403,21 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="C26" gate="G$1" pin="1"/>
 <pinref part="C27" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="GND64" gate="1" pin="GND"/>
+<wire x1="152.4" y1="93.98" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U33" gate="G$1" pin="GND"/>
+<wire x1="152.4" y1="96.52" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U33" gate="G$1" pin="A2"/>
+<wire x1="154.94" y1="96.52" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<junction x="154.94" y="96.52"/>
+<pinref part="U33" gate="G$1" pin="A1"/>
+<wire x1="154.94" y1="99.06" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
+<junction x="154.94" y="99.06"/>
+<pinref part="U33" gate="G$1" pin="A0"/>
+<wire x1="154.94" y1="104.14" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
+<junction x="154.94" y="101.6"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -18118,13 +18443,6 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="IC1" gate="G$1" pin="(PCINT12/OC0B/!SS!)PB4"/>
 <wire x1="91.44" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 <label x="96.52" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RTC_INT" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT10/INT2/AIN0)PB2"/>
-<wire x1="91.44" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<label x="96.52" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_CD" class="0">
@@ -18190,35 +18508,14 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="IC1" gate="G$1" pin="(PCINT20/TDO)PC4"/>
 </segment>
 </net>
-<net name="PG" class="0">
+<net name="C0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT18/TCK)PC2"/>
 <wire x1="91.44" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
 <label x="96.52" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BAT_SENSE" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT2/ADC2)PA2"/>
-<wire x1="91.44" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
-<label x="96.52" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="THERM_SENSE" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT1/ADC1)PA1"/>
-<wire x1="91.44" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<label x="96.52" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VREF" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
-<wire x1="91.44" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<label x="96.52" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VBAT_SW_CTRL" class="0">
+<net name="C1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT19/TMS)PC3"/>
 <wire x1="91.44" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
@@ -18246,6 +18543,56 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="96.52" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="GPIO_2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT11/OC0A/AIN1)PB3"/>
+<wire x1="91.44" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<label x="96.52" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO_0" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT28/OC1B)PD4"/>
+<wire x1="91.44" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
+<label x="96.52" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_BUS_PRIME" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
+<wire x1="91.44" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
+<label x="96.52" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_BUS_SEC" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT23/TOSC2)PC7"/>
+<wire x1="91.44" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<label x="96.52" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_RTS" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT7/ADC7)PA7"/>
+<wire x1="91.44" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
+<label x="96.52" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_CTS" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT6/ADC6)PA6"/>
+<wire x1="91.44" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<label x="96.52" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_GPIO" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT5/ADC5)PA5"/>
+<wire x1="91.44" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
+<label x="96.52" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="LOG_INT" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
@@ -18253,32 +18600,37 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="96.52" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_EXT" class="0">
+<net name="RTC_INT" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT11/OC0A/AIN1)PB3"/>
-<wire x1="91.44" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<label x="96.52" y="71.12" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="(PCINT10/INT2/AIN0)PB2"/>
+<wire x1="91.44" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="96.52" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="3V3_AUX_CTRL" class="0">
+<net name="GLOBAL_INT" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
-<wire x1="91.44" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-<label x="96.52" y="55.88" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
+<wire x1="91.44" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+<label x="96.52" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U33" gate="G$1" pin="!INT"/>
+<wire x1="154.94" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<label x="139.7" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VSWITCH_CTRL" class="0">
+<net name="SDA_OB" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT28/OC1B)PD4"/>
-<wire x1="91.44" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
-<label x="96.52" y="27.94" size="1.778" layer="95"/>
+<pinref part="U33" gate="G$1" pin="SDA"/>
+<wire x1="154.94" y1="83.82" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
+<label x="144.78" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC_EXT" class="0">
+<net name="3V3_CORE" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT0/ADC0)PA0"/>
-<wire x1="91.44" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="96.52" y="86.36" size="1.778" layer="95"/>
+<pinref part="U33" gate="G$1" pin="VCC"/>
+<wire x1="154.94" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
+<label x="152.4" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -18287,6 +18639,10 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
