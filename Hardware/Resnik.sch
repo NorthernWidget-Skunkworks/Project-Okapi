@@ -4450,6 +4450,42 @@ part number 2062-2P from STA</description>
 <wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
 <circle x="-0.508" y="0.508" radius="0.127" width="0.127" layer="21"/>
 </package>
+<package name="2_56">
+<description>&lt;p&gt;&lt;b&gt;2x56 Non-Plated Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<hole x="0" y="0" drill="2.5"/>
+<circle x="0" y="0" radius="1.8" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.125" width="0.127" layer="21"/>
+</package>
+<package name="4_40">
+<description>&lt;p&gt;&lt;b&gt;4x40 Non-Plated Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="2.33" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
+</package>
+<package name="4_40_PLATED">
+<description>&lt;p&gt;&lt;b&gt;4x40 Non-Plated Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<circle x="0" y="0" radius="2.33" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="3.175"/>
+</package>
+<package name="2_56_PLATED">
+<description>&lt;p&gt;&lt;b&gt;2x56 Non-Plated Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<circle x="0" y="0" radius="1.8" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.125" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="2.5"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MSOP-12_GND" urn="urn:adsk.eagle:package:39078/1" type="box">
@@ -5479,6 +5515,16 @@ Switches electrical signals</description>
 <wire x1="10.16" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
 <text x="1.524" y="24.13" size="1.27" layer="95" ratio="15" align="center">TCA9555</text>
 <text x="1.27" y="-24.13" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="MOUNT-HOLE">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9270,6 +9316,44 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TCA9555RTWR" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE" prefix="H" uservalue="yes">
+<description>&lt;p&gt;&lt;b&gt;Genaric Mechanical Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum &lt;b&gt;required clearance&lt;/b&gt;)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (&lt;b&gt;recomended clearance&lt;/b&gt;) 
+&lt;li&gt;
+&lt;b&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "http://fastener-express.com/fastener-technical/SocketscapSS-Alloy.pdf"&gt;Socket Cap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "http://fastener-express.com/fastener-technical/Button-Socket-alloy.pdf"&gt;Button Head Socket Cap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "http://fastener-express.com/fastener-technical/pan-machine-Screws.pdf"&gt;Pan Head&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOUNT-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2_NP" package="2_56">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4_NP" package="4_40">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4_PL" package="4_40_PLATED">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2_PL" package="2_56_PLATED">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -14918,6 +15002,10 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C39" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
 <part name="GND67" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C40" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF"/>
+<part name="H1" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
+<part name="H2" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
+<part name="H3" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
 </parts>
 <sheets>
 <sheet>
@@ -16350,15 +16438,6 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <junction x="48.26" y="101.6"/>
 <label x="53.34" y="101.6" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U15" gate="G$1" pin="!FAULT"/>
-<pinref part="U16" gate="G$1" pin="!FAULT"/>
-<wire x1="48.26" y1="167.64" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="160.02" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
-<junction x="48.26" y="160.02"/>
-<label x="53.34" y="160.02" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$27" class="0">
 <segment>
@@ -16700,6 +16779,17 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <junction x="15.24" y="172.72"/>
 </segment>
 </net>
+<net name="FAULT_SEC" class="0">
+<segment>
+<pinref part="U15" gate="G$1" pin="!FAULT"/>
+<pinref part="U16" gate="G$1" pin="!FAULT"/>
+<wire x1="48.26" y1="167.64" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="160.02" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
+<junction x="48.26" y="160.02"/>
+<label x="53.34" y="160.02" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -16746,6 +16836,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="J6" gate="G$1" x="205.74" y="86.36"/>
 <instance part="J7" gate="G$1" x="205.74" y="73.66"/>
 <instance part="J8" gate="G$1" x="241.3" y="86.36" rot="R90"/>
+<instance part="H1" gate="G$1" x="114.3" y="10.16"/>
+<instance part="H2" gate="G$1" x="121.92" y="10.16"/>
+<instance part="H3" gate="G$1" x="129.54" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -17819,6 +17912,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </instance>
 <instance part="GND60" gate="1" x="111.76" y="17.78"/>
 <instance part="GND61" gate="1" x="162.56" y="48.26"/>
+<instance part="C40" gate="G$1" x="68.58" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -17828,6 +17922,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="GND42" gate="1" pin="GND"/>
 <pinref part="BT1" gate="G$1" pin="-"/>
 <wire x1="60.96" y1="20.32" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+<junction x="60.96" y="22.86"/>
 </segment>
 <segment>
 <pinref part="RTC1" gate="G$1" pin="GND"/>
@@ -17984,6 +18081,8 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="BT1" gate="G$1" pin="+"/>
 <junction x="60.96" y="30.48"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RTC_INT" class="0">
@@ -18305,17 +18404,17 @@ GPIO3</text>
 --MPPT, FAULT (Input)
 --MPPT, SHDN (Output)
 Feather PowerOn (Output)
-ADC, OnBoard, Alert/RDY (Input, Interrupt)
-ADC, OffBoard, Alert/RDY (Input, Interrupt)
+--ADC, OnBoard, Alert/RDY (Input, Interrupt)
+--ADC, OffBoard, Alert/RDY (Input, Interrupt)
 --Vusb (Input)
-LevelShifter, Primary Bus, EN (Output)
+--LevelShifter, Primary Bus, EN (Output)
 LevelShifter, Secondary Bus, EN (Output)
 --BMS, CTR (Output)
-BusPowerSwitch, Primary Bus, Fault (Input)
+--BusPowerSwitch, Primary Bus, Fault (Input)
 BusPowerSwitch, Secondary Bus, Fault (Input)
-HighPowerBoost, LBO (Input, Interrupt?)
-HighPowerBuck, PG (Input)
-LowPowerLDO_3v3, PG (Input)</text>
+--HighPowerBoost, LBO (Input, Interrupt?)
+--HighPowerBuck, PG (Input)
+--LowPowerLDO_3v3, PG (Input)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="66.04" y="60.96"/>
@@ -18607,13 +18706,6 @@ LowPowerLDO_3v3, PG (Input)</text>
 </net>
 <net name="EN_BUS_PRIME" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
-<wire x1="91.44" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-<label x="96.52" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="EN_BUS_SEC" class="0">
-<segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT23/TOSC2)PC7"/>
 <wire x1="91.44" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <label x="96.52" y="58.42" size="1.778" layer="95"/>
@@ -18643,9 +18735,9 @@ LowPowerLDO_3v3, PG (Input)</text>
 </net>
 <net name="LOG_INT" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
-<wire x1="91.44" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-<label x="96.52" y="96.52" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
+<wire x1="91.44" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+<label x="96.52" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTC_INT" class="0">
@@ -18657,14 +18749,14 @@ LowPowerLDO_3v3, PG (Input)</text>
 </net>
 <net name="GLOBAL_INT" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
-<wire x1="91.44" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<label x="96.52" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U33" gate="G$1" pin="!INT"/>
 <wire x1="154.94" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="139.7" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
+<wire x1="91.44" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<label x="96.52" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA_OB" class="0">
@@ -18759,10 +18851,11 @@ LowPowerLDO_3v3, PG (Input)</text>
 <label x="187.96" y="88.9" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="GPIO_3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT2/ADC2)PA2"/>
 <wire x1="91.44" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
+<label x="96.52" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_1" class="0">
@@ -18770,6 +18863,48 @@ LowPowerLDO_3v3, PG (Input)</text>
 <pinref part="IC1" gate="G$1" pin="(PCINT1/ADC1)PA1"/>
 <wire x1="91.44" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <label x="96.52" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CS_EXT" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT0/ADC0)PA0"/>
+<wire x1="91.44" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
+<label x="96.52" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_BUS_SEC" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
+<wire x1="91.44" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
+<label x="96.52" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PG_LDO" class="0">
+<segment>
+<pinref part="U33" gate="G$1" pin="P10"/>
+<wire x1="182.88" y1="83.82" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
+<label x="187.96" y="83.82" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="3V3_AUX_PG" class="0">
+<segment>
+<pinref part="U33" gate="G$1" pin="P13"/>
+<wire x1="182.88" y1="76.2" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
+<label x="187.96" y="76.2" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LBI" class="0">
+<segment>
+<pinref part="U33" gate="G$1" pin="P14"/>
+<wire x1="182.88" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
+<label x="187.96" y="73.66" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ADC_OB_ALERT" class="0">
+<segment>
+<pinref part="U33" gate="G$1" pin="P15"/>
+<wire x1="182.88" y1="71.12" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
+<label x="187.96" y="71.12" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
