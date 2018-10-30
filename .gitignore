@@ -50,3 +50,13 @@ eagle.epf
 
 # file locks introduced since 7.x
 *.lck
+
+#LTSPice Files
+*.net
+*.op
+*.raw
+*.lnk
+*.log
+*.ipynd_checkpoints
+*checkpoint.ipynb
+*.csv
