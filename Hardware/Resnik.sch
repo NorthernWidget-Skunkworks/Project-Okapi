@@ -15006,6 +15006,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="H1" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
 <part name="H2" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
 <part name="H3" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
+<part name="GND68" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17399,6 +17402,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="GND66" gate="1" x="63.5" y="73.66"/>
 <instance part="C39" gate="G$1" x="63.5" y="40.64"/>
 <instance part="GND67" gate="1" x="63.5" y="30.48"/>
+<instance part="GND68" gate="1" x="86.36" y="58.42"/>
+<instance part="GND69" gate="1" x="86.36" y="15.24"/>
+<instance part="GND70" gate="1" x="157.48" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -17480,6 +17486,24 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="63.5" y1="35.56" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND67" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U25" gate="G$1" pin="GND"/>
+<wire x1="88.9" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="63.5" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="GND68" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U26" gate="G$1" pin="GND"/>
+<wire x1="88.9" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="20.32" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="GND69" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U27" gate="G$1" pin="GND"/>
+<wire x1="160.02" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="73.66" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="GND70" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3V3_AUX" class="0">
 <segment>
@@ -17552,26 +17576,26 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="2A"/>
-<wire x1="10.16" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
-<label x="2.54" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="88.9" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
 <label x="83.82" y="73.66" size="0.8128" layer="95" rot="R180" xref="yes"/>
 <pinref part="U25" gate="G$1" pin="A5"/>
 </segment>
-</net>
-<net name="SCK" class="0">
 <segment>
 <pinref part="U$17" gate="G$1" pin="1A"/>
 <wire x1="10.16" y1="60.96" x2="5.08" y2="60.96" width="0.1524" layer="91"/>
 <label x="2.54" y="60.96" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="SCK" class="0">
 <segment>
 <wire x1="88.9" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
 <label x="83.82" y="71.12" size="0.8128" layer="95" rot="R180" xref="yes"/>
 <pinref part="U25" gate="G$1" pin="A6"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="2A"/>
+<wire x1="10.16" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
+<label x="2.54" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_CS" class="0">
@@ -17581,18 +17605,11 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <label x="2.54" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOSI_BUF" class="0">
+<net name="SCK_BUF" class="0">
 <segment>
 <pinref part="U$17" gate="G$1" pin="2Y"/>
 <wire x1="35.56" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <label x="38.1" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SCK_BUF" class="0">
-<segment>
-<pinref part="U$17" gate="G$1" pin="1Y"/>
-<wire x1="35.56" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<label x="38.1" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_CS_BUF" class="0">
@@ -17861,6 +17878,13 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="111.76" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <label x="116.84" y="73.66" size="0.8128" layer="95" xref="yes"/>
 <pinref part="U25" gate="G$1" pin="B4"/>
+</segment>
+</net>
+<net name="MOSI_BUF" class="0">
+<segment>
+<pinref part="U$17" gate="G$1" pin="1Y"/>
+<wire x1="35.56" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<label x="38.1" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
