@@ -19044,8 +19044,6 @@ GPIO3</text>
 --HighPowerBoost, LBO (Input, Interrupt?)
 --HighPowerBuck, PG (Input)
 --LowPowerLDO_3v3, PG (Input)</text>
-<text x="213.36" y="58.42" size="3.81" layer="91">VBETA CONTROL!!!!!!!!!!!</text>
-<text x="215.9" y="43.18" size="3.81" layer="91">Global Int Pullup!</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="66.04" y="60.96" smashed="yes">
