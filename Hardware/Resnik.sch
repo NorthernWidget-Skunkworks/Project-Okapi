@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -6843,7 +6843,11 @@ Switches electrical signals</description>
 <connect gate="G$1" pin="C" pad="CATHODE"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO-216AA" package="DO-216AA">
@@ -6870,7 +6874,11 @@ Switches electrical signals</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO-214AC" package="DO214AC">
@@ -6879,7 +6887,11 @@ Switches electrical signals</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12559,6 +12571,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="TDK" constant="no"/>
 <attribute name="MPN" value="CGA2B2C0G1H120J050BA" constant="no"/>
 </technology>
+<technology name="68PF">
+<attribute name="DIGIKEY" value="732-7474-1-ND" constant="no"/>
+<attribute name="MF" value="Wurth" constant="no"/>
+<attribute name="MPN" value="885012005060" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C0504" package="C0504">
@@ -12633,6 +12650,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="DIGIKEY" value="490-9952-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM219R61C226ME15L" constant="no"/>
+</technology>
+<technology name="4.7UF">
+<attribute name="DIGIKEY" value="399-7415-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0805C475K4RACTU" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -13323,7 +13345,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;s=4356&amp;s=47360&amp;sf=0&amp;FV=fffc000d%2C1c0002%2C142c040c%2C1f140000%2Cffe00034&amp;quantity=10&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0603&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv252=68&amp;sf=0&amp;FV=ffec373d%2C1c0002%2C142c040c%2C1f140000%2Cffe00034%2C80002%2Cc0001&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, 0603&lt;/a&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?FV=ffec4907%2Cfffc000a%2Cc0172%2C142c040c%2C1f140000%2Cffe00034%2C1c0002&amp;quantity=100&amp;ColumnSort=2085&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, precision, 0603&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv3=1&amp;sf=0&amp;FV=ffec373d%2C1c0002%2C1f140000%2Cffe00034%2C142c040d&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, 0805&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv3=1&amp;sf=0&amp;FV=ffecb688%2C1f140000%2Cffe00034%2C1c0002&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Rohm, current sense&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv7=2&amp;sf=0&amp;FV=ffec5d6b%2Cffe00034%2C1f140000&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Vishay, pulse proof automotive&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -13355,6 +13383,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0402JR-0710KL" constant="no"/>
 <attribute name="VALUE_PART" value="10k" constant="no"/>
 </technology>
+<technology name="120K">
+<attribute name="DIGIKEY" value="311-120KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
+<attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="20">
+<attribute name="DIGIKEY" value="311-20LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0720RL" constant="no"/>
+<attribute name="VALUE_PART" value="20" constant="no"/>
+</technology>
 <technology name="200K">
 <attribute name="DIGIKEY" value="311-200KLRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -13366,6 +13406,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-0727RL" constant="no"/>
 <attribute name="VALUE_PART" value="27" constant="no"/>
+</technology>
+<technology name="287">
+<attribute name="DIGIKEY" value="YAG3089CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07287RL" constant="no"/>
+<attribute name="VALUE_PART" value="287" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="DIGIKEY" value="311-2KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-072KL" constant="no"/>
+<attribute name="VALUE_PART" value="2k" constant="no"/>
 </technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330LRCT-ND" constant="no"/>
@@ -13411,11 +13463,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RMCF0603FT10M0" constant="no"/>
 <attribute name="VALUE_PART" value="10M" constant="no"/>
 </technology>
+<technology name="120K">
+<attribute name="DIGIKEY" value="311-120KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07120KL" constant="no"/>
+<attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="311-180KHRTR-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07180KL" constant="no"/>
 <attribute name="VALUE_PART" value="180k" constant="no"/>
+</technology>
+<technology name="182K">
+<attribute name="DIGIKEY" value="P182KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF1823V" constant="no"/>
+<attribute name="VALUE_PART" value="182k" constant="no"/>
 </technology>
 <technology name="1K">
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" constant="no"/>
@@ -13440,6 +13504,36 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07330RL" constant="no"/>
 <attribute name="VALUE_PART" value="330" constant="no"/>
+</technology>
+<technology name="330K">
+<attribute name="DIGIKEY" value="P330KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF3303V" constant="no"/>
+<attribute name="VALUE_PART" value="330k" constant="no"/>
+</technology>
+<technology name="360K">
+<attribute name="DIGIKEY" value="311-360KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
+<attribute name="VALUE_PART" value="360k" constant="no"/>
+</technology>
+<technology name="470K">
+<attribute name="DIGIKEY" value="311-470KGRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
+<attribute name="VALUE_PART" value="470k" constant="no"/>
+</technology>
+<technology name="820K">
+<attribute name="DIGIKEY" value="311-820KGRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603JR-07820KL" constant="no"/>
+<attribute name="VALUE_PART" value="820k" constant="no"/>
+</technology>
+<technology name="91K">
+<attribute name="DIGIKEY" value="P91.0KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF9102V" constant="no"/>
+<attribute name="VALUE_PART" value="91k" constant="no"/>
 </technology>
 <technology name="P100K">
 <attribute name="DIGIKEY" value="P100KDBCT-ND" constant="no"/>
@@ -13467,7 +13561,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0.003">
+<attribute name="DIGIKEY" value="RHM.003AJCT-ND" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="PMR10EZPFV3L00" constant="no"/>
+</technology>
+<technology name="0.005">
+<attribute name="DIGIKEY" value="PMR10EZPFU5L00" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="PMR10EZPFU5L00" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R0805W" package="R0805W">
@@ -14560,102 +14668,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-power" urn="urn:adsk.eagle:library:400">
-<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SUPER-SOT3" urn="urn:adsk.eagle:footprint:29425/1" library_version="2">
-<description>&lt;b&gt;MOLDED PACKAGE SUPERSOT, 3 LEAD&lt;/b&gt; MKT-MAO3B&lt;p&gt;
-Source: http://www.fairchildsemi.com/dwg/MA/MA03B.pdf</description>
-<wire x1="1.352" y1="0.603" x2="1.352" y2="-0.603" width="0.2032" layer="21"/>
-<wire x1="1.352" y1="-0.603" x2="-1.352" y2="-0.603" width="0.2032" layer="21"/>
-<wire x1="-1.352" y1="-0.603" x2="-1.352" y2="0.603" width="0.2032" layer="21"/>
-<wire x1="-1.352" y1="0.603" x2="1.352" y2="0.603" width="0.2032" layer="21"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.75" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.75" y="-3.25" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.175" y1="-1.25" x2="-0.675" y2="-0.6534" layer="51"/>
-<rectangle x1="0.675" y1="-1.25" x2="1.175" y2="-0.6534" layer="51"/>
-<rectangle x1="-0.25" y1="0.6534" x2="0.225" y2="1.25" layer="51" rot="R180"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SUPER-SOT3" urn="urn:adsk.eagle:package:29529/2" type="model" library_version="2">
-<description>MOLDED PACKAGE SUPERSOT, 3 LEAD MKT-MAO3B
-Source: http://www.fairchildsemi.com/dwg/MA/MA03B.pdf</description>
-<packageinstances>
-<packageinstance name="SUPER-SOT3"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="MOSFET_P" urn="urn:adsk.eagle:symbol:29421/1" library_version="2">
-<wire x1="-1.016" y1="-2.54" x2="-1.016" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-2.159" x2="2.54" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.159" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="2.159" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.159" x2="0.5334" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.81" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.159" x2="3.81" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.159" x2="2.54" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
-<circle x="2.54" y="2.159" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="-2.159" radius="0.127" width="0.4064" layer="94"/>
-<text x="6.35" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="6.35" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="1.397" y="-4.318" size="0.8128" layer="93">D</text>
-<text x="1.397" y="3.556" size="0.8128" layer="93">S</text>
-<text x="-2.286" y="1.143" size="0.8128" layer="93">G</text>
-<rectangle x1="-0.254" y1="-2.794" x2="0.508" y2="-1.27" layer="94"/>
-<rectangle x1="-0.254" y1="1.27" x2="0.508" y2="2.794" layer="94"/>
-<rectangle x1="-0.254" y1="-0.889" x2="0.508" y2="0.889" layer="94"/>
-<pin name="G" x="-2.54" y="2.54" visible="off" length="point" direction="pas"/>
-<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<polygon width="0.1524" layer="94">
-<vertex x="2.54" y="0"/>
-<vertex x="1.27" y="0.508"/>
-<vertex x="1.27" y="-0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="3.81" y="0.508"/>
-<vertex x="3.302" y="-0.254"/>
-<vertex x="4.318" y="-0.254"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FDN360P" urn="urn:adsk.eagle:component:29602/2" prefix="Q" library_version="2">
-<description>&lt;b&gt;Single P-Channel, PowerTrench (R) MOSFET&lt;/b&gt;&lt;p&gt;
-Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
-<gates>
-<gate name="G$1" symbol="MOSFET_P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SUPER-SOT3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:29529/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14667,69 +14679,93 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </classes>
 <parts>
 <part name="U3" library="bschulz" deviceset="TPS6103*" device="RSA" technology="2" value="TPS61032RSA"/>
-<part name="L2" library="bschulz" deviceset="INDUCTOR" device="XHMI_6.65X6.45" value="10uH"/>
-<part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0805" value="22uF"/>
-<part name="C7" library="bschulz_passives" deviceset="C-EU" device="C0805" value="2.2uF"/>
-<part name="R2" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="1.62M"/>
-<part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="360k"/>
-<part name="R8" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="180k"/>
+<part name="L2" library="bschulz" deviceset="INDUCTOR" device="XHMI_6.65X6.45" value="10uH">
+<attribute name="DIGIKEY" value="732-1208-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="74477110"/>
+</part>
+<part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
+<part name="C7" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
+<part name="R2" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="1.62M" value="1.62M"/>
+<part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="360K" value="360k"/>
+<part name="R8" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="bschulz_passives" deviceset="CTANT_EU" device="2917" value="220uF"/>
+<part name="C5" library="bschulz_passives" deviceset="CTANT_EU" device="2917" value="220uF">
+<attribute name="DIGIKEY" value="478-5408-1-ND"/>
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="TPSY227K010R0100"/>
+</part>
 <part name="U2" library="bschulz" deviceset="TPS6282*" device="DLC" technology="2"/>
-<part name="C1" library="bschulz_passives" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="R1" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="180k"/>
+<part name="C1" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="4.7UF" value="4.7uF"/>
+<part name="R1" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="820k"/>
-<part name="R7" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="180k"/>
-<part name="C6" library="bschulz_passives" deviceset="C-EU" device="C0402" value="68pF"/>
-<part name="C8" library="bschulz_passives" deviceset="C-EU" device="C0805" value="22uF"/>
-<part name="C9" library="bschulz_passives" deviceset="C-EU" device="C0805" value="22uF"/>
+<part name="R6" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="820K" value="820k"/>
+<part name="R7" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
+<part name="C6" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="68PF" value="68pF"/>
+<part name="C8" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
+<part name="C9" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L3" library="bschulz" deviceset="INDUCTOR" device="LQS_3X3" value="1uH"/>
+<part name="L3" library="bschulz" deviceset="INDUCTOR" device="LQS_3X3" value="1uH">
+<attribute name="DIGIKEY" value="732-5491-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="74404032010"/>
+</part>
 <part name="U1" library="bschulz" deviceset="TLV61220" device="DBV"/>
-<part name="L1" library="bschulz" deviceset="INDUCTOR" device="1008" value="6.8uH"/>
-<part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0805" value="10uF"/>
-<part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="1.62M"/>
-<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="180k"/>
+<part name="L1" library="bschulz" deviceset="INDUCTOR" device="1008" value="6.8uH">
+<attribute name="DIGIKEY" value="732-4849-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="74438323068"/>
+</part>
+<part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
+<part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="1.62M" value="1.62M"/>
+<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0805" value="10uF"/>
+<part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U5" library="bschulz" deviceset="BQ2980" device="RUG"/>
-<part name="R11" library="bschulz" deviceset="R-EU_" device="R0402" value="20R"/>
-<part name="R9" library="bschulz" deviceset="R-EU_" device="R0402" value="330R"/>
-<part name="R12" library="bschulz" deviceset="R-EU_" device="R0402"/>
-<part name="R14" library="bschulz" deviceset="R-EU_" device="R0402" value="100R"/>
-<part name="R15" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="2k"/>
+<part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="20" value="20"/>
+<part name="R9" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="330" value="330"/>
+<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
+<part name="R14" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100" value="100R"/>
+<part name="R15" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="2K" value="2k"/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
 <part name="Q2" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
-<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0805" value="3m"/>
+<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0805" technology="0.003" value="3m"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C12" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="C11" library="bschulz_passives" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="C12" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
+<part name="C11" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="U4" library="bschulz" deviceset="LT3652" device="DD"/>
-<part name="C10" library="bschulz_passives" deviceset="C-EU" device="C0805" value="22uF"/>
+<part name="C10" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R13" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="91k"/>
-<part name="R16" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="182k"/>
-<part name="R17" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="330k"/>
+<part name="R13" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="91K" value="91k"/>
+<part name="R16" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="182K" value="182k"/>
+<part name="R17" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="330K" value="330k"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D2" library="bschulz" deviceset="DIODE" device="SOD-323"/>
-<part name="R18" library="bschulz_passives" deviceset="R-EU_" device="R0805" value="5m"/>
-<part name="L4" library="bschulz" deviceset="INDUCTOR" device="MAIA_4.1X4.1" value="4.7uH"/>
-<part name="C14" library="bschulz_passives" deviceset="C-EU" device="C0805" value="10uF"/>
-<part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="D2" library="bschulz" deviceset="DIODE" device="SOD-323">
+<attribute name="DIGIKEY" value="CMDSH2-3CT-ND"/>
+<attribute name="MF" value="Central Semiconductor"/>
+<attribute name="MPN" value="CMDSH2-3 TR"/>
+</part>
+<part name="R18" library="bschulz_passives" deviceset="R-EU_" device="R0805" technology="0.005" value="5m"/>
+<part name="L4" library="bschulz" deviceset="INDUCTOR" device="MAIA_4.1X4.1" value="4.7uH">
+<attribute name="DIGIKEY" value="732-11316-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="78438356047"/>
+</part>
+<part name="C14" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
+<part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U22" library="bschulz" deviceset="TPS22917" device="DBV"/>
 <part name="U21" library="bschulz" deviceset="TPS22917" device="DBV"/>
@@ -14749,12 +14785,12 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R25" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R25" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R28" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
-<part name="R32" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
-<part name="R29" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
-<part name="R33" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
+<part name="R28" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
+<part name="R32" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
+<part name="R29" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
+<part name="R33" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
 <part name="JP3" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="JP4" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="U18" library="bschulz" deviceset="MIC2039" device="MT"/>
@@ -14766,24 +14802,24 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R24" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R24" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R26" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
-<part name="R30" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
-<part name="R27" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
-<part name="R31" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="287R"/>
+<part name="R26" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
+<part name="R30" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
+<part name="R27" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
+<part name="R31" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="287" value="287R"/>
 <part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="JP2" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
-<part name="C19" library="bschulz_passives" deviceset="C-EU" device="C0805" value="22uF"/>
-<part name="C20" library="bschulz_passives" deviceset="C-EU" device="C0805" value="22uF"/>
+<part name="C19" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
+<part name="C20" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S2" library="bschulz" deviceset="SPDT" device="PCM12"/>
-<part name="R23" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R23" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="S1" library="bschulz" deviceset="SPDT" device="PCM12"/>
-<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="J1" library="bschulz" deviceset="CONN_8" device="2.54_SCREW"/>
@@ -14814,7 +14850,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="Q5" library="bschulz" deviceset="MOSFET_PCH" device="-FDN360P" value="FDN360P"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q4" library="bschulz" deviceset="MOSFET_PCH" device="-FDN360P" value="FDN360P"/>
-<part name="R21" library="bschulz" deviceset="R-EU_" device="R0603"/>
+<part name="R21" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="470K" value="470k"/>
 <part name="U25" library="bschulz" deviceset="SN74AUP3G34" device="DCU"/>
 <part name="C21" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="C22" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
@@ -14904,45 +14940,45 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="C39" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="SD1" library="bschulz" deviceset="MICROSD" device=""/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R41" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R41" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP5" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="U8" library="bschulz" deviceset="TPL5111" device="DDC"/>
-<part name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="FDN360P" device="" package3d_urn="urn:adsk.eagle:package:29529/2"/>
-<part name="R19" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="180k"/>
-<part name="R20" library="bschulz" deviceset="R-EU_" device="R0603" value="120k"/>
+<part name="Q3" library="bschulz" deviceset="MOSFET_PCH" device="-FDN360P" value="FDN360P"/>
+<part name="R19" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="120K" value="120k"/>
+<part name="R20" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="120K" value="120k"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U10" library="bschulz" deviceset="TPS22917" device="DBV"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U27" library="bschulz" deviceset="TXS0108" device="RGY"/>
-<part name="R46" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R46" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="U28" library="bschulz" deviceset="TXS0108" device="RGY"/>
-<part name="R47" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R47" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="U29" library="bschulz" deviceset="TXS0104" device="RGY"/>
 <part name="U30" library="bschulz" deviceset="MCP4726*" device="SOT-23" technology="A2"/>
 <part name="D6" library="bschulz" deviceset="LM4040" device="" technology="2.5"/>
-<part name="R48" library="bschulz" deviceset="R-EU_" device="R0603" value="330R"/>
+<part name="R48" library="bschulz" deviceset="R-EU_" device="R0603" technology="330" value="330R"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C29" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="C30" library="bschulz_passives" deviceset="C-EU" device="C0805" value="10uF"/>
+<part name="C29" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
+<part name="C30" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C33" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C33" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND57" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C31" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C31" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="U32" library="bschulz" deviceset="ADS111*" device="" technology="5"/>
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U34" library="bschulz" deviceset="INA21*" device="DCK" technology="1"/>
 <part name="D7" library="bschulz" deviceset="LM4040" device="" technology="2.5"/>
 <part name="R51" library="bschulz" deviceset="R-EU_" device="R0603"/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C37" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C37" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="U35" library="bschulz" deviceset="INA21*" device="DCK" technology="0"/>
-<part name="C38" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C38" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND65" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C35" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C35" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="U33" library="bschulz" deviceset="ADS111*" device="" technology="5"/>
 <part name="GND61" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C36" library="bschulz_passives" deviceset="C-EU" device="C0402" value="0.1uF"/>
+<part name="C36" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="R50" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="P10K" value="10k"/>
 <part name="R49" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="P10K" value="10k"/>
 <part name="JP7" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
@@ -14954,27 +14990,35 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="J5" library="bschulz" deviceset="CONN_02" device="SCREW_2.54"/>
 <part name="J6" library="bschulz" deviceset="CONN_02" device="SCREW_2.54"/>
 <part name="J7" library="bschulz" deviceset="CONN_02" device="SCREW_2.54"/>
-<part name="D3" library="bschulz" deviceset="DIODE" device="DO-214AC"/>
-<part name="D1" library="bschulz" deviceset="DIODE" device="DO-214AC"/>
+<part name="D3" library="bschulz" deviceset="DIODE" device="DO-214AC">
+<attribute name="DIGIKEY" value="CMSH3-40MATR13CT-ND"/>
+<attribute name="MF" value="Central Semiconductor"/>
+<attribute name="MPN" value="CMSH3-40MA TR13"/>
+</part>
+<part name="D1" library="bschulz" deviceset="DIODE" device="DO-214AC">
+<attribute name="DIGIKEY" value="CMSH3-40MATR13CT-ND"/>
+<attribute name="MF" value="Central Semiconductor"/>
+<attribute name="MPN" value="CMSH3-40MA TR13"/>
+</part>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J8" library="bschulz" deviceset="JST_2MM_MALE" device=""/>
 <part name="F1" library="bschulz" deviceset="PPTC" device="1.5A"/>
 <part name="U36" library="bschulz" deviceset="TCA9555" device="RTW"/>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C28" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
+<part name="C28" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C26" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
+<part name="C26" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C27" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
+<part name="C27" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C34" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF"/>
+<part name="C34" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="H1" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
 <part name="H2" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
 <part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="H3" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
-<part name="R53" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R53" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14993,6 +15037,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="L2" gate="G$1" x="7.62" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.7" y="44.45" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="12.7" y="49.53" size="1.778" layer="96" rot="R180"/>
+<attribute name="MF" x="7.62" y="45.72" size="2.54" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="7.62" y="45.72" size="2.54" layer="96" rot="R90" display="off"/>
+<attribute name="DIGIKEY" x="7.62" y="45.72" size="2.54" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="-5.08" y="43.18" smashed="yes">
 <attribute name="NAME" x="-3.556" y="43.561" size="1.778" layer="95"/>
@@ -15032,6 +15079,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="C5" gate="G$1" x="66.04" y="43.18" smashed="yes">
 <attribute name="NAME" x="67.183" y="43.6626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="67.183" y="38.5826" size="1.778" layer="96"/>
+<attribute name="MPN" x="66.04" y="43.18" size="2.54" layer="96" display="off"/>
+<attribute name="MF" x="66.04" y="43.18" size="2.54" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="66.04" y="43.18" size="2.54" layer="96" display="off"/>
 </instance>
 <instance part="U2" gate="G$1" x="27.94" y="88.9" smashed="yes">
 <attribute name="DISP" x="29.21" y="97.79" size="1.27" layer="95" ratio="15" align="center"/>
@@ -15083,6 +15133,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="L3" gate="G$1" x="53.34" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.42" y="92.71" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="58.42" y="97.79" size="1.778" layer="96" rot="R180"/>
+<attribute name="MF" x="53.34" y="93.98" size="2.54" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="53.34" y="93.98" size="2.54" layer="96" rot="R90" display="off"/>
+<attribute name="DIGIKEY" x="53.34" y="93.98" size="2.54" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="U1" gate="G$1" x="27.94" y="121.92" smashed="yes">
 <attribute name="NAME" x="27.94" y="110.236" size="1.778" layer="95" ratio="15" align="center"/>
@@ -15090,6 +15143,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="L1" gate="G$1" x="5.08" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.16" y="125.73" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="10.16" y="130.81" size="1.778" layer="96" rot="R180"/>
+<attribute name="MF" x="5.08" y="127" size="2.54" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="5.08" y="127" size="2.54" layer="96" rot="R90" display="off"/>
+<attribute name="DIGIKEY" x="5.08" y="127" size="2.54" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C3" gate="G$1" x="-2.54" y="119.38" smashed="yes">
 <attribute name="NAME" x="-1.016" y="119.761" size="1.778" layer="95"/>
@@ -15203,6 +15259,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="D2" gate="G$1" x="185.42" y="68.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="182.88" y="68.0974" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="182.88" y="70.8914" size="1.778" layer="96" rot="R180"/>
+<attribute name="DIGIKEY" x="185.42" y="68.58" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="185.42" y="68.58" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="185.42" y="68.58" size="2.54" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R18" gate="G$1" x="203.2" y="63.5" smashed="yes">
 <attribute name="NAME" x="199.39" y="64.9986" size="1.778" layer="95"/>
@@ -15211,6 +15270,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="L4" gate="G$1" x="193.04" y="71.12" smashed="yes">
 <attribute name="NAME" x="191.77" y="66.04" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="196.85" y="66.04" size="1.778" layer="96" rot="R90"/>
+<attribute name="MF" x="193.04" y="71.12" size="2.54" layer="96" display="off"/>
+<attribute name="MPN" x="193.04" y="71.12" size="2.54" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="193.04" y="71.12" size="2.54" layer="96" display="off"/>
 </instance>
 <instance part="C14" gate="G$1" x="203.2" y="55.88" smashed="yes">
 <attribute name="NAME" x="204.724" y="56.261" size="1.778" layer="95"/>
@@ -15275,9 +15337,9 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="U8" gate="G$1" x="307.34" y="22.86" smashed="yes">
 <attribute name="NAME" x="307.34" y="13.716" size="1.778" layer="95" ratio="15" align="center"/>
 </instance>
-<instance part="Q3" gate="G$1" x="276.86" y="38.1" smashed="yes">
-<attribute name="NAME" x="283.21" y="40.64" size="1.778" layer="95"/>
-<attribute name="VALUE" x="283.21" y="38.1" size="1.778" layer="96"/>
+<instance part="Q3" gate="G$1" x="276.86" y="38.354" smashed="yes" rot="MR180">
+<attribute name="NAME" x="283.21" y="35.814" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="283.21" y="38.354" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="R19" gate="G$1" x="269.24" y="48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="267.7414" y="44.45" size="1.778" layer="95" rot="R90"/>
@@ -15306,10 +15368,16 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="D3" gate="G$1" x="195.58" y="83.82" smashed="yes" rot="R180">
 <attribute name="NAME" x="193.04" y="83.3374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="193.04" y="86.1314" size="1.778" layer="96" rot="R180"/>
+<attribute name="DIGIKEY" x="195.58" y="83.82" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="195.58" y="83.82" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="195.58" y="83.82" size="2.54" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="D1" gate="G$1" x="109.22" y="73.66" smashed="yes">
 <attribute name="NAME" x="111.76" y="74.1426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="111.76" y="71.3486" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="109.22" y="73.66" size="2.54" layer="96" display="off"/>
+<attribute name="MPN" x="109.22" y="73.66" size="2.54" layer="96" display="off"/>
+<attribute name="MF" x="109.22" y="73.66" size="2.54" layer="96" display="off"/>
 </instance>
 <instance part="GND21" gate="1" x="200.66" y="78.74" smashed="yes">
 <attribute name="VALUE" x="198.12" y="76.2" size="1.778" layer="96"/>
@@ -15973,7 +16041,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="269.24" y1="53.34" x2="269.24" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="55.88" x2="279.4" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="279.4" y1="55.88" x2="279.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="55.88" x2="279.4" y2="43.434" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="55.88" x2="266.7" y2="55.88" width="0.1524" layer="91"/>
 <junction x="269.24" y="55.88"/>
 <label x="266.7" y="55.88" size="0.8128" layer="95" rot="R180" xref="yes"/>
@@ -16029,12 +16097,12 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <net name="FEATHER_EN" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="274.32" y1="40.64" x2="269.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="40.894" x2="269.24" y2="40.894" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="269.24" y1="40.64" x2="269.24" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="40.64" x2="266.7" y2="40.64" width="0.1524" layer="91"/>
-<junction x="269.24" y="40.64"/>
-<label x="266.7" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<wire x1="269.24" y1="40.894" x2="269.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="40.894" x2="266.7" y2="40.894" width="0.1524" layer="91"/>
+<junction x="269.24" y="40.894"/>
+<label x="266.7" y="40.894" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -16042,7 +16110,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="U8" gate="G$1" pin="DELAY"/>
 <wire x1="292.1" y1="22.86" x2="279.4" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="279.4" y1="22.86" x2="279.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="22.86" x2="279.4" y2="33.274" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <junction x="279.4" y="22.86"/>
 </segment>
@@ -16128,6 +16196,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <sheet>
 <plain>
 <text x="320.04" y="187.96" size="1.778" layer="97">USB &amp; ISP</text>
+<text x="210.82" y="205.74" size="2.54" layer="91">Check current rating!!</text>
 </plain>
 <instances>
 <instance part="U22" gate="G$1" x="73.66" y="22.86" smashed="yes" rot="MR180">
