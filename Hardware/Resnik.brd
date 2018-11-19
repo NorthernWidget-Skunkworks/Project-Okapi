@@ -3,7 +3,7 @@
 <eagle version="9.2.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -1894,9 +1894,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="29.591" y="39.624" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="L2" library="bschulz" package="WE-XHMI(6.65X6.45)" value="10uH" x="18.288" y="24.765" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="732-1208-1-ND" x="18.288" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY" value="732-10707-1-ND" x="18.288" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Wurth" x="18.288" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="74477110" x="18.288" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="74439346100" x="18.288" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L3" library="bschulz" package="WE-LQS(3X3)" value="1uH" x="23.749" y="39.751" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="732-5491-1-ND" x="23.749" y="39.751" size="1.778" layer="27" rot="R90" display="off"/>
