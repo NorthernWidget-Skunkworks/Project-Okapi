@@ -9,9 +9,10 @@
 #include <Wire.h> //Include base Wire library
 
 //If a pin is defined as "0", it is allowed to be made an output, if pin is defined as a "1" is if forbidden to be defined as an output
-const uint32_t PinMask = 0b11100000101000001100000000011000; //Pin configuration mask for uC
+// const uint32_t PinMask = 0b11100000101000001100000000011000; //Pin configuration mask for uC
 // const uint16_t ExpPinMask = 0b1001110101011110; //Pin configuration mask for IO Expander
 const uint16_t ExpPinMask = 0x00; //DEBUG!
+const uint32_t PinMask = 0x00; //DEBUG!
 
 TCA9555 IO(0x20); //Instatiate IO Expander
 BME RH; //Instatiate BME280
