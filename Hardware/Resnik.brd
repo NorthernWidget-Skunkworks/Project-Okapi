@@ -2990,10 +2990,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="9.906" y="5.334" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="12.192" y="5.334" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="U36" library="bschulz" package="RTW_S-PWQFN-N24" value="TCA9555RTW" x="27.94" y="52.578" smashed="yes">
-<attribute name="DIGIKEY" value="296-24857-1-ND" x="27.94" y="52.578" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<element name="U36" library="bschulz" package="RTW_S-PWQFN-N24" value="TCA9535RTW" x="27.94" y="52.578" smashed="yes">
+<attribute name="DIGIKEY" value="296-25156-1-ND" x="27.94" y="52.578" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="DISP" value="TCA9535" x="27.94" y="52.578" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="TI" x="27.94" y="52.578" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="MPN" value="TCA9555RTWR" x="27.94" y="52.578" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="MPN" value="TCA9535RTWR" x="27.94" y="52.578" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="C28" library="bschulz_passives" package="C0402" value="0.1uF" x="10.287" y="45.847" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="10.287" y="45.847" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>

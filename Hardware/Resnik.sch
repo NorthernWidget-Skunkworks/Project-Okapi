@@ -5645,7 +5645,7 @@ Switches electrical signals</description>
 <wire x1="-7.62" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
-<text x="1.524" y="24.13" size="1.27" layer="95" ratio="15" align="center">TCA9555</text>
+<text x="1.524" y="24.13" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
 <text x="1.27" y="-24.13" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="MOUNT-HOLE">
@@ -9463,8 +9463,8 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="TCA9555" prefix="U">
-<description>&lt;b&gt;TCA9555&lt;/b&gt; - I&lt;sup&gt;2&lt;/sup&gt;C I/O Expander, 16 bit wtih interrupt
+<deviceset name="TCA95*5" prefix="U">
+<description>&lt;b&gt;TCA9555/TCA9535&lt;/b&gt; - I&lt;sup&gt;2&lt;/sup&gt;C I/O Expander, 16 bit wtih interrupt
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
@@ -9472,12 +9472,15 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 &lt;li&gt; I&lt;sub&gt;Out&lt;/sub&gt;: 25 mA &lt;/li&gt;
 &lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 3.5&amp;mu;A&lt;/li&gt;
 &lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;Internal Pullups (TCA9555 Only) &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
  
 &lt;p&gt;Digikey: &lt;br&gt;
 &lt;ul&gt;
-&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TCA9555RTWR/296-24857-1-ND/2096240"&gt; 296-24857-1-ND &lt;/a&gt;&lt;br/&gt; 
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TCA9555RTWR/296-24857-1-ND/2096240"&gt; 296-24857-1-ND (TCA9555)&lt;/a&gt;&lt;br/&gt; 
+
+&lt;a href = "https://www.digikey.com/product-detail/en/TCA9535RTWR/296-25156-1-ND/2170385/?itemSeq=278335859"&gt; 296-25156-1-ND (TCA9535) &lt;/a&gt;&lt;br/&gt; 
 &lt;/ul&gt;
 &lt;/p&gt;</description>
 <gates>
@@ -9513,7 +9516,20 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="3">
+<attribute name="DIGIKEY" value="296-25156-1-ND" constant="no"/>
+<attribute name="DISP" value="TCA9535" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TCA9535RTWR" constant="no"/>
+</technology>
+<technology name="5">
 <attribute name="DIGIKEY" value="296-24857-1-ND" constant="no"/>
+<attribute name="DISP" value="TCA9555" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TCA9555RTWR" constant="no"/>
 </technology>
@@ -15229,7 +15245,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J8" library="bschulz" deviceset="JST_2MM_MALE" device=""/>
 <part name="F1" library="bschulz" deviceset="PPTC" device="1.5A"/>
-<part name="U36" library="bschulz" deviceset="TCA9555" device="RTW"/>
+<part name="U36" library="bschulz" deviceset="TCA95*5" device="RTW" technology="3" value="TCA9535RTW"/>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C28" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -19361,6 +19377,7 @@ GPIO3</text>
 <attribute name="VALUE" x="22.479" y="103.124" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U36" gate="G$1" x="167.64" y="86.36" smashed="yes">
+<attribute name="DISP" x="169.164" y="110.49" size="1.27" layer="95" ratio="15" align="center"/>
 <attribute name="NAME" x="168.91" y="62.23" size="1.27" layer="95" ratio="15" align="center"/>
 </instance>
 <instance part="GND70" gate="1" x="152.4" y="91.44" smashed="yes">
