@@ -14995,8 +14995,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R13" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="91K" value="91k"/>
-<part name="R16" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="182K" value="182k"/>
+<part name="R13" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="182K" value="182k"/>
+<part name="R16" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="91K" value="91k"/>
 <part name="R17" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="330K" value="330k"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D2" library="bschulz" deviceset="DIODE" device="SOD-323">
