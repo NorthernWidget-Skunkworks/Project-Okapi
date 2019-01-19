@@ -298,8 +298,8 @@ bool SetPinModeIO(uint8_t Pin, bool State)  //Set the pin mode of a pin on the I
 		IO.PinMode(Pin, State);
 		Serial.print("IO Exp Pin ");
 		Serial.print(Pin);
-		if(State == 0) Serial.println("Set as Output");
-		if(State == 1) Serial.println("Set as Input");
+		if(State == 0) Serial.println(" Set as Output");
+		if(State == 1) Serial.println(" Set as Input");
 	}
 	else Serial.println("Pin Direction Error!");
 }
