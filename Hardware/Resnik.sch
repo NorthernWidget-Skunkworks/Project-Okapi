@@ -4648,6 +4648,7 @@ part number 2062-2P from STA</description>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
 <circle x="-1.27" y="-0.889" radius="0.127" width="0.127" layer="21"/>
+<text x="1.524" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="RSE0008A">
 <description>RSE0008A
@@ -9717,7 +9718,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC94090">
+<deviceset name="MIC94090" prefix="U">
 <description>&lt;b&gt;MIC94090&lt;/b&gt; - Hight Side Load Switch 
  
 &lt;p&gt;Characteristics:
@@ -12963,6 +12964,16 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 </package>
+<package name="C1206_TANT">
+<smd name="+" x="-1.355" y="0" dx="1.19" dy="1.06" layer="1" rot="R90"/>
+<smd name="-" x="1.355" y="0" dx="1.19" dy="1.06" layer="1" rot="R90"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<rectangle x1="-0.889" y1="-0.762" x2="-0.381" y2="0.762" layer="21"/>
+<text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -14861,6 +14872,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="1206" package="C1206_TANT">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -15639,10 +15659,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
 <part name="R23" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
 <part name="S5" library="bschulz" deviceset="BUTTON" device="2.6X1.6"/>
-<part name="C43" library="bschulz_passives" deviceset="CTANT_EU" device="2917" value="100uF">
-<attribute name="DIGIKEY" value="718-1101-1-ND"/>
+<part name="C43" library="bschulz_passives" deviceset="CTANT_EU" device="1206" value="100uF">
+<attribute name="DIGIKEY" value="718-1921-1-ND"/>
 <attribute name="MF" value="Vishay Sprague"/>
-<attribute name="MPN" value="593D107X9010D2TE3"/>
+<attribute name="MPN" value="TL8A0107M010D"/>
 </part>
 <part name="GND71" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U37" library="bschulz" deviceset="TLV3691" device="DCK"/>
@@ -15656,9 +15676,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND74" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R64" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="130K" value="130k"/>
 <part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$1" library="bschulz" deviceset="MIC94090" device="C6"/>
+<part name="U39" library="bschulz" deviceset="MIC94090" device="C6"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U38" library="bschulz" deviceset="TS5A21366" device="DCU"/>
+<part name="U38" library="bschulz" deviceset="TS5A21366" device="RSE" value="TS5A21366RSE"/>
 <part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -16053,7 +16073,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND73" gate="1" x="292.1" y="5.08" smashed="yes">
 <attribute name="VALUE" x="289.56" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="25.4" y="170.18" smashed="yes"/>
+<instance part="U39" gate="G$1" x="25.4" y="170.18" smashed="yes"/>
 <instance part="GND76" gate="1" x="40.64" y="162.56" smashed="yes">
 <attribute name="VALUE" x="38.1" y="160.02" size="1.778" layer="96"/>
 </instance>
@@ -16343,7 +16363,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="292.1" y1="17.78" x2="292.1" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U39" gate="G$1" pin="GND"/>
 <wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="167.64" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND76" gate="1" pin="GND"/>
@@ -16405,7 +16425,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="63.5" y="93.98"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="EN"/>
+<pinref part="U39" gate="G$1" pin="EN"/>
 <wire x1="12.7" y1="167.64" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
 <label x="7.62" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16777,7 +16797,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="292.1" y="27.94"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
+<pinref part="U39" gate="G$1" pin="VIN"/>
 <wire x1="12.7" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
 <label x="7.62" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16952,7 +16972,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="3V3_CORE_ISO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VOUT"/>
+<pinref part="U39" gate="G$1" pin="VOUT"/>
 <wire x1="38.1" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
 <label x="43.18" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
