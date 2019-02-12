@@ -1614,21 +1614,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="0.35" width="0.127" layer="21"/>
 </package>
-<package name="SOT323">
-<wire x1="1.1224" y1="0.6604" x2="1.1224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.1224" y1="-0.6604" x2="-1.1224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.1224" y1="-0.6604" x2="-1.1224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.1224" y1="0.6604" x2="1.1224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.673" y1="0.7" x2="-1.1" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.1" y1="0.7" x2="-1.1" y2="-0.354" width="0.2032" layer="21"/>
-<wire x1="0.673" y1="0.7" x2="1.1" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.354" width="0.2032" layer="21"/>
-<smd name="1" x="-0.65" y="-0.925" dx="0.7" dy="0.7" layer="1"/>
-<smd name="2" x="0.65" y="-0.925" dx="0.7" dy="0.7" layer="1"/>
-<smd name="3" x="0" y="0.925" dx="0.7" dy="0.7" layer="1"/>
-<text x="-1.27" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="1.27" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-</package>
 <package name="SC-70_6">
 <smd name="6" x="-0.65" y="0.9" dx="0.47" dy="1" layer="1"/>
 <smd name="5" x="0" y="0.9" dx="0.47" dy="1" layer="1"/>
@@ -3240,37 +3225,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="32.131" y="84.455" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE_PART" value="330k" x="30.734" y="84.455" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q7" library="bschulz" package="SOT323" value="2N7002" x="-25.4" y="-17.78" smashed="yes">
-<attribute name="DIGIKEY" value="2N7002W-FDICT-ND" x="-25.4" y="-17.78" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Diodes Incorporated" x="-25.4" y="-17.78" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="2N7002W-7-F" x="-25.4" y="-17.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-26.67" y="-17.78" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="TRANS-11151" x="-25.4" y="-17.78" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-24.13" y="-17.78" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
-</element>
-<element name="Q8" library="bschulz" package="SOT23-3" value="FDN360P" x="-25.4" y="-21.59" smashed="yes">
-<attribute name="DIGIKEY" value="FDN360PCT-ND" x="-25.4" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Fairchild" x="-25.4" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FDN360P" x="-25.4" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-27.051" y="-21.59" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-23.749" y="-21.59" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
-</element>
-<element name="R63" library="bschulz_passives" package="R0603" value="10M" x="-30.48" y="-21.59" smashed="yes">
-<attribute name="DIGIKEY" value="RMCF0603FT10M0CT-ND" x="-30.48" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Stackpole" x="-30.48" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RMCF0603FT10M0" x="-30.48" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-30.48" y="-20.193" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="-30.48" y="-22.987" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE_PART" value="10M" x="-30.48" y="-21.59" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R64" library="bschulz_passives" package="R0603" value="130k" x="-34.29" y="-21.59" smashed="yes">
-<attribute name="DIGIKEY" value="311-130KHRCT-ND" x="-34.29" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Yageo" x="-34.29" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603FR-07130KL" x="-34.29" y="-21.59" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-34.29" y="-20.193" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="-34.29" y="-22.987" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE_PART" value="130k" x="-34.29" y="-21.59" size="1.778" layer="27" display="off"/>
-</element>
 <element name="U39" library="bschulz" package="SC-70_6" value="MIC94090C6" x="34.163" y="55.499" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="576-3484-1-ND" x="34.163" y="55.499" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Microchip" x="34.163" y="55.499" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3466,8 +3420,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="37.719" y1="25.273" x2="37.719" y2="25.908" width="0.254" layer="1"/>
 <wire x1="37.719" y1="25.908" x2="38.3008" y2="26.4898" width="0.254" layer="1"/>
 <wire x1="38.3008" y1="26.4898" x2="55.32406875" y2="26.4898" width="0.254" layer="1"/>
-<contactref element="Q7" pad="1"/>
-<contactref element="R64" pad="2"/>
 <contactref element="U38" pad="3"/>
 <contactref element="U38" pad="7"/>
 <contactref element="U38" pad="2"/>
@@ -3501,8 +3453,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="36.957" y1="56.769" x2="36.957" y2="57.404" width="0.2" layer="1"/>
 <wire x1="36.957" y1="57.404" x2="36.264" y2="58.097" width="0.2" layer="1"/>
 <wire x1="36.264" y1="58.097" x2="36.033" y2="58.097" width="0.2" layer="1"/>
-<wire x1="-26.05" y1="-18.705" x2="-33.44" y2="-21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="3.3049875" y1="34.3408" x2="-26.05" y2="-18.705" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="V_HP">
 <contactref element="U3" pad="8"/>
@@ -4313,8 +4263,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U37" pad="2"/>
 <contactref element="JP8" pad="2"/>
 <contactref element="U8" pad="2"/>
-<contactref element="Q7" pad="2"/>
-<contactref element="R64" pad="1"/>
 <contactref element="U39" pad="5"/>
 <contactref element="U39" pad="2"/>
 <contactref element="U38" pad="6"/>
@@ -4413,8 +4361,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="30.734" y1="23.876" x2="30.734" y2="23.241" width="0.3048" layer="16"/>
 <wire x1="30.734" y1="23.241" x2="30.226" y2="22.733" width="0.3048" layer="16"/>
 <wire x1="30.226" y1="22.733" x2="26.162" y2="22.733" width="0.3048" layer="16"/>
-<wire x1="-24.75" y1="-18.705" x2="-35.14" y2="-21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="1.082" y1="6.858" x2="-24.75" y2="-18.705" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LBI">
 <contactref element="U3" pad="12"/>
@@ -5253,8 +5199,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="62.611" y1="14.605" x2="62.611" y2="9.906" width="0.6096" layer="1"/>
 <wire x1="60.6264" y1="16.5896" x2="62.611" y2="14.605" width="0.6096" layer="1"/>
 <contactref element="U37" pad="3"/>
-<contactref element="Q8" pad="2"/>
-<contactref element="R63" pad="1"/>
 <contactref element="U38" pad="4"/>
 <wire x1="44.511" y1="25.288" x2="43.76920625" y2="25.288" width="0.3048" layer="1"/>
 <wire x1="43.76920625" y1="25.288" x2="43.4404" y2="24.95919375" width="0.3048" layer="1"/>
@@ -5268,8 +5212,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="37.719" y1="23.241" x2="37.719" y2="22.4156625" width="0.254" layer="1"/>
 <wire x1="37.719" y1="22.4156625" x2="37.4104" y2="22.1070625" width="0.254" layer="1"/>
 <wire x1="37.4104" y1="22.1070625" x2="37.4104" y2="19.133" width="0.254" layer="1"/>
-<wire x1="-24.45" y1="-22.59" x2="-31.33" y2="-21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="26.0747375" y1="17.5544" x2="-24.45" y2="-22.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="U13" pad="7"/>
@@ -7708,21 +7650,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="30.5308" y1="81.661" x2="30.5308" y2="83.4018" width="0.3048" layer="1"/>
 <wire x1="30.5308" y1="83.4018" x2="30.734" y2="83.605" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$17">
-<contactref element="R63" pad="2"/>
-<contactref element="Q8" pad="1"/>
-<contactref element="Q7" pad="3"/>
-<wire x1="-26.35" y1="-22.59" x2="-29.63" y2="-21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.4" y1="-16.855" x2="-26.35" y2="-22.59" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="V_PRIME_SENSE">
-<contactref element="Q8" pad="3"/>
 <contactref element="U32" pad="6"/>
 <contactref element="U38" pad="5"/>
 <wire x1="35.012" y1="23.106" x2="35.012" y2="23.836" width="0.254" layer="1"/>
 <wire x1="35.449" y1="24.273" x2="36.363" y2="24.273" width="0.254" layer="1"/>
 <wire x1="35.012" y1="23.836" x2="35.449" y2="24.273" width="0.254" layer="1"/>
-<wire x1="-25.4" y1="-20.49" x2="35.012" y2="23.106" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3_CORE_ISO">
 <contactref element="U39" pad="1"/>

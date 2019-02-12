@@ -15670,12 +15670,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP8" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39293/1"/>
 <part name="R62" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="330K" value="330k"/>
 <part name="GND73" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q7" library="bschulz" deviceset="MOSFET-NCH" device="-2N7002PW" value="2N7002"/>
-<part name="Q8" library="bschulz" deviceset="MOSFET_PCH" device="-FDN360P" value="FDN360P"/>
-<part name="R63" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="10M" value="10M"/>
-<part name="GND74" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R64" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="130K" value="130k"/>
-<part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U39" library="bschulz" deviceset="MIC94090" device="C6"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U38" library="bschulz" deviceset="TS5A21366" device="RSE" value="TS5A21366RSE"/>
@@ -19212,7 +19206,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="109.22" y="76.2" size="0.8128" layer="91">ADR = 0x49</text>
-<text x="106.68" y="157.48" size="2.54" layer="91">DELETE!!!!!!</text>
 <text x="55.88" y="160.02" size="1.778" layer="91">Change package???</text>
 </plain>
 <instances>
@@ -19354,28 +19347,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="70.104" y="28.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="70.104" y="23.241" size="1.778" layer="96"/>
 </instance>
-<instance part="Q7" gate="NMOS" x="142.24" y="134.62" smashed="yes" rot="MR0">
-<attribute name="NAME" x="137.16" y="134.62" size="1.778" layer="95" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="137.16" y="132.08" size="1.778" layer="96" font="vector" rot="MR0"/>
-</instance>
-<instance part="Q8" gate="G$1" x="127" y="144.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="127" y="139.7" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="124.46" y="139.7" size="1.778" layer="96" font="vector" rot="R270"/>
-</instance>
-<instance part="R63" gate="G$1" x="119.38" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="117.8814" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="122.682" y="146.05" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND74" gate="1" x="139.7" y="124.46" smashed="yes">
-<attribute name="VALUE" x="137.16" y="121.92" size="1.778" layer="96"/>
-</instance>
-<instance part="R64" gate="G$1" x="149.86" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.3614" y="123.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="153.162" y="123.19" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND75" gate="1" x="149.86" y="116.84" smashed="yes">
-<attribute name="VALUE" x="147.32" y="114.3" size="1.778" layer="96"/>
-</instance>
 <instance part="U38" gate="G$1" x="71.12" y="144.78" smashed="yes">
 <attribute name="NAME" x="71.12" y="130.81" size="1.27" layer="96" align="center"/>
 <attribute name="DISP" x="71.12" y="156.464" size="1.27" layer="95" ratio="15" align="center"/>
@@ -19506,16 +19477,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND62" gate="1" pin="GND"/>
 <pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="20.32" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="Q7" gate="NMOS" pin="S"/>
-<wire x1="139.7" y1="129.54" x2="139.7" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND74" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND75" gate="1" pin="GND"/>
-<pinref part="R64" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="119.38" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U38" gate="G$1" pin="GND"/>
@@ -19663,14 +19624,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="111.76" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="63.5" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 <junction x="109.22" y="71.12"/>
-</segment>
-<segment>
-<pinref part="Q7" gate="NMOS" pin="G"/>
-<wire x1="147.32" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
-<label x="154.94" y="132.08" size="1.27" layer="95" xref="yes"/>
-<pinref part="R64" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
-<junction x="149.86" y="132.08"/>
 </segment>
 <segment>
 <pinref part="U38" gate="G$1" pin="S1"/>
@@ -19861,40 +19814,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="V_PRIME" class="0">
 <segment>
-<pinref part="Q8" gate="G$1" pin="S"/>
-<wire x1="121.92" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<label x="116.84" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R63" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="144.78" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<junction x="119.38" y="142.24"/>
-</segment>
-<segment>
 <pinref part="U38" gate="G$1" pin="A2"/>
 <wire x1="58.42" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
 <label x="53.34" y="142.24" size="0.4064" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="R63" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="Q8" gate="G$1" pin="G"/>
-<wire x1="124.46" y1="154.94" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
-<junction x="124.46" y="154.94"/>
-<wire x1="124.46" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="154.94" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="Q7" gate="NMOS" pin="D"/>
-</segment>
-</net>
 <net name="V_PRIME_SENSE" class="0">
-<segment>
-<pinref part="Q8" gate="G$1" pin="D"/>
-<wire x1="132.08" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="142.24" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
-<label x="144.78" y="144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U32" gate="G$1" pin="AIN2"/>
 <wire x1="139.7" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
