@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -302,6 +302,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<text x="0" y="-2.159" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="1008">
 <smd name="1" x="-0.975" y="0" dx="0.85" dy="2.3" layer="1"/>
@@ -310,6 +311,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="21"/>
 <wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="21"/>
+<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-PD(12X12)">
 <smd name="1" x="-4.95" y="0" dx="2.9" dy="5.4" layer="1"/>
@@ -366,6 +368,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
 <circle x="-1.778" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+<text x="2.159" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="RUG_S-PQFP-N8">
 <smd name="8" x="0" y="0.65" dx="0.3" dy="0.6" layer="1"/>
@@ -2137,12 +2140,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <smd name="4" x="0.225" y="-1.4" dx="0.7" dy="0.25" layer="1" rot="R270"/>
 <smd name="2" x="-0.675" y="-1.4" dx="0.7" dy="0.25" layer="1" rot="R270"/>
 <smd name="1" x="-1.125" y="-1.4" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="EP" x="0" y="0" dx="1.65" dy="2.38" layer="1" rot="R90"/>
+<smd name="EP" x="0" y="0" dx="1.65" dy="2.38" layer="1" rot="R90" cream="no"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.905" y="-1.397" radius="0.127" width="0.127" layer="21"/>
+<rectangle x1="-1.077" y1="0.127" x2="-0.127" y2="0.742" layer="31"/>
+<rectangle x1="-1.077" y1="0.127" x2="-0.127" y2="0.742" layer="31"/>
+<rectangle x1="0.127" y1="-0.742" x2="1.077" y2="-0.127" layer="31" rot="R180"/>
+<rectangle x1="-1.077" y1="-0.742" x2="-0.127" y2="-0.127" layer="31"/>
+<rectangle x1="0.127" y1="0.127" x2="1.077" y2="0.742" layer="31" rot="R180"/>
 </package>
 <package name="SOD-923">
 <description>&lt;p&gt;SOD-923&lt;br&gt;Diode Package&lt;/p&gt;</description>
@@ -3333,9 +3341,13 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <smd name="18" x="-0.032" y="1.968" dx="0.7" dy="0.25" layer="1" rot="R90"/>
 <smd name="19" x="-0.532" y="1.968" dx="0.7" dy="0.25" layer="1" rot="R90"/>
 <smd name="20" x="-1.032" y="1.968" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="EP" x="-0.032" y="-0.032" dx="2.45" dy="2.45" layer="1"/>
+<smd name="EP" x="-0.032" y="-0.032" dx="2.45" dy="2.45" layer="1" cream="no"/>
 <text x="0" y="2.921" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <circle x="-2.413" y="2.286" radius="0.127" width="0.127" layer="21"/>
+<rectangle x1="-1.05" y1="0.2" x2="-0.2" y2="1.05" layer="31"/>
+<rectangle x1="-1.05" y1="-1.05" x2="-0.2" y2="-0.2" layer="31"/>
+<rectangle x1="0.2" y1="-1.05" x2="1.05" y2="-0.2" layer="31"/>
+<rectangle x1="0.2" y1="0.2" x2="1.05" y2="1.05" layer="31"/>
 </package>
 <package name="DRL_R-PDSO-N6">
 <smd name="6" x="-0.5" y="0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
@@ -3546,7 +3558,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <smd name="42" x="-1.5" y="3.325" dx="0.3" dy="0.7" layer="1" roundness="50"/>
 <smd name="43" x="-2" y="3.325" dx="0.3" dy="0.7" layer="1" roundness="50"/>
 <smd name="44" x="-2.5" y="3.325" dx="0.3" dy="0.7" layer="1" roundness="50"/>
-<smd name="TH" x="0" y="0" dx="5" dy="5" layer="1" roundness="10"/>
+<smd name="TH" x="0" y="0" dx="5" dy="5" layer="1" roundness="10" cream="no"/>
 <text x="-2.5" y="1" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-2.75" y="-1.5" size="0.6096" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.5" y1="2.375" x2="-3" y2="2.625" layer="51"/>
@@ -3593,6 +3605,15 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <rectangle x1="-1.625" y1="3" x2="-1.375" y2="3.5" layer="51"/>
 <rectangle x1="-2.125" y1="3" x2="-1.875" y2="3.5" layer="51"/>
 <rectangle x1="-2.625" y1="3" x2="-2.375" y2="3.5" layer="51"/>
+<rectangle x1="-2.325" y1="0.975" x2="-0.975" y2="2.325" layer="31"/>
+<rectangle x1="-0.675" y1="0.975" x2="0.675" y2="2.325" layer="31"/>
+<rectangle x1="0.977" y1="0.977" x2="2.327" y2="2.327" layer="31" rot="R90"/>
+<rectangle x1="0.975" y1="-2.325" x2="2.325" y2="-0.975" layer="31" rot="R180"/>
+<rectangle x1="-0.675" y1="-2.325" x2="0.675" y2="-0.975" layer="31" rot="R180"/>
+<rectangle x1="-2.327" y1="-2.327" x2="-0.977" y2="-0.977" layer="31" rot="R270"/>
+<rectangle x1="0.975" y1="-0.674" x2="2.325" y2="0.676" layer="31" rot="R180"/>
+<rectangle x1="-0.675" y1="-0.674" x2="0.675" y2="0.676" layer="31" rot="R180"/>
+<rectangle x1="-2.327" y1="-0.676" x2="-0.977" y2="0.674" layer="31" rot="R270"/>
 </package>
 <package name="MICROSD">
 <wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
@@ -3638,6 +3659,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-1.45" y1="0.8" x2="-1.45" y2="-0.8" width="0.127" layer="21"/>
 <circle x="-1.778" y="-1.143" radius="0.179603125" width="0.127" layer="21"/>
+<text x="2.032" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="2X3_1.27">
 <pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.05"/>
@@ -4686,6 +4708,30 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ts5a21366.pdf"&gt; Data shee
 <wire x1="-1.15" y1="-1" x2="-1.15" y2="1" width="0.127" layer="21"/>
 <circle x="-1.397" y="1.27" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="-1.651" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-TPC(3.8X3.8)">
+<smd name="1" x="-1.35" y="0" dx="4.3" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="1.35" y="0" dx="4.3" dy="1.6" layer="1" rot="R90"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-1.9" x2="1.9" y2="1.9" width="0.127" layer="21"/>
+<wire x1="1.9" y1="1.9" x2="-1.9" y2="1.9" width="0.127" layer="21"/>
+<text x="0" y="-2.794" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="DPF0006A">
+<smd name="1" x="-0.525" y="0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="-0.525" y="0" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="3" x="-0.525" y="-0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="4" x="0.525" y="-0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="0.525" y="0" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="0.525" y="0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="0.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="-0.5" x2="0.5" y2="-0.5" width="0.1524" layer="21"/>
+<wire x1="-0.5842" y1="0.6858" x2="-0.7874" y2="0.6858" width="0.0508" layer="21" curve="-180"/>
+<wire x1="-0.7874" y1="0.6858" x2="-0.5842" y2="0.6858" width="0.0508" layer="21" curve="-180"/>
+<text x="0" y="-1.016" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -5933,6 +5979,15 @@ Switches electrical signals</description>
 </technologies>
 </device>
 <device name="TPC_4.8X4.8" package="WE-TPC(4.8X4.8)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TPC_3.8X3.8" package="WE-TPC(3.8X3.8)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -9694,6 +9749,8 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 &lt;p&gt;Digikey: &lt;br&gt;
 &lt;ul&gt;
 &lt;a href = "https://www.digikey.com/products/en/integrated-circuits-ics/linear-comparators/692?k=TLV3691&amp;k=&amp;pkeyword=TLV3691&amp;sv=0&amp;pv7=2&amp;sf=0&amp;FV=142c0371%2Cffe002b4&amp;quantity=&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; 296-37910-1-ND (DCK)&lt;/a&gt;&lt;br/&gt; 
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TLV3691IDPFR/296-37242-6-ND/4695352"&gt; 296-37242-6-ND (DPF)&lt;/a&gt;&lt;br/&gt; 
 &lt;/ul&gt;
 &lt;/p&gt;</description>
 <gates>
@@ -9713,6 +9770,22 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <attribute name="DIGIKEY" value="296-37910-1-ND" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TLV3691IDCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DPF" package="DPF0006A">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-37242-6-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TLV3691IDPFR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11437,8 +11510,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
@@ -11458,22 +11531,6 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
-</package>
-<package name="R1206">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="21"/>
-<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="21"/>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="21"/>
-<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="21"/>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
 </package>
 <package name="R1206W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -12973,6 +13030,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="1.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
 <rectangle x1="-0.889" y1="-0.762" x2="-0.381" y2="0.762" layer="21"/>
 <text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="R1206">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="21"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="21"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="21"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="21"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
 </package>
 </packages>
 <symbols>
