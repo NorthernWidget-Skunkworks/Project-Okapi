@@ -379,12 +379,22 @@ void SetHP(int State)  //-1 off, 0 off, 1 VBeta, 2 VPrime
 	Serial.print("High Power Status: ");
 	switch(State){
 		case -1:  //Turn off power
+//      pinMode(16, OUTPUT);
+//      pinMode(17, OUTPUT);
+//      
+//      pinMode(16, LOW);
+//      pinMode(17, LOW);
 			Serial.println(" OFF");
 			digitalWrite(C0, HIGH);
 			digitalWrite(C1, HIGH);
 			break;
 
 		case 0:  //Turn off power
+//      pinMode(16, OUTPUT);
+//      pinMode(17, OUTPUT);
+//      
+//      pinMode(16, LOW);
+//      pinMode(17, LOW);
 			Serial.println(" OFF");
 			digitalWrite(C0, LOW);
 			digitalWrite(C1, LOW);
@@ -403,6 +413,11 @@ void SetHP(int State)  //-1 off, 0 off, 1 VBeta, 2 VPrime
 			break;
 
 		default:  //Turn off by default 
+//      pinMode(16, OUTPUT);
+//      pinMode(17, OUTPUT);
+//      
+//      pinMode(16, LOW);
+//      pinMode(17, LOW);
 			Serial.println(" OFF");
 			digitalWrite(C0, LOW);
 			digitalWrite(C1, LOW);
