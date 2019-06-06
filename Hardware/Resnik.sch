@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -5882,6 +5882,35 @@ Switches electrical signals</description>
 <text x="0" y="24.384" size="1.778" layer="95" ratio="15" align="center">MCP23018</text>
 <text x="0" y="-24.384" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="SDD">
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.016" x2="-0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.016" x2="-1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-1.016" x2="1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.016" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0.762" y="2.0066" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.318" y="-3.9624" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="A2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TPS6103*" prefix="U">
@@ -10044,6 +10073,28 @@ Digikey:
 <attribute name="DIGIKEY" value="MCP23018T-E/MJCT-ND" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="MCP23018T-E/MJ" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAT54C" prefix="D">
+<description>BAT54C</description>
+<gates>
+<gate name="G$1" symbol="SDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="BAT54CLT1GOSCT-ND" constant="no"/>
+<attribute name="MF" value="ON Semiconductor" constant="no"/>
+<attribute name="MFP" value="BAT54CLT1G" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -14413,6 +14464,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Bourns" constant="no"/>
 <attribute name="MPN" value="CRF0805-FZ-R010ELF" constant="no"/>
 </technology>
+<technology name="0.05">
+<attribute name="DIGIKEY" value="P50LLCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-L06KF50MV" constant="no"/>
+</technology>
 <technology name="0.1">
 <attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
@@ -15706,7 +15762,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" value="Central Semiconductor"/>
 <attribute name="MPN" value="CMDSH2-3 TR"/>
 </part>
-<part name="R18" library="bschulz_passives" deviceset="R-EU_" device="R0805" technology="0.005" value="5m"/>
+<part name="R18" library="bschulz_passives" deviceset="R-EU_" device="R0805" technology="0.05" value="50m"/>
 <part name="L4" library="bschulz" deviceset="INDUCTOR" device="MAIA_4.1X4.1" value="4.7uH">
 <attribute name="DIGIKEY" value="732-11316-1-ND"/>
 <attribute name="MF" value="Wurth"/>
@@ -16012,6 +16068,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R70" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
 <part name="R71" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
 <part name="GND85" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D8" library="bschulz" deviceset="BAT54C" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16462,6 +16519,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND85" gate="1" x="177.8" y="-7.62" smashed="yes">
 <attribute name="VALUE" x="175.26" y="-10.16" size="1.778" layer="96"/>
 </instance>
+<instance part="D8" gate="G$1" x="251.46" y="165.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="253.4666" y="164.338" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="247.4976" y="169.418" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16873,6 +16934,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="264.16" y1="160.02" x2="259.08" y2="160.02" width="0.1524" layer="91"/>
 <label x="256.54" y="160.02" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="D8" gate="G$1" pin="A2"/>
+<wire x1="251.46" y1="160.02" x2="251.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="157.48" x2="248.92" y2="157.48" width="0.1524" layer="91"/>
+<label x="248.92" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -17190,6 +17257,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="264.16" y1="157.48" x2="259.08" y2="157.48" width="0.1524" layer="91"/>
 <label x="256.54" y="157.48" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="D8" gate="G$1" pin="A1"/>
+<wire x1="251.46" y1="170.18" x2="251.46" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="172.72" x2="248.92" y2="172.72" width="0.1524" layer="91"/>
+<label x="248.92" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="3V3_CORE" class="0">
 <segment>
@@ -17244,11 +17317,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C43" gate="G$1" pin="+"/>
 <wire x1="307.34" y1="139.7" x2="325.12" y2="139.7" width="0.1524" layer="91"/>
 <junction x="307.34" y="139.7"/>
-</segment>
-<segment>
-<pinref part="U37" gate="G$1" pin="VCC"/>
-<wire x1="264.16" y1="165.1" x2="259.08" y2="165.1" width="0.1524" layer="91"/>
-<label x="256.54" y="165.1" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -17468,6 +17536,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R70" gate="G$1" pin="1"/>
 <pinref part="Q8" gate="NMOS" pin="D"/>
 <wire x1="177.8" y1="10.16" x2="177.8" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="U37" gate="G$1" pin="VCC"/>
+<wire x1="254" y1="165.1" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
