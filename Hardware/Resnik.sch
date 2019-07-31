@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -244,6 +244,7 @@
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
 <circle x="-2.286" y="-2.286" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="2.921" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-LQS(4X4)">
 <description>Wurth LQS series inductor, with 4mmx4mm package
@@ -355,6 +356,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <wire x1="1" y1="-0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.75" x2="-1" y2="0.75" width="0.127" layer="21"/>
 <circle x="-1.27" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="DBV_R-PDSO-G6">
 <smd name="6" x="-0.95" y="1.35" dx="1.05" dy="0.6" layer="1" rot="R90"/>
@@ -384,6 +386,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <wire x1="0.75" y1="-0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
 <wire x1="0.75" y1="0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
 <circle x="-0.635" y="1.143" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.524" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="DPAK">
 <wire x1="3.2766" y1="2.4654" x2="3.277" y2="-3.729" width="0.2032" layer="21"/>
@@ -532,8 +535,8 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 </package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="21"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="21"/>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -542,8 +545,8 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="21"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="R0805">
@@ -2194,21 +2197,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="21"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
-<package name="DQE_R-PX2SON-N8">
-<smd name="8" x="-0.525" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="7" x="-0.175" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="6" x="0.175" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="5" x="0.525" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="4" x="0.525" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="3" x="0.175" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="2" x="-0.175" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<smd name="1" x="-0.525" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
-<wire x1="-0.725" y1="0.525" x2="-0.725" y2="-0.525" width="0.127" layer="21"/>
-<wire x1="-0.725" y1="-0.525" x2="0.725" y2="-0.525" width="0.127" layer="21"/>
-<wire x1="0.725" y1="-0.525" x2="0.725" y2="0.525" width="0.127" layer="21"/>
-<wire x1="0.725" y1="0.525" x2="-0.725" y2="0.525" width="0.127" layer="21"/>
-<circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="21"/>
-</package>
 <package name="MSOP_8">
 <description>MSOP, 3x3mm, o.65mm pitch</description>
 <smd name="1" x="-2.4" y="0.975" dx="1.26" dy="0.4" layer="1"/>
@@ -2224,6 +2212,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SOT23-6L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -2330,6 +2319,7 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="-1.524" y1="-1.397" x2="-1.524" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-2.921" x2="1.524" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-2.921" x2="1.524" y2="-1.397" width="0.127" layer="21"/>
+<text x="-5.08" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="1X08_SCREW">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -3139,6 +3129,7 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
 <circle x="1.016" y="1.651" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SOT23-5">
 <smd name="5" x="-0.95" y="1.35" dx="0.55" dy="1" layer="1"/>
@@ -3647,6 +3638,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <rectangle x1="0.15" y1="-0.97" x2="1.47" y2="-0.15" layer="31" rot="R180"/>
 <rectangle x1="0.15" y1="0.15" x2="1.47" y2="0.97" layer="31"/>
 <rectangle x1="-1.47" y1="-0.97" x2="-0.15" y2="-0.15" layer="31" rot="R180"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RGY_S-PVQFN-N14">
 <smd name="13" x="-1" y="1.725" dx="0.85" dy="0.28" layer="1" rot="R90"/>
@@ -3673,6 +3665,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <wire x1="1.75" y1="-1.75" x2="-1.75" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.127" layer="21"/>
 <circle x="-2.159" y="-1.397" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="VSSOP_10">
 <smd name="10" x="-1" y="2.2" dx="0.3" dy="1.45" layer="1"/>
@@ -4313,6 +4306,7 @@ part number 2062-2P from STA</description>
 <wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.127" layer="21"/>
 <wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
 <circle x="-0.508" y="0.508" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-0.889" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="2_56">
 <description>&lt;p&gt;&lt;b&gt;2x56 Non-Plated Mounting Hole &lt;/b&gt;
@@ -4803,6 +4797,90 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ts5a21366.pdf"&gt; Data shee
 <circle x="-2.286" y="2.286" radius="0.179603125" width="0.127" layer="25"/>
 <smd name="EP" x="0" y="0" dx="2.6" dy="2.6" layer="1"/>
 <text x="0" y="2.921" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="HC49UP" urn="urn:adsk.eagle:footprint:37484/1">
+<description>&lt;h3&gt;HC-49/UP 11.4x4.8mm SMD Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.standardcrystalcorp.com/pdf%5Cc-3.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-5.1091" y1="1.143" x2="-3.429" y2="2.0321" width="0.0508" layer="21" curve="-55.770993" cap="flat"/>
+<wire x1="-5.715" y1="1.143" x2="-5.715" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="2.032" x2="5.1091" y2="1.143" width="0.0508" layer="21" curve="-55.772485" cap="flat"/>
+<wire x1="5.715" y1="1.143" x2="5.715" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="-1.27" x2="-3.429" y2="-1.27" width="0.0508" layer="21"/>
+<wire x1="3.429" y1="-2.032" x2="-3.429" y2="-2.032" width="0.0508" layer="21"/>
+<wire x1="-3.429" y1="1.27" x2="3.429" y2="1.27" width="0.0508" layer="21"/>
+<wire x1="5.461" y1="-2.413" x2="-5.461" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-0.381" x2="6.477" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="5.715" y1="0.381" x2="6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="6.477" y1="-0.381" x2="6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="5.461" y1="-2.413" x2="5.715" y2="-2.159" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.715" y1="-1.143" x2="5.715" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="5.715" y1="-2.159" x2="5.715" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="-1.27" x2="3.9826" y2="-1.143" width="0.0508" layer="21" curve="25.842828" cap="flat"/>
+<wire x1="3.429" y1="1.27" x2="3.9826" y2="1.143" width="0.0508" layer="21" curve="-25.842828" cap="flat"/>
+<wire x1="3.429" y1="-2.032" x2="5.109" y2="-1.1429" width="0.0508" layer="21" curve="55.771157" cap="flat"/>
+<wire x1="3.9826" y1="-1.143" x2="3.9826" y2="1.143" width="0.0508" layer="51" curve="128.314524" cap="flat"/>
+<wire x1="5.1091" y1="-1.143" x2="5.1091" y2="1.143" width="0.0508" layer="51" curve="68.456213" cap="flat"/>
+<wire x1="-5.1091" y1="-1.143" x2="-3.429" y2="-2.032" width="0.0508" layer="21" curve="55.772485" cap="flat"/>
+<wire x1="-3.9826" y1="-1.143" x2="-3.9826" y2="1.143" width="0.0508" layer="51" curve="-128.314524" cap="flat"/>
+<wire x1="-3.9826" y1="-1.143" x2="-3.429" y2="-1.27" width="0.0508" layer="21" curve="25.842828" cap="flat"/>
+<wire x1="-3.9826" y1="1.143" x2="-3.429" y2="1.27" width="0.0508" layer="21" curve="-25.842828" cap="flat"/>
+<wire x1="-6.477" y1="-0.381" x2="-6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-5.1091" y1="-1.143" x2="-5.1091" y2="1.143" width="0.0508" layer="51" curve="-68.456213" cap="flat"/>
+<wire x1="-5.715" y1="-1.143" x2="-5.715" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="-0.381" x2="-5.715" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="0.381" x2="-5.715" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="-2.159" x2="-5.715" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-2.159" x2="-5.461" y2="-2.413" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.715" y1="-0.381" x2="-6.477" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="0.381" x2="-6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-3.429" y1="2.032" x2="3.429" y2="2.032" width="0.0508" layer="21"/>
+<wire x1="5.461" y1="2.413" x2="-5.461" y2="2.413" width="0.1524" layer="21"/>
+<wire x1="5.461" y1="2.413" x2="5.715" y2="2.159" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-5.715" y1="2.159" x2="-5.461" y2="2.413" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-0.254" y1="0.635" x2="-0.254" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-0.635" x2="0.254" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="-0.635" x2="0.254" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="-0.254" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.016" y2="0" width="0.0508" layer="21"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.016" y2="0" width="0.0508" layer="21"/>
+<smd name="1" x="-4.826" y="0" dx="5.334" dy="1.9304" layer="1"/>
+<smd name="2" x="4.826" y="0" dx="5.334" dy="1.9304" layer="1"/>
+<rectangle x1="-6.604" y1="-3.048" x2="6.604" y2="3.048" layer="43"/>
+<text x="-0.254" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CRYSTAL_3.2X2.5_4-SMD">
+<description>Crystal, 3.2 x 2.5 mm, 4 pad &lt;br&gt;
+Ref &lt;a href = https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&amp;lang=en&gt;datasheet&lt;/a&gt;</description>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="DQE_R-PX2SON-N8">
+<smd name="8" x="-0.525" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="7" x="-0.175" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="6" x="0.175" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="5" x="0.525" y="0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="4" x="0.525" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="3" x="0.175" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="2" x="-0.175" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<smd name="1" x="-0.525" y="-0.335" dx="0.51" dy="0.19" layer="1" rot="R90"/>
+<wire x1="-0.725" y1="0.525" x2="-0.725" y2="-0.525" width="0.127" layer="21"/>
+<wire x1="-0.725" y1="-0.525" x2="0.725" y2="-0.525" width="0.127" layer="21"/>
+<wire x1="0.725" y1="-0.525" x2="0.725" y2="0.525" width="0.127" layer="21"/>
+<wire x1="0.725" y1="0.525" x2="-0.725" y2="0.525" width="0.127" layer="21"/>
+<circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -6376,6 +6454,21 @@ Switches electrical signals</description>
 <attribute name="DIGIKEY" value="RE1C002UNTCLCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="RE1C002UNTCL" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-2N7002P" package="SOT23-3">
+<connects>
+<connect gate="NMOS" pin="D" pad="3"/>
+<connect gate="NMOS" pin="G" pad="1"/>
+<connect gate="NMOS" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1727-4692-1-ND" constant="no"/>
+<attribute name="MF" value="Nexperia" constant="no"/>
+<attribute name="MPN" value="2N7002P,215" constant="no"/>
+<attribute name="VALUE" value="2N7002" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8059,7 +8152,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS3231M" prefix="RTC">
+<deviceset name="DS3231M" prefix="U">
 <description>&lt;h3&gt;DS3231M Real Time Clock&lt;/h3&gt;
 &lt;p&gt;Accuracy +/-5ppm.  Battery Backup.  2.3V to 5.5V.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/DS3231M.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -8827,6 +8920,20 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="MF" value="ECS" constant="no"/>
 <attribute name="MPN" value="ECS-.327-9-34QCS-TR" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="HC-49/US" package="HC49UP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.2X2.5" package="CRYSTAL_3.2X2.5_4-SMD">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -13211,6 +13318,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="3.65" y1="-2.15" x2="3.65" y2="2.15" width="0.127" layer="21"/>
 <wire x1="3.65" y1="2.15" x2="-3.65" y2="2.15" width="0.127" layer="21"/>
 <rectangle x1="-2.286" y1="-2.159" x2="-1.27" y2="2.159" layer="21"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="R2512">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
@@ -13373,6 +13481,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="DIGIKEY" value="1276-2083-1-ND" constant="no"/>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10B474KA8NNNC" constant="no"/>
+</technology>
+<technology name="10PF">
+<attribute name="DIGIKEY" value="311-1058-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603JRNPO9BN100CC0603JRNPO9BN100" constant="no"/>
 </technology>
 <technology name="10UF">
 <attribute name="DIGIKEY" value="490-10728-1-ND" constant="no"/>
@@ -14363,6 +14476,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
 <attribute name="VALUE_PART" value="360k" constant="no"/>
+</technology>
+<technology name="4.7K">
+<attribute name="DIGIKEY" value="311-4.70KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-074K7L" constant="no"/>
+<attribute name="VALUE_PART" value="4.7k" constant="no"/>
 </technology>
 <technology name="422K">
 <attribute name="DIGIKEY" value="311-422KHRCT-ND" constant="no"/>
@@ -15738,7 +15857,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U5" library="bschulz" deviceset="BQ2980" device="RUG"/>
 <part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="20" value="20"/>
 <part name="R9" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="330" value="330"/>
-<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
+<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="R14" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100" value="100R"/>
 <part name="R15" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="2K" value="2k"/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
@@ -15968,7 +16087,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U34" library="bschulz" deviceset="INA21*" device="DCK" technology="1"/>
 <part name="D7" library="bschulz" deviceset="LM4040" device="" technology="2.5"/>
-<part name="R51" library="bschulz" deviceset="R-EU_" device="R0603"/>
+<part name="R51" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="20k"/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C37" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="U35" library="bschulz" deviceset="INA21*" device="DCK" technology="0"/>
@@ -16015,13 +16134,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="H3" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
-<part name="R55" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
-<part name="R56" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
-<part name="R57" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
-<part name="R58" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
-<part name="R59" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
-<part name="R60" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
-<part name="R61" library="bschulz_passives" deviceset="R-EU_" device="R0402"/>
+<part name="R55" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1M"/>
+<part name="R56" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1M"/>
+<part name="R57" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="R58" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="R59" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1M"/>
+<part name="R60" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="R61" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S5" library="bschulz" deviceset="BUTTON" device="2.6X1.6"/>
@@ -16061,12 +16180,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U41" library="bschulz" deviceset="MCP23018" device="QFN"/>
 <part name="GND84" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R68" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1M" value="1M"/>
-<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="R69" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="143k"/>
+<part name="R69" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q8" library="bschulz" deviceset="MOSFET-NCH" device="-2N7002PW" value="2N7002"/>
-<part name="R70" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="R71" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R70" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="200k"/>
+<part name="R71" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="1M"/>
 <part name="GND85" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D8" library="bschulz" deviceset="BAT54C" device=""/>
 </parts>
@@ -20492,13 +20611,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="116.84" y="27.94" size="1.778" layer="91">Pin 12</text>
-<text x="116.84" y="104.14" size="1.778" layer="91">Pin A7</text>
-<text x="116.84" y="101.6" size="1.778" layer="91">Pin A6</text>
-<text x="116.84" y="99.06" size="1.778" layer="91">Pin A5</text>
-<text x="116.84" y="96.52" size="1.778" layer="91">Pin A4</text>
+<text x="116.84" y="104.14" size="1.778" layer="91">Pin A7/31</text>
+<text x="116.84" y="101.6" size="1.778" layer="91">Pin A6/30</text>
+<text x="116.84" y="99.06" size="1.778" layer="91">Pin A5/29</text>
+<text x="116.84" y="96.52" size="1.778" layer="91">Pin A4/28</text>
 <text x="116.84" y="35.56" size="1.778" layer="91">Pin 15</text>
 <text x="116.84" y="58.42" size="1.778" layer="91">Pin 23</text>
-<text x="116.84" y="93.98" size="1.778" layer="91">Pin A3</text>
+<text x="116.84" y="93.98" size="1.778" layer="91">Pin A3/27</text>
 <text x="124.46" y="27.94" size="1.778" layer="91">Also ext PWM</text>
 <text x="116.84" y="48.26" size="1.778" layer="91">Pin 19</text>
 <text x="116.84" y="33.02" size="1.778" layer="91">Pin 14</text>
@@ -20507,9 +20626,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="116.84" y="68.58" size="1.778" layer="91">Pin 2</text>
 <text x="116.84" y="66.04" size="1.778" layer="91">Pin 1</text>
 <text x="116.84" y="73.66" size="1.778" layer="91">Pin 4</text>
-<text x="116.84" y="86.36" size="1.778" layer="91">Pin A0</text>
-<text x="116.84" y="88.9" size="1.778" layer="91">Pin A1</text>
-<text x="116.84" y="91.44" size="1.778" layer="91">Pin A2</text>
+<text x="116.84" y="86.36" size="1.778" layer="91">Pin A0/24</text>
+<text x="116.84" y="88.9" size="1.778" layer="91">Pin A1/25</text>
+<text x="116.84" y="91.44" size="1.778" layer="91">Pin A2/26</text>
 <text x="116.84" y="50.8" size="1.778" layer="91">Pin 20</text>
 <text x="116.84" y="25.4" size="1.778" layer="91">Pin 11</text>
 <text x="116.84" y="22.86" size="1.778" layer="91">Pin 10</text>
