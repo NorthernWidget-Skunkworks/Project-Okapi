@@ -59,4 +59,4 @@ eagle.epf
 *.log
 *.ipynd_checkpoints
 *checkpoint.ipynb
-*.csv
+

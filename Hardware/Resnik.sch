@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -2209,6 +2209,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SOT23-6L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -5282,13 +5283,13 @@ Switches electronic signals</description>
 <text x="-4.318" y="1.27" size="1.27" layer="95" rot="R90" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="BMP280">
-<pin name="VDD" x="-15.24" y="5.08" visible="pin" length="middle" direction="pwr"/>
-<pin name="VDDIO" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="CSB" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="SDI" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="SCK" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SDO" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="-15.24" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="VDDIO" x="-15.24" y="2.54" length="middle"/>
+<pin name="CSB" x="-15.24" y="0" length="middle"/>
+<pin name="SDI" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SDO" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
@@ -5306,7 +5307,7 @@ Switches electronic signals</description>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.604" size="1.27" layer="95" align="center">TPS2105</text>
+<text x="0" y="6.604" size="1.27" layer="95" align="center">&gt;DISP</text>
 <text x="0" y="-8.89" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="TPS797XX">
@@ -5318,7 +5319,7 @@ Switches electronic signals</description>
 <wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="10.16" y2="2.54" width="0.254" layer="94"/>
 <wire x1="10.16" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="3.556" size="1.27" layer="95">TPS797xx</text>
+<text x="-7.62" y="3.556" size="1.27" layer="95">&gt;DISP</text>
 <text x="1.27" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="LTC4412">
@@ -5803,7 +5804,7 @@ Switches electrical signals</description>
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.858" size="1.778" layer="95" align="center">MIC94090</text>
+<text x="0" y="6.858" size="1.778" layer="95" align="center">&gt;DISP</text>
 </symbol>
 <symbol name="SW_1:1_2">
 <pin name="A1" x="-12.7" y="5.08" visible="off" length="middle"/>
@@ -6400,6 +6401,20 @@ Switches electrical signals</description>
 <attribute name="DIGIKEY" value="RE1C002UNTCLCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="RE1C002UNTCL" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-2N7002P" package="SOT23-3">
+<connects>
+<connect gate="NMOS" pin="D" pad="3"/>
+<connect gate="NMOS" pin="G" pad="1"/>
+<connect gate="NMOS" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1727-4692-1-ND" constant="no"/>
+<attribute name="MF" value="Nexperia" constant="no"/>
+<attribute name="MPN" value="2N7002P,215" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8211,8 +8226,8 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2105" prefix="U">
-<description>&lt;b&gt;TPS2105&lt;/b&gt; - Power Distribution Switch (OR'ing switch)
+<deviceset name="TPS210*" prefix="U">
+<description>&lt;b&gt;TPS210x&lt;/b&gt; - Power Distribution Switch (OR'ing switch)
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
@@ -8224,10 +8239,14 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 &lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
+
+TPS2104/5 Inverted vs non-inverted enable pin
  
 &lt;p&gt;Digikey: &lt;br&gt;
 &lt;ul&gt;
-&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS2105DBVR/296-10883-1-ND/504485"&gt; 296-10883-1-ND &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS2105DBVR/296-10883-1-ND/504485"&gt; TPS2105 296-10883-1-ND &lt;/a&gt;&lt;br/&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS2104DBVR/296-10882-1-ND/560870"&gt; TPS2104 296-10882-1-ND &lt;/a&gt;&lt;br/&gt;
 &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPS2105" x="0" y="0"/>
@@ -8243,7 +8262,20 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="296-10882-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS2104" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS2104DBVR" constant="no"/>
+</technology>
+<technology name="5">
 <attribute name="DIGIKEY" value="296-10883-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS2105" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS2105DBVR" constant="no"/>
 </technology>
@@ -8290,26 +8322,31 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
 <technology name="18">
 <attribute name="DIGIKEY" value="296-11988-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS79718" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS79718DCKR" constant="no"/>
 </technology>
 <technology name="285">
 <attribute name="DIGIKEY" value="296-25465-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS797285" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS797285DCKR" constant="no"/>
 </technology>
 <technology name="30">
 <attribute name="DIGIKEY" value="296-11989-1-ND " constant="no"/>
+<attribute name="DISP" value="TPS79730" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS79730DCKR" constant="no"/>
 </technology>
 <technology name="33">
 <attribute name="DIGIKEY" value="296-11990-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS79733" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS79733DCKR" constant="no"/>
 </technology>
@@ -8873,8 +8910,8 @@ Standard 6 pin header for AVR programming</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA644*" prefix="U">
-<description>&lt;b&gt;8-bit Microcontroller&lt;/b&gt; with 64K Bytes In-System Programmable Flash&lt;p&gt;
+<deviceset name="ATMEGA1284*" prefix="U">
+<description>&lt;b&gt;8-bit Microcontroller&lt;/b&gt; with 128K Bytes In-System Programmable Flash&lt;p&gt;
 Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
 <gates>
 <gate name="G$1" symbol="ATMEGA644E" x="0" y="0"/>
@@ -8930,11 +8967,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="ATMEGA644PA-MURCT-ND" constant="no"/>
+<attribute name="DIGIKEY" value="ATMEGA1284P-MURCT-ND" constant="no"/>
 <attribute name="MF" value="Atmel" constant="no"/>
-<attribute name="MPN" value="ATMEGA644PA-MUR" constant="no"/>
-<attribute name="OC_FARNELL" value="1748528" constant="no"/>
-<attribute name="OC_NEWARK" value="26R5636" constant="no"/>
+<attribute name="MPN" value="ATMEGA1284P-MUR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9835,8 +9870,8 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC94090" prefix="U">
-<description>&lt;b&gt;MIC94090&lt;/b&gt; - Hight Side Load Switch 
+<deviceset name="MIC9409*" prefix="U">
+<description>&lt;b&gt;MIC9409x&lt;/b&gt; - Hight Side Load Switch 
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
@@ -9865,9 +9900,22 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="MIC9409x" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
 <attribute name="DIGIKEY" value="576-3484-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC94090" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MIC94090YC6-TR" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="576-3492-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC94094" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC94094YC6-TR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -14312,6 +14360,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RMCF0603FT1M62" constant="no"/>
 <attribute name="VALUE_PART" value="1.62M" constant="no"/>
 </technology>
+<technology name="1.8K">
+<attribute name="DIGIKEY" value="311-1.80KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-071K8L" constant="no"/>
+<attribute name="VALUE_PART" value="1.8k" constant="no"/>
+</technology>
 <technology name="100K">
 <attribute name="DIGIKEY" value="RC0402FR-071ML" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -14342,6 +14396,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0603FR-07130KL" constant="no"/>
 <attribute name="VALUE_PART" value="130k" constant="no"/>
 </technology>
+<technology name="143K">
+<attribute name="DIGIKEY" value="311-143KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07143KL" constant="no"/>
+<attribute name="VALUE_PART" value="143k" constant="no"/>
+</technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="P180KHCT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
@@ -14365,6 +14425,24 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ERJ-3EKF1004V" constant="no"/>
 <attribute name="VALUE_PART" value="1M" constant="no"/>
+</technology>
+<technology name="2.2K">
+<attribute name="DIGIKEY" value="311-2.20KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-072K2L" constant="no"/>
+<attribute name="VALUE_PART" value="2.2k" constant="no"/>
+</technology>
+<technology name="200K">
+<attribute name="DIGIKEY" value="311-200KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07200KL" constant="no"/>
+<attribute name="VALUE_PART" value="200k" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="DIGIKEY" value="311-20.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0720KL" constant="no"/>
+<attribute name="VALUE_PART" value="20k" constant="no"/>
 </technology>
 <technology name="220">
 <attribute name="DIGIKEY" value="311-220HRCT-ND" constant="no"/>
@@ -15782,7 +15860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U5" library="bschulz" deviceset="BQ2980" device="RUG"/>
 <part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="20" value="20"/>
 <part name="R9" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="330" value="330"/>
-<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1k"/>
+<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1K" value="1k"/>
 <part name="R14" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100" value="100R"/>
 <part name="R15" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="2K" value="2k"/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
@@ -15880,7 +15958,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U31" library="bschulz" deviceset="BME280" device=""/>
 <part name="GND56" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="U6" library="bschulz" deviceset="TPS2105" device=""/>
+<part name="U6" library="bschulz" deviceset="TPS210*" device="" technology="5" value="TPS2105"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C15" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.22UF" value="0.22uF"/>
 <part name="C16" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.22UF" value="0.22uF"/>
@@ -15954,7 +16032,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="DIGIKEY" value="311-10.0KHRCT-ND"/>
 </part>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
-<part name="IC1" library="bschulz" deviceset="ATMEGA644*" device="M"/>
+<part name="IC1" library="bschulz" deviceset="ATMEGA1284*" device="M"/>
 <part name="GND69" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C42" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="1uF">
 <attribute name="DIGIKEY" value="1276-6524-1-ND"/>
@@ -16009,10 +16087,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U34" library="bschulz" deviceset="INA21*" device="DCK" technology="1"/>
 <part name="D7" library="bschulz" deviceset="LM4040" device="" technology="2.5"/>
-<part name="R51" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="20k"/>
+<part name="R51" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="20K" value="20k"/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C37" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
-<part name="U35" library="bschulz" deviceset="INA21*" device="DCK" technology="0"/>
+<part name="U35" library="bschulz" deviceset="INA21*" device="DCK" technology="3" value="INA213DCK"/>
 <part name="C38" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND65" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C35" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
@@ -16056,16 +16134,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="H3" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
-<part name="R55" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1M"/>
-<part name="R56" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1M"/>
-<part name="R57" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
-<part name="R58" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
-<part name="R59" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="1M"/>
-<part name="R60" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
-<part name="R61" library="bschulz_passives" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="R55" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1M" value="1M"/>
+<part name="R56" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1M" value="1M"/>
+<part name="R57" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R58" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R59" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1M" value="1M"/>
+<part name="R60" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R61" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="S5" library="bschulz" deviceset="BUTTON" device="2.6X1.6"/>
+<part name="S5" library="bschulz" deviceset="BUTTON" device="2.6X1.6">
+<attribute name="DIGIKEY" value="P19888CT-ND"/>
+<attribute name="MF" value="Panasonic "/>
+<attribute name="MPN" value="EVP-BB2A9B000"/>
+</part>
 <part name="C43" library="bschulz_passives" deviceset="CTANT_EU" device="1206" value="100uF">
 <attribute name="DIGIKEY" value="718-1921-1-ND"/>
 <attribute name="MF" value="Vishay Sprague"/>
@@ -16077,7 +16159,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP8" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39293/1"/>
 <part name="R62" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="330K" value="330k"/>
 <part name="GND73" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U39" library="bschulz" deviceset="MIC94090" device="C6"/>
+<part name="U39" library="bschulz" deviceset="MIC9409*" device="C6" technology="4" value="MIC94094C6"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U38" library="bschulz" deviceset="TS5A21366" device="RSE" value="TS5A21366RSE"/>
 <part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -16102,12 +16184,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U41" library="bschulz" deviceset="MCP23018" device="QFN"/>
 <part name="GND84" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R68" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1M" value="1M"/>
-<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="143k"/>
-<part name="R69" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="143K" value="143k"/>
+<part name="R69" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q8" library="bschulz" deviceset="MOSFET-NCH" device="-2N7002PW" value="2N7002"/>
-<part name="R70" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="200k"/>
-<part name="R71" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="1M"/>
+<part name="R70" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="200K" value="200k"/>
+<part name="R71" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="1M" value="1M"/>
 <part name="GND85" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D8" library="bschulz" deviceset="BAT54C" device=""/>
 <part name="D9" library="bschulz" deviceset="DIODE" device="DO-214AC">
@@ -16397,6 +16479,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="200.66" y="43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="U6" gate="G$1" x="276.86" y="137.16" smashed="yes">
+<attribute name="DISP" x="276.86" y="143.764" size="1.27" layer="95" align="center"/>
 <attribute name="NAME" x="276.86" y="128.27" size="1.27" layer="95" ratio="15" align="center"/>
 </instance>
 <instance part="GND23" gate="1" x="261.62" y="127" smashed="yes">
@@ -16411,6 +16494,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="258.064" y="132.461" size="1.778" layer="96"/>
 </instance>
 <instance part="U9" gate="G$1" x="342.9" y="139.7" smashed="yes">
+<attribute name="DISP" x="335.28" y="143.256" size="1.27" layer="95"/>
 <attribute name="NAME" x="344.17" y="133.35" size="1.27" layer="95" ratio="15" align="center"/>
 </instance>
 <instance part="C17" gate="G$1" x="325.12" y="137.16" smashed="yes">
@@ -16491,6 +16575,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="S5" gate="G$1" x="121.92" y="152.4" smashed="yes">
 <attribute name="NAME" x="129.54" y="148.336" size="1.27" layer="95" ratio="15" align="center"/>
+<attribute name="MF" x="121.92" y="152.4" size="1.27" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="121.92" y="152.4" size="1.27" layer="96" display="off"/>
+<attribute name="MPN" x="121.92" y="152.4" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="C43" gate="G$1" x="307.34" y="137.16" smashed="yes">
 <attribute name="NAME" x="308.483" y="137.6426" size="1.778" layer="95"/>
@@ -16518,7 +16605,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND73" gate="1" x="292.1" y="5.08" smashed="yes">
 <attribute name="VALUE" x="289.56" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="U39" gate="G$1" x="25.4" y="170.18" smashed="yes"/>
+<instance part="U39" gate="G$1" x="25.4" y="170.18" smashed="yes">
+<attribute name="DISP" x="25.4" y="177.038" size="1.778" layer="95" align="center"/>
+</instance>
 <instance part="GND76" gate="1" x="40.64" y="162.56" smashed="yes">
 <attribute name="VALUE" x="38.1" y="160.02" size="1.778" layer="96"/>
 </instance>
