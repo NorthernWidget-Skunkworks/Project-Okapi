@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,13 +23,13 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -263,6 +263,8 @@ University of Minnesota</text>
 <dimension x1="19.812" y1="86.858" x2="59.812" y2="86.858" x3="39.812" y3="104.648" textsize="0.8128" textratio="15" layer="48" dtype="horizontal"/>
 <dimension x1="19.812" y1="86.858" x2="19.812" y2="6.858" x3="-8.89" y3="46.858" textsize="0.8128" textratio="15" layer="48" dtype="vertical"/>
 <text x="27.432" y="81.661" size="0.8128" layer="51" font="vector" ratio="15" align="center">J6</text>
+<text x="35.56" y="79.121" size="0.8128" layer="25" font="vector" ratio="15" align="center">J8</text>
+<text x="43.18" y="96.139" size="0.8128" layer="25" font="vector" ratio="15" align="center">J9</text>
 </plain>
 <libraries>
 <library name="bschulz_passives">
@@ -2144,9 +2146,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="55.499" y="11.684" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C11" library="bschulz_passives" package="C0603" value="1uF" x="53.721" y="8.255" smashed="yes">
-<attribute name="DIGIKEY" value="490-10479-1-ND" x="53.721" y="8.255" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="MF" value="Murata" x="53.721" y="8.255" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="MPN" value="GRM188R61C105KA12D" x="53.721" y="8.255" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="DIGIKEY" value="587-1251-1-ND" x="53.721" y="8.255" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="MF" value="Yaiyo Yuden" x="53.721" y="8.255" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="MPN" value="EMK107BJ105KA-T" x="53.721" y="8.255" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="53.721" y="9.144" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="53.721" y="6.858" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
@@ -2214,9 +2216,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="39.497" y="9.271" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C13" library="bschulz_passives" package="C0603" value="1uF" x="24.257" y="9.271" smashed="yes">
-<attribute name="DIGIKEY" value="490-10479-1-ND" x="24.257" y="9.271" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="MF" value="Murata" x="24.257" y="9.271" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="MPN" value="GRM188R61C105KA12D" x="24.257" y="9.271" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="DIGIKEY" value="587-1251-1-ND" x="24.257" y="9.271" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="MF" value="Yaiyo Yuden" x="24.257" y="9.271" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="MPN" value="EMK107BJ105KA-T" x="24.257" y="9.271" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="NAME" x="22.479" y="9.271" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="24.257" y="7.874" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
@@ -2505,10 +2507,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="39.497" y="17.907" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="39.497" y="19.939" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C18" library="bschulz_passives" package="C0603" value="1uF" x="39.497" y="22.733" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="490-10479-1-ND" x="49.657" y="21.463" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<element name="C18" library="bschulz_passives" package="C0603" value="4.7uF" x="39.497" y="22.733" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="490-10481-1-ND" x="49.657" y="21.463" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="MF" value="Murata" x="49.657" y="21.463" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="MPN" value="GRM188R61C105KA12D" x="49.657" y="21.463" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="MPN" value="GRM188R61C475KAAJD" x="49.657" y="21.463" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="38.227" y="22.733" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="39.497" y="24.13" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
