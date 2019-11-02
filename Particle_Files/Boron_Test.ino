@@ -4,18 +4,24 @@ SYSTEM_MODE(SEMI_AUTOMATIC);
 SYSTEM_THREAD(ENABLED);
 // SYSTEM_MODE(AUTOMATIC);
 
-#define RST 9 //Reset connected to pin 9
-#define WD_DONE 16 //WD_DONE connected to pin 16
+#define RST D4 //Reset connected to pin 9
+#define WD_DONE A3 //WD_DONE connected to pin 16
 #define GPIO D14 //GPIO to micro on pin 14
 
 #define BACKHAUL_NUM 5 //Define the number of backhaul values at a given time //FIX make flexible, just read until stop value??
 String GlobalRead; 
 String Data[BACKHAUL_NUM];
+
+unsigned long Timeout = 0;
 // int Count = 0;
 
 int ForceReset(String command);
 
+ApplicationWatchdog wd(90000, Mayday);
+
 void setup() {
+    pinMode(GPIO, OUTPUT);
+    digitalWrite(GPIO, HIGH);
     Cellular.setActiveSim(INTERNAL_SIM);
     Cellular.clearCredentials();
     // This set the setup done flag on brand new devices so it won't stay in listening mode
@@ -23,19 +29,27 @@ void setup() {
     dct_write_app_data(&val, DCT_SETUP_DONE_OFFSET, 1);
     pinMode(9, INPUT); //Set RST as input to not interfere with rest of system
     pinMode(D7, OUTPUT);
-    pinMode(GPIO, OUTPUT);
+    pinMode(WD_DONE, OUTPUT);
+    digitalWrite(WD_DONE, HIGH);
     Serial.begin(9600);
     Serial1.begin(38400); //Begin to comunicate with the micro
     Serial.println("START");
     Particle.function("Reset", ForceReset);
+    Timeout = millis();
 }
 
 void loop() {
     while(Serial1.available()) {
+        wd.checkin(); //If any serial print made, service wd //FIX??
+        digitalWrite(D7, HIGH);  //DEBUG!
         String Val = Serial1.readStringUntil('\n');
+        Serial.println(Val.trim()); //DEBUG!
         if(Val.trim() == "START BACKHAUL") {
+            // while(Val.trim() == "START BACKHAUL") { //Read until data is being sent
+            //     Val = Serial1.readStringUntil('\n'); 
+            // }
             digitalWrite(D7, HIGH);  //DEBUG!
-            digitalWrite(GPIO, HIGH);
+
             for(int i = 0; i < BACKHAUL_NUM; i++) { //Read data into array
                 // while(!Serial1.available()); //wait for data
                 Data[i] = Serial1.readStringUntil('\n'); 
@@ -74,6 +88,13 @@ void loop() {
     //     Count = 0;
     // }
     // Count++; 
+    if(millis() - Timeout > 90000) {
+        pinMode(RST, OUTPUT);
+        digitalWrite(RST, HIGH);
+        delay(1);
+        digitalWrite(RST, LOW);
+        delay(1);
+    }
 }
 
 // this function automagically gets called upon a matching POST request
@@ -91,5 +112,18 @@ int ForceReset(String command)
     return 1;
   }
   else return -1;
+}
+
+void Mayday() {
+   // System.sleep(SLEEP_MODE_DEEP, 60);
+   pinMode(RST, OUTPUT);
+   digitalWrite(RST, HIGH);
+   delay(5);
+   digitalWrite(RST, LOW);
+   delay(5);
+   digitalWrite(WD_DONE, LOW);  //Cycle VBat if in use, FIX??
+   delay(1);
+   digitalWrite(WD_DONE, HIGH);
+   delay(1); 
 }
 
