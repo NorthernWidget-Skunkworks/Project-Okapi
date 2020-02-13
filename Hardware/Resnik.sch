@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20657,6 +20657,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="210.82" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <label x="215.9" y="68.58" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U38" gate="G$1" pin="A1"/>
+<wire x1="58.42" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
+<label x="53.34" y="149.86" size="0.4064" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="ADC_EXT_ALERT" class="0">
 <segment>
@@ -20714,13 +20719,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="111.76" y1="45.72" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
 <label x="114.3" y="48.26" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LI+" class="0">
-<segment>
-<pinref part="U38" gate="G$1" pin="A1"/>
-<wire x1="58.42" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
-<label x="53.34" y="149.86" size="0.4064" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="V_PRIME" class="0">
