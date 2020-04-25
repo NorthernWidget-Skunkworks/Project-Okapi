@@ -9,9 +9,10 @@
 #include <Wire.h> //Include base Wire library
 
 //If a pin is defined as "0", it is allowed to be made an output, if pin is defined as a "1" is if forbidden to be defined as an output
-const uint32_t PinMask = 0b11100000101000001100000000011000; //Pin configuration mask for uC
+// const uint32_t PinMask = 0b11100000101000001100000000011000; //Pin configuration mask for uC
 // const uint16_t ExpPinMask = 0b1001110101011110; //Pin configuration mask for IO Expander
 const uint16_t ExpPinMask = 0x00; //DEBUG!
+const uint32_t PinMask = 0x00; //DEBUG!
 
 TCA9555 IO(0x20); //Instatiate IO Expander
 BME RH; //Instatiate BME280
@@ -297,8 +298,8 @@ bool SetPinModeIO(uint8_t Pin, bool State)  //Set the pin mode of a pin on the I
 		IO.PinMode(Pin, State);
 		Serial.print("IO Exp Pin ");
 		Serial.print(Pin);
-		if(State == 0) Serial.println("Set as Output");
-		if(State == 1) Serial.println("Set as Input");
+		if(State == 0) Serial.println(" Set as Output");
+		if(State == 1) Serial.println(" Set as Input");
 	}
 	else Serial.println("Pin Direction Error!");
 }
@@ -378,12 +379,22 @@ void SetHP(int State)  //-1 off, 0 off, 1 VBeta, 2 VPrime
 	Serial.print("High Power Status: ");
 	switch(State){
 		case -1:  //Turn off power
+//      pinMode(16, OUTPUT);
+//      pinMode(17, OUTPUT);
+//      
+//      pinMode(16, LOW);
+//      pinMode(17, LOW);
 			Serial.println(" OFF");
 			digitalWrite(C0, HIGH);
 			digitalWrite(C1, HIGH);
 			break;
 
 		case 0:  //Turn off power
+//      pinMode(16, OUTPUT);
+//      pinMode(17, OUTPUT);
+//      
+//      pinMode(16, LOW);
+//      pinMode(17, LOW);
 			Serial.println(" OFF");
 			digitalWrite(C0, LOW);
 			digitalWrite(C1, LOW);
@@ -402,6 +413,11 @@ void SetHP(int State)  //-1 off, 0 off, 1 VBeta, 2 VPrime
 			break;
 
 		default:  //Turn off by default 
+//      pinMode(16, OUTPUT);
+//      pinMode(17, OUTPUT);
+//      
+//      pinMode(16, LOW);
+//      pinMode(17, LOW);
 			Serial.println(" OFF");
 			digitalWrite(C0, LOW);
 			digitalWrite(C1, LOW);

@@ -48,19 +48,22 @@ Feather, RTS	--PA7
 
 IO Exp	16 GPIO
 ------
+-
+
+Feather PowerOn (Output)
+ADC, OnBoard, Alert/RDY (Input, Interrupt)
+ADC, OffBoard, Alert/RDY (Input, Interrupt)
+
+LevelShifter, Primary Bus, EN (Output)
+LevelShifter, Secondary Bus, EN (Output)
+BusPowerSwitch, Primary Bus, Fault (Input)
+BusPowerSwitch, Secondary Bus, Fault (Input)
 
 MPPT, CHRG (Input)
 MPPT, FAULT (Input)
 MPPT, SHDN (Output)
-Feather PowerOn (Output)
-ADC, OnBoard, Alert/RDY (Input, Interrupt)
-ADC, OffBoard, Alert/RDY (Input, Interrupt)
 Vusb (Input)
-LevelShifter, Primary Bus, EN (Output)
-LevelShifter, Secondary Bus, EN (Output)
 BMS, CTR (Output)
-BusPowerSwitch, Primary Bus, Fault (Input)
-BusPowerSwitch, Secondary Bus, Fault (Input)
 HighPowerBoost, LBO (Input, Interrupt?)
 HighPowerBuck, PG (Input)
 LowPowerLDO_3v3, PG (Input)
