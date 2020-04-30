@@ -461,3 +461,8 @@ The second LED (STAT) will have one of the colors below.
 * Verify the quality of all screw terminal connections by gently tugging on the wires and making sure they stay in place, if not, remove, replace, and re-tighten the connection
 * Ensure sensors and/or cables are not damaged, this can result is shorts or other problems
 * Make sure batteries have sufficient voltage to run the logger (>3.3 V)
+
+
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
