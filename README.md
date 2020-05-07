@@ -151,6 +151,7 @@ Assembling this data logger is possible by hand with sufficient skill and the fo
 * Hot-air rework station
 * Equipment for stenciling with solder paste
 * ESD-safe tweezers and workstation
+* Solder wick
 
 Mechanized assembly by a professional circuit-board assembly house, which is available in many parts of the world, may be preferred due to the complexity of this data logger board.
 
@@ -465,4 +466,3 @@ The second LED (STAT) will have one of the colors below.
 
 <br>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
