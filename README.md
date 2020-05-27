@@ -121,7 +121,7 @@ Designing a large-platform, multi-power-system, and telemetry-enabled data logge
 * The socket holds a [Feather-form-factor board](https://learn.adafruit.com/adafruit-feather/feather-specification).
   * This standard, designed by [Adafruit](https://www.adafruit.com/), has been widely adopted, including by the IoT/telemetry module designer [Particle](https://www.particle.io/).
   * We often use a [Particle Boron mobile-phone telemetry unit](https://docs.particle.io/boron/).
-* Mounting holes for \#4 screws
+* Mounting holes for [\#4 self-tapping screws](https://www.polycase.com/screws-mbr-100)
 * CR1220 battery; can power the real-time clock for up to 7 years
 * ISP header (also called an ICSP header): This 3x2 header is used with an in-system programmer (in-circuit system programmer) to upload the (bootloader)[#installing-the-bootloader] to the data logger.
 * A micro-SD card holds a copy of all data, whether or not any telemetry is used
@@ -365,10 +365,12 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 * **Enclosure**: [PolyCase WH10 outdoor-rated hinged enclosure](https://www.polycase.com/wh-10)
 * **Cable glands**:
 >> AW: Photo didn't take; look up
-* **\#4 machine screws** x3
-* **Mounting plate for Resnik** (3D printed, ABS)
+* [\#4 self-tapping screws](https://www.polycase.com/screws-mbr-100) x3 to attach Resnik to mounting plate
+* [M4 x 8 mm screws](https://www.polycase.com/screws-007-50) x2 to attach mounting plate to threaded inserts in the enclosure
+* **Mounting plate for Resnik** (3D printed, ABS) **Plate design needed**
 >> Get files
 * **Mounting plate for batteries (both)** (Designed? ABS)
+>> Solar panel, Li-Ion batteries and holder, alkaline battery backup
 
 ### Tools
 
