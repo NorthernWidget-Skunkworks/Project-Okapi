@@ -363,11 +363,12 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 ### Materials
 
 * **Enclosure**: [PolyCase WH10 outdoor-rated hinged enclosure](https://www.polycase.com/wh-10)
-* **Cable glands**:
+* **Cable glands**: [RDC07AA](https://www.elecdirect.com/catalogsearch/result/?q=RDC07AA). One per sensor, plus one for the solar panel.
 >> AW: Photo didn't take; look up
-* [\#4 self-tapping screws](https://www.polycase.com/screws-mbr-100) x3 to attach Resnik to mounting plate
-* [M4 x 8 mm screws](https://www.polycase.com/screws-007-50) x2 to attach mounting plate to threaded inserts in the enclosure
-* **Mounting plate for Resnik** (3D printed, ABS) **Plate design needed**
+* **Screws**
+  * [\#4 self-tapping screws](https://www.polycase.com/screws-mbr-100) x3 to attach Resnik to mounting plate
+  * [M4 x 8 mm screws](https://www.polycase.com/screws-007-50) x2 to attach mounting plate to threaded inserts in the enclosure
+* **Mounting plate for Resnik** (3D printed, ABS) ***Plate design needed***
 >> Get files
 * **Mounting plate for batteries (both)** (Designed? ABS)
 >> Solar panel, Li-Ion batteries and holder, alkaline battery backup
