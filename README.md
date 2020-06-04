@@ -351,7 +351,7 @@ A full index of the public variables and functions within the Resnik data logger
 ## Power supply
 
 * **Lithium-ion 18650 rechargeable batteries**; this board can hold two in parallel: https://github.com/NorthernWidget/LiIon-18650-Parallel
-* **Solar panel**. A wide range is acceptable, but we like [Voltaic Systems' 6-watt panel](https://voltaicsystems.com/6-watt-panel/)
+* **Solar panel**. A wide range is acceptable, but we like [Voltaic Systems' 6-watt panel](https://voltaicsystems.com/6-watt-panel/). If you do not want to snip off the barrel jack, [this extension plug from Adafruit should work](https://www.adafruit.com/product/2788) (though we have not tested it... and you'll also have to cut *it* in half).
 * **Primary alkaline batteries**; we typically use three high-quality (e.g., Duracell) AAs. These are the backup power supply, and we place them in a [3xAA holder (in series for the proper voltage) with a switch](https://www.jameco.com/z/SBH-331-AS-R-3x-AA-Battery-Holder-with-Cover-and-Switch_216144.html).
 
 >> @bschulz1701: new smarter 18650 holder?
