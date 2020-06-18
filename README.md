@@ -472,6 +472,8 @@ Support for this project provided by:
 
 <img src="https://pbs.twimg.com/profile_images/1139626463932637186/qCak0yvY_400x400.png" alt="UMN ESCI" width="240px">
 
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AUSGS_logo.png&psig=AOvVaw3RhHpaerya3Fqmh7QyaBYd&ust=1592599555654000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCDrOydjOoCFQAAAAAdAAAAABAD" alt="USGS" width="240px">
+
 <img src="https://ane4bf-datap1.s3-eu-west-1.amazonaws.com/wmocms/s3fs-public/styles/featured_media_detail/public/advanced_page/featured_media/wmologo2016_fulltext_horizontal_rgb_en-2.jpg?C4guHHfFZ0Uv029Eo5AvJLFg6nMR47hI&itok=NVNNIT7H" alt="WMO" width="240px">
 
 <br/>
