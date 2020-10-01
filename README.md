@@ -362,12 +362,14 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 
 ### Materials
 
-* **Enclosure**: [PolyCase WH10 outdoor-rated hinged enclosure](https://www.polycase.com/wh-10)
+* **Enclosure**: [PolyCase WH-16-03 outdoor-rated hinged enclosure](https://www.polycase.com/wh-16)
 * **Cable glands**: [RDC07AA](https://www.elecdirect.com/catalogsearch/result/?q=RDC07AA). One per sensor, plus one for the solar panel.
 >> AW: Photo didn't take; look up
-* **Screws**
-  * [\#4 self-tapping screws](https://www.polycase.com/screws-mbr-100) x3 to attach Resnik to mounting plate
-  * [M4 x 8 mm screws](https://www.polycase.com/screws-007-50) x2 to attach mounting plate to threaded inserts in the enclosure
+* **Fasteners**
+  * [M5-0.8 x 10 mm truss head screws](https://www.mcmaster.com/92467A320/) x4 to attach mounting plate to threaded inserts in the enclosure
+  * [\#4-40 x 1/4 in pan head screws](https://www.mcmaster.com/91772A106/) x22 to attach Resnik, battery packs, and mounting plate to standoffs
+  * [\#4-40 x 2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91115A173/) x3 to stand off Resnik from mounting plate
+  * [\#4-40 x 1/2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91920A533/) x8 to stand off AA battery pack and Li-Ion battery pack from mounting plate
 * **Mounting plate for Resnik** (3D printed, ABS) ***Plate design needed***
 >> Get files
 * **Mounting plate for batteries (both)** (Designed? ABS)
