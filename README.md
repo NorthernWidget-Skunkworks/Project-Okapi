@@ -121,7 +121,7 @@ Designing a large-platform, multi-power-system, and telemetry-enabled data logge
 * The socket holds a [Feather-form-factor board](https://learn.adafruit.com/adafruit-feather/feather-specification).
   * This standard, designed by [Adafruit](https://www.adafruit.com/), has been widely adopted, including by the IoT/telemetry module designer [Particle](https://www.particle.io/).
   * We often use a [Particle Boron mobile-phone telemetry unit](https://docs.particle.io/boron/).
-* Mounting holes for [\#4 self-tapping screws](https://www.polycase.com/screws-mbr-100)
+* Mounting holes for [\#4 screws](https://www.mcmaster.com/91772A106/)
 * CR1220 battery; can power the real-time clock for up to 7 years
 * ISP header (also called an ICSP header): This 3x2 header is used with an in-system programmer (in-circuit system programmer) to upload the (bootloader)[#installing-the-bootloader] to the data logger.
 * A micro-SD card holds a copy of all data, whether or not any telemetry is used
