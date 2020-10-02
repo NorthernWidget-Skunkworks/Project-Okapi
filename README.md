@@ -370,10 +370,12 @@ The below suggestions encompass what we use and suggest for the housing. In the 
   * [\#4-40 x 1/4 in pan head screws](https://www.mcmaster.com/91772A106/) x22 to attach Resnik, battery packs, and mounting plate to standoffs
   * [\#4-40 x 2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91115A173/) x3 to stand off Resnik from mounting plate
   * [\#4-40 x 1/2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91920A533/) x8 to stand off AA battery pack and Li-Ion battery pack from mounting plate
-* **Mounting plate for Resnik** (3D printed, ABS) ***Plate design needed***
->> Get files
-* **Mounting plate for batteries (both)** (Designed? ABS)
->> Solar panel, Li-Ion batteries and holder, alkaline battery backup
+* **Mounting plate for Resnik** (Milled, ABS)
+  * [Mounting Plate Design](Mounting%20Plate)
+* **Power**
+>> Solar panel
+  * [3x AA battery pack BK-1280-PC6](https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/BK-1280-PC6/1640076) for alkaline battery backup, mounting holes included for #4-40 screws
+>> Li-Ion battery and holder
 
 ### Tools
 
