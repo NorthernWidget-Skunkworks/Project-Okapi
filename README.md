@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/153699511.svg)](https://zenodo.org/badge/latestdoi/153699511)
+
 # Project-Resnik: Data logger with integrated solar charging and modular telemetry
 
 ![Project Resnik Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
