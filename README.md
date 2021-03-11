@@ -458,34 +458,34 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 The first LED (AUX) will turn green so long as power is applied.
 The second LED (STAT) will have one of the colors below.
 
-**Green:** All systems check out OK, logging will proceed
+**Green:**: All systems check out OK, logging will proceed
 
-**Orange:** A sensor system is not registering properly, some sensor data may be missing or incorrect
+**Orange:**: A sensor system is not registering properly, some sensor data may be missing or incorrect
 * Verify correct polarity of sensor connection
 * Ensure the right sensor is connected
 * Verify the screw terminals are well connected to the wires (a lose connection can cause a failure)
 * Make sure battery power is applied, some sensors can fail otherwise
 
-**Cyan:** Clock time is incorrect, but logger is otherwise working correctly
+**Cyan:**: Clock time is incorrect, but logger is otherwise working correctly
 * Connect the logger to a computer and reset the clock using the Northern Widget Time Set GUI
 * Start Processing
 * Open the Northern Widget Time Set program
 * Note and record the wrong time if the logger has been out in the field, alongside the current (correct) time, to correct the prior measurements
-* Click the "set time" button and check that you are <3 seconds off of the correct time.
-* Click the "close" button.
+* Click the "set time" button and check that you are <3 seconds off of the correct time
+* Click the "close" button
 
-**Pink** (looks like purple to some people): SD card is not inserted
+**Pink**: (looks like purple to some people): SD card is not inserted
 * Insert the SD card, or remove and re-insert to make sure card is fully seated
 
-**Red**: Critical on board component is not functioning correctly, such as SD card or clock. Logging will likely not be able to proceed
+**Red**: Critical on board component is not functioning correctly, such as SD card or clock; Logging will likely not be able to proceed
 * Attempt power cycle
 * Try different SD card
-* Disconnect all sensors; reconnect one by one and check.
+* Disconnect all sensors; reconnect one by one and check
 
-**Yellow, Fast Blinking**: <50% battery capacity.
-* Replace batteries: turn battery pack off, replace batteries, and turn battery pack back on.
+**Yellow, Fast Blinking**: <50% battery capacity
+* Replace batteries: turn battery pack off, replace batteries, and turn battery pack back on
 
-**Red, Fast Blinking**: Batteries <3.3V. Voltage too low to properly function.
+**Red, Fast Blinking**: Batteries <3.3V. Voltage too low to properly function
 * Replace batteries: turn battery pack off, replace batteries, and turn battery pack back on.
 
 #### General tips to solve many kinds of errors
