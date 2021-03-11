@@ -463,7 +463,7 @@ The second LED (STAT) will have one of the colors below.
 **Orange:**: A sensor system is not registering properly, some sensor data may be missing or incorrect
 * Verify correct polarity of sensor connection
 * Ensure the right sensor is connected
-* Verify the screw terminals are well connected to the wires (a lose connection can cause a failure)
+* Verify the screw terminals are well connected to the wires (a loose connection can cause a failure)
 * Make sure battery power is applied, some sensors can fail otherwise
 
 **Cyan:**: Clock time is incorrect, but logger is otherwise working correctly
