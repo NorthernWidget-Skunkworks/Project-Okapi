@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 # Okapi: Data logger with integrated solar charging and modular telemetry
-=======
 [![DOI](https://zenodo.org/badge/153699511.svg)](https://zenodo.org/badge/latestdoi/153699511)
-
-# Project-Resnik: Data logger with integrated solar charging and modular telemetry
->>>>>>> 54feaad80fcacc5c10d438e72f0a4e0f4ede8c61
 
 ![Project Okapi Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
 
@@ -112,13 +107,8 @@ The Okapi, a relative of the giraffe, communicates over long distances using [in
   * Can be used with our [clock-setting program](https://github.com/NorthernWidget/SetTime_GUI) to set the time on the real-time clock.
   * Provides power to the data logger while it is connected; this power source is isolated from the batteries and solar panel, and therefore may be plugged in safely at any time.
 * Solar panel, 4.95--32.0 V. A wide range of panels can work with this.
-<<<<<<< HEAD
-* Li-Ion battery, 2.60--4.475 V. This works with standard 18650 Li-ion batteries. It can work well with just a single battery, but if more storage is required, multiple 18650 batteries may be connected in parallel; we have a circuit-board design to do this: https://github.com/NorthernWidget/LiIon-18650-Parallel. ***CAUTION***: most commercially available multiple-18650-battery holders connect them in parallel; this voltage is ***TOO HIGH*** for the data logger.
-* Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Okapi data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
-=======
 * Li-Ion battery, 2.60--4.475 V. This works with standard 18650 Li-ion batteries. It can work well with just a single battery, but if more storage is required, multiple 18650 batteries may be connected in parallel; we have a circuit-board design to do this: https://github.com/NorthernWidget/LiIon-18650-Parallel. ***CAUTION***: most commercially available multiple-18650-battery holders connect them in series; this voltage is ***TOO HIGH*** for the data logger.
 * Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Resnik data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
->>>>>>> 54feaad80fcacc5c10d438e72f0a4e0f4ede8c61
 
 >> @bschulz1701: Solar panel supply current / size?
 
