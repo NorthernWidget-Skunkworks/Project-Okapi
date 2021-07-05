@@ -1,0 +1,3 @@
+Material type: ABS
+Material dimensions: 254.99999999999997 mm x 165 mm x 3.175 mm
+Bit: 0.0625 in, Upcut
