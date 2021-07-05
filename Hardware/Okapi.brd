@@ -250,7 +250,7 @@ Closed: 400 mA limit</text>
 <text x="61.087" y="7.747" size="0.8128" layer="52" font="vector" ratio="15" rot="MR0" align="center">3.3~5.5v</text>
 <text x="6.35" y="46.99" size="1.27" layer="52" font="vector" ratio="15" rot="MR270" align="center">Primary Bus</text>
 <text x="58.801" y="21.59" size="1.27" layer="52" font="vector" ratio="15" rot="MR270" align="center">Secondary Bus</text>
-<text x="62.23" y="62.23" size="1.27" layer="52" font="vector" ratio="15" rot="MR0" align="center-left">Project Resnik v0.5
+<text x="62.23" y="62.23" size="1.27" layer="52" font="vector" ratio="15" rot="MR0" align="center-left">Project Okapi v0.6
 ----------------
 Developed by 
 Northern Widget and 
