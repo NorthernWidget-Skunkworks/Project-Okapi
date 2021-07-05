@@ -60,3 +60,5 @@ eagle.epf
 *.ipynd_checkpoints
 *checkpoint.ipynb
 
+# vim
+*.swp
