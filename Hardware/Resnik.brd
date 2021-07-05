@@ -8,7 +8,7 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -272,6 +272,10 @@ University of Minnesota</text>
 Closed: 400 mA limit</text>
 <text x="45.085" y="42.672" size="0.8128" layer="52" font="vector" ratio="15" rot="MR90" align="center">secondary</text>
 <text x="9.207496875" y="43.053" size="0.8128" layer="52" font="vector" ratio="15" rot="MR0" align="center">A1</text>
+<dimension x1="0" y1="98" x2="64.77" y2="77.47" x3="32.385" y3="105.41" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="62.75" y1="100" x2="59.69" y2="0" x3="69.85" y3="50" textsize="1.778" layer="47" dtype="vertical"/>
+<dimension x1="19.812" y1="86.858" x2="59.812" y2="86.858" x3="39.812" y3="109.22" textsize="1.778" layer="47" dtype="vertical"/>
+<dimension x1="19.812" y1="86.858" x2="19.812" y2="6.858" x3="-3.81" y3="46.858" textsize="1.778" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="bschulz_passives">
