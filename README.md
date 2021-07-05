@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Okapi: Data logger with integrated solar charging and modular telemetry
+=======
+[![DOI](https://zenodo.org/badge/153699511.svg)](https://zenodo.org/badge/latestdoi/153699511)
+
+# Project-Resnik: Data logger with integrated solar charging and modular telemetry
+>>>>>>> 54feaad80fcacc5c10d438e72f0a4e0f4ede8c61
 
 ![Project Okapi Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
 
@@ -106,8 +112,13 @@ The Okapi, a relative of the giraffe, communicates over long distances using [in
   * Can be used with our [clock-setting program](https://github.com/NorthernWidget/SetTime_GUI) to set the time on the real-time clock.
   * Provides power to the data logger while it is connected; this power source is isolated from the batteries and solar panel, and therefore may be plugged in safely at any time.
 * Solar panel, 4.95--32.0 V. A wide range of panels can work with this.
+<<<<<<< HEAD
 * Li-Ion battery, 2.60--4.475 V. This works with standard 18650 Li-ion batteries. It can work well with just a single battery, but if more storage is required, multiple 18650 batteries may be connected in parallel; we have a circuit-board design to do this: https://github.com/NorthernWidget/LiIon-18650-Parallel. ***CAUTION***: most commercially available multiple-18650-battery holders connect them in parallel; this voltage is ***TOO HIGH*** for the data logger.
 * Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Okapi data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
+=======
+* Li-Ion battery, 2.60--4.475 V. This works with standard 18650 Li-ion batteries. It can work well with just a single battery, but if more storage is required, multiple 18650 batteries may be connected in parallel; we have a circuit-board design to do this: https://github.com/NorthernWidget/LiIon-18650-Parallel. ***CAUTION***: most commercially available multiple-18650-battery holders connect them in series; this voltage is ***TOO HIGH*** for the data logger.
+* Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Resnik data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
+>>>>>>> 54feaad80fcacc5c10d438e72f0a4e0f4ede8c61
 
 >> @bschulz1701: Solar panel supply current / size?
 
@@ -143,6 +154,28 @@ Two LEDs, status and auxiliary, flash messages to the user to provide informatio
 The Li-ion override button, which can be pressed with the tip of a pen or other small object, ...
 
 >> @bschulz1701: This somehow overrides the Li-Ion battery electronics to allow something to happen... but I am not remembering what!
+
+## On-board Devices
+
+### I2C
+
+| **Device**                                                        	| **Default address** 	| **Reprogrammable address** 	| **Function**                                                     	|
+|-------------------------------------------------------------------	|---------------------	|----------------------------	|------------------------------------------------------------------	|
+| [DS3231](https://github.com/NorthernWidget/DS3231_Logger)         	| 0x68                	| N                          	| Real-time clock                                                  	|
+| [MCP23018](https://github.com/NorthernWidget-Skunkworks/MCP23018) 	| 0x20                	| N                          	| I/O Expander                                                     	|
+| [ADS1115](https://github.com/adafruit/Adafruit_ADS1X15)           	| 0x48                	| N                          	| ADC (on-board devices)                                           	|
+| [ADS1115](https://github.com/adafruit/Adafruit_ADS1X15)           	| 0x49                	| N                          	| ADC (off-board devices)                                          	|
+| [MCP4725](https://github.com/NorthernWidget-Skunkworks/MCP4725)   	| 0x62                	| N                          	| DAC                                                              	|
+| [BME280](https://github.com/NorthernWidget/BME_Library)           	| 0x77                	| N                          	| On-board barometric pressure, temperature, and relative humidity 	|
+
+### SPI
+
+* SD Card
+
+### UART (USART)
+
+* FTDI USB-Serial converter
+* Feather form-factor telemetry board; typically [Particle Boron](https://docs.particle.io/boron/)
 
 ## Assembly
 
@@ -434,34 +467,34 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 The first LED (AUX) will turn green so long as power is applied.
 The second LED (STAT) will have one of the colors below.
 
-**Green:** All systems check out OK, logging will proceed
+**Green:**: All systems check out OK, logging will proceed
 
-**Orange:** A sensor system is not registering properly, some sensor data may be missing or incorrect
+**Orange:**: A sensor system is not registering properly, some sensor data may be missing or incorrect
 * Verify correct polarity of sensor connection
 * Ensure the right sensor is connected
-* Verify the screw terminals are well connected to the wires (a lose connection can cause a failure)
+* Verify the screw terminals are well connected to the wires (a loose connection can cause a failure)
 * Make sure battery power is applied, some sensors can fail otherwise
 
-**Cyan:** Clock time is incorrect, but logger is otherwise working correctly
+**Cyan:**: Clock time is incorrect, but logger is otherwise working correctly
 * Connect the logger to a computer and reset the clock using the Northern Widget Time Set GUI
 * Start Processing
 * Open the Northern Widget Time Set program
 * Note and record the wrong time if the logger has been out in the field, alongside the current (correct) time, to correct the prior measurements
-* Click the "set time" button and check that you are <3 seconds off of the correct time.
-* Click the "close" button.
+* Click the "set time" button and check that you are <3 seconds off of the correct time
+* Click the "close" button
 
-**Pink** (looks like purple to some people): SD card is not inserted
+**Pink**: (looks like purple to some people): SD card is not inserted
 * Insert the SD card, or remove and re-insert to make sure card is fully seated
 
-**Red**: Critical on board component is not functioning correctly, such as SD card or clock. Logging will likely not be able to proceed
+**Red**: Critical on board component is not functioning correctly, such as SD card or clock; Logging will likely not be able to proceed
 * Attempt power cycle
 * Try different SD card
-* Disconnect all sensors; reconnect one by one and check.
+* Disconnect all sensors; reconnect one by one and check
 
-**Yellow, Fast Blinking**: <50% battery capacity.
-* Replace batteries: turn battery pack off, replace batteries, and turn battery pack back on.
+**Yellow, Fast Blinking**: <50% battery capacity
+* Replace batteries: turn battery pack off, replace batteries, and turn battery pack back on
 
-**Red, Fast Blinking**: Batteries <3.3V. Voltage too low to properly function.
+**Red, Fast Blinking**: Batteries <3.3V. Voltage too low to properly function
 * Replace batteries: turn battery pack off, replace batteries, and turn battery pack back on.
 
 #### General tips to solve many kinds of errors
