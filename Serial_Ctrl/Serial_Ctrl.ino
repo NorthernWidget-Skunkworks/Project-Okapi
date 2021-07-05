@@ -1,10 +1,10 @@
-#include <TCA9555.h>  //Include IO expander interface 
+//#include <TCA9555.h>  //Include IO expander interface 
 #include <DS3231.h>  //Include RTC interface
 #include <BME.h>  //Include BME280 interface
 #include <Adafruit_ADS1015.h> //Include ADC interface
 #include <SD.h>  //Include SD interface
 #include <SPI.h> //Include base SPI library
-#include <Adafruit_MCP4725.h> //Include DAC interface 
+//#include <Adafruit_MCP4725.h> //Include DAC interface 
 #include <EEPROM.h>
 #include <Wire.h> //Include base Wire library
 
@@ -14,9 +14,9 @@
 const uint16_t ExpPinMask = 0x00; //DEBUG!
 const uint32_t PinMask = 0x00; //DEBUG!
 
-TCA9555 IO(0x20); //Instatiate IO Expander
+//TCA9555 IO(0x20); //Instatiate IO Expander
 BME RH; //Instatiate BME280
-Adafruit_MCP4725 DAC; //Instatiate DAC
+//Adafruit_MCP4725 DAC; //Instatiate DAC
 Adafruit_ADS1115 ADC_OB(0x48); //Initialize on board (power moitoring) ADC
 Adafruit_ADS1115 ADC_Ext(0x49);  //Initialize external (sensor) ADC
 
