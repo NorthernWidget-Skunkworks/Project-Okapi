@@ -1,16 +1,16 @@
-# Project-Resnik: Data logger with integrated solar charging and modular telemetry
+# Okapi: Data logger with integrated solar charging and modular telemetry
 
-![Project Resnik Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
+![Project Okapi Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
 
-***Project Resnik data logger, with a micro-SD card for local storage and a Particle Boron telemetry module.***
+***Okapi data logger, with a micro-SD card for local storage and a Particle Boron telemetry module.***
 
-The “Project Resnik” data logger responds to the need for a robust, flexible, and power-efficient open-source option to record and transmit data from remote locations. It is programmable using the open-source standard Arduino framework via a standard micro-USB cable and supports a wide range of sensor input/output options. It connects to dual power supplies to ensure consistent recordings, and interfaces with a range of “Feather”-form-factor boards for telemetry.
+The **Okapi** data logger responds to the need for a robust, flexible, and power-efficient open-source option to record and transmit data from remote locations. It is programmable using the open-source standard Arduino framework via a standard micro-USB cable and supports a wide range of sensor input/output options. It connects to dual power supplies to ensure consistent recordings, and interfaces with a range of “Feather”-form-factor boards for telemetry.
 
 ## Namesake
 
-Designing a large-platform, multi-power-system, and telemetry-enabled data logger is the single most complex task that our group has undertaken. Bobby Schulz, lead engineer, code-named this work "Project Resnik", named after Dr. Judy Resnik, electrical engineer and astronaut. Although we don't have to deal with the complexities of space travel, we think that our design will do pretty well down here on Planet Earth.
+The Okapi, a relative of the giraffe, communicates over long distances using [infrasound](https://en.wikipedia.org/wiki/Infrasound). The telemetry capabilities of this data logger inspired this namesake.
 
-![Astronaut Dr. Judy Resnik](https://upload.wikimedia.org/wikipedia/commons/4/43/Judy_Resnik_%2817126382249%29.jpg)
+![Okapi](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Okapi-Wald1.png/1280px-Okapi-Wald1.png)
 
 ## Technical specifications
 
@@ -107,7 +107,7 @@ Designing a large-platform, multi-power-system, and telemetry-enabled data logge
   * Provides power to the data logger while it is connected; this power source is isolated from the batteries and solar panel, and therefore may be plugged in safely at any time.
 * Solar panel, 4.95--32.0 V. A wide range of panels can work with this.
 * Li-Ion battery, 2.60--4.475 V. This works with standard 18650 Li-ion batteries. It can work well with just a single battery, but if more storage is required, multiple 18650 batteries may be connected in parallel; we have a circuit-board design to do this: https://github.com/NorthernWidget/LiIon-18650-Parallel. ***CAUTION***: most commercially available multiple-18650-battery holders connect them in parallel; this voltage is ***TOO HIGH*** for the data logger.
-* Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Resnik data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
+* Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Okapi data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
 
 >> @bschulz1701: Solar panel supply current / size?
 
@@ -132,7 +132,7 @@ Designing a large-platform, multi-power-system, and telemetry-enabled data logge
 
 ***Data logger with key microchips, LEDs, and switches marked.*** *MCU: Microcontroller. RTC: Real-time clock. LED: Light-emitting diode. Bus: a subsystem for connections and data transfer.*
 
-The Resnik data logger contains two buses (see above), each of which has an independent voltage. The primary bus is on the left and the secondary bus is on the right. These can be selected as 3.3V (switches slid towards the inside of the board) or 5V (switches towards the outside of the board).
+The Okapi data logger contains two buses (see above), each of which has an independent voltage. The primary bus is on the left and the secondary bus is on the right. These can be selected as 3.3V (switches slid towards the inside of the board) or 5V (switches towards the outside of the board).
 
 >> @bschulz1701: How much power can each bus source/sink?
 
@@ -202,11 +202,11 @@ The below program is an example that you can copy and paste directly into the Ar
  * Written by Bobby Schulz with a few comments added by Andy Wickert.
  */
 
-#include "Resnik.h"
+#include "Okapi.h"
 #include <TP_Downhole_Longbow.h>
 
 TP_Downhole_Longbow Walrus; // Instantiate Walrus sensor; relict library name
-Resnik Logger; // Instantiate data logger object
+Okapi Logger; // Instantiate data logger object
 
 String Header = ""; // Information header; starts as an empty string
 uint8_t I2CVals[1] = {0x22}; // I2C addresses of sensors
@@ -240,7 +240,7 @@ void Init()
 #### "Include" statements
 
 ```c++
-#include "Resnik.h"
+#include "Okapi.h"
 #include <TP_Downhole_Longbow.h>
 ```
 
@@ -250,10 +250,10 @@ These bring in the two code libraries involved, the former for the data logger a
 
 ```c++
 TP_Downhole_Longbow Walrus; // Instantiate Walrus sensor; relict library name
-Resnik Logger; // Instantiate data logger object
+Okapi Logger; // Instantiate data logger object
 ```
 
-"Instantiating an object" means that we create our own specific versions of the a class of items. This can be thought of as: `Breakfast myBreakfast`. Breakfast is the general concept, but I create "myBreakfast", which I can then modify. In this same way, "Logger" is what we call our Project Resnik data logger, and "Walrus" is what we call our "TP_Downhole_Longbow" sensor; this name is a holdover from an earlier design that is the ancestor of the Walrus. We can then access functions and variables within these two instantiated objects.
+"Instantiating an object" means that we create our own specific versions of the a class of items. This can be thought of as: `Breakfast myBreakfast`. Breakfast is the general concept, but I create "myBreakfast", which I can then modify. In this same way, "Logger" is what we call our Okapi data logger, and "Walrus" is what we call our "TP_Downhole_Longbow" sensor; this name is a holdover from an earlier design that is the ancestor of the Walrus. We can then access functions and variables within these two instantiated objects.
 
 #### Declare the header string
 
@@ -281,7 +281,7 @@ unsigned long UpdateRate = 60; // Number of seconds between readings
 
 This is the number of seconds between logging events. If it takes 2 seconds to record data, make sure that you give the logger at least 3 seconds between events. The maximum logging time is set by the watchdog timer, which [FINISH HERE]
 
->> @BSCHULZ1701: Is there an external WDT on Resnik?
+>> @BSCHULZ1701: Is there an external WDT on Okapi?
 
 #### `setup()` step: runs once at the start
 
@@ -293,7 +293,7 @@ void setup() {
 }
 ```
 
-`setup()` is a special function that runs just once when the logger boots up. In this case, it first adds the Walrus' header to the header string. `GetHeader()` is a standard function that lies within each of our sensor libraries and returns this header information as a `String`. We then pass the header and the I2C values to the Resnik library's `begin()` function. This sets up the header and prepares the data loger to record data. Finally, this function calls `Init()`, which we skip ahead to describe immediately below.
+`setup()` is a special function that runs just once when the logger boots up. In this case, it first adds the Walrus' header to the header string. `GetHeader()` is a standard function that lies within each of our sensor libraries and returns this header information as a `String`. We then pass the header and the I2C values to the Okapi library's `begin()` function. This sets up the header and prepares the data loger to record data. Finally, this function calls `Init()`, which we skip ahead to describe immediately below.
 
 >> (awickert): I still don't understand why we have to pass `sizeof()` and can't just compute that within the function.
 
@@ -317,7 +317,7 @@ void loop() {
 }
 ```
 
-The loop calls the main function of the Resnik library, `Run()`, repeatedly. This puts the logger into a low-power sleep mode and wakes it up only when interrupted by the clock or the "LOG" button. `Update` refers to the function described immediately below. `UpdateRate` is our logging interval defined above.
+The loop calls the main function of the Okapi library, `Run()`, repeatedly. This puts the logger into a low-power sleep mode and wakes it up only when interrupted by the clock or the "LOG" button. `Update` refers to the function described immediately below. `UpdateRate` is our logging interval defined above.
 
 #### `Update()` function: Gives data for the logger to record
 
@@ -334,7 +334,7 @@ The `Update()` function first calls the `Init()` function to be sure that the se
 
 ### Reference
 
-A full index of the public variables and functions within the Resnik data logger library is available at https://github.com/NorthernWidget-Skunkworks/Resnik_Library.
+A full index of the public variables and functions within the Okapi data logger library is available at https://github.com/NorthernWidget/Okapi_Library.
 
 >> Send user to library page
 
@@ -367,10 +367,10 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 >> AW: Photo didn't take; look up
 * **Fasteners**
   * [M5-0.8 x 10 mm truss head screws](https://www.mcmaster.com/92467A320/) x4 to attach mounting plate to threaded inserts in the enclosure
-  * [\#4-40 x 1/4 in pan head screws](https://www.mcmaster.com/91772A106/) x22 to attach Resnik, battery packs, and mounting plate to standoffs
-  * [\#4-40 x 2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91115A173/) x3 to stand off Resnik from mounting plate
+  * [\#4-40 x 1/4 in pan head screws](https://www.mcmaster.com/91772A106/) x22 to attach Okapi, battery packs, and mounting plate to standoffs
+  * [\#4-40 x 2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91115A173/) x3 to stand off Okapi from mounting plate
   * [\#4-40 x 1/2 in Female Threaded Hex Standoffs](https://www.mcmaster.com/91920A533/) x8 to stand off AA battery pack and Li-Ion battery pack from mounting plate
-* **Mounting plate for Resnik** (Milled, ABS)
+* **Mounting plate for Okapi** (Milled, ABS)
   * [Mounting Plate Design](Mounting%20Plate)
 * **Power**
 >> Solar panel
