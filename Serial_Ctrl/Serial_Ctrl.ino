@@ -1,4 +1,4 @@
-//#include <TCA9555.h>  //Include IO expander interface 
+#include <MCP23018.h>  //Include IO expander interface 
 #include <DS3231.h>  //Include RTC interface
 #include <BME.h>  //Include BME280 interface
 #include <Adafruit_ADS1015.h> //Include ADC interface
@@ -14,7 +14,7 @@
 const uint16_t ExpPinMask = 0x00; //DEBUG!
 const uint32_t PinMask = 0x00; //DEBUG!
 
-//TCA9555 IO(0x20); //Instatiate IO Expander
+MCP23018 IO(0x20); //Instatiate IO Expander
 BME RH; //Instatiate BME280
 MCP4725 DAC; //Instatiate DAC
 Adafruit_ADS1115 ADC_OB(0x48); //Initialize on board (power moitoring) ADC
@@ -62,7 +62,7 @@ void setup() {
 	digitalWrite(BuiltInLED, LOW); //DEBUG!
 	Wire.begin(); //Initialize base I2C library
 	Serial.print("\tIO Exp... ");
-	IO.Begin(); //Initialize IO Expander
+	IO.begin(); //Initialize IO Expander
 	Serial.println("Done");
 
 	Serial.print("\tBME280... ");
@@ -295,7 +295,8 @@ bool SetPinModeIO(uint8_t Pin, bool State)  //Set the pin mode of a pin on the I
 {
 	//Add check for pin range!
 	if(State == INPUT || (State == OUTPUT && ((ExpPinMask >> Pin) & 0x01) == 0)) {  //Proceed only if input, or output AND mask allows for output
-		IO.PinMode(Pin, State);
+		IO.PinMode(Pin, State, 0); // Will only check Port 0 for now
+		// IO.PinMode(Pin, State, 1); // ????
 		Serial.print("IO Exp Pin ");
 		Serial.print(Pin);
 		if(State == 0) Serial.println(" Set as Output");
@@ -308,7 +309,7 @@ void DigitalWrite(uint8_t Pin, bool State) //Set the state of a pin on the uC
 {
 	if(((PinMask >> Pin) & 0x01) == 1) Serial.println("Pin Direction Error!"); //Pin is not configurable as output
 	else {
-		digitalWrite(Pin, State); //Set pin state
+		digitalWrite(Pin, State, 0); //Set pin state, Port 0
 		Serial.print("uC Pin ");  //Print Status
 		Serial.print(Pin);
 		Serial.print(" Set to ");
