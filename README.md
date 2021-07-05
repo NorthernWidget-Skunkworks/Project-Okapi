@@ -108,7 +108,7 @@ The Okapi, a relative of the giraffe, communicates over long distances using [in
   * Provides power to the data logger while it is connected; this power source is isolated from the batteries and solar panel, and therefore may be plugged in safely at any time.
 * Solar panel, 4.95--32.0 V. A wide range of panels can work with this.
 * Li-Ion battery, 2.60--4.475 V. This works with standard 18650 Li-ion batteries. It can work well with just a single battery, but if more storage is required, multiple 18650 batteries may be connected in parallel; we have a circuit-board design to do this: https://github.com/NorthernWidget/LiIon-18650-Parallel. ***CAUTION***: most commercially available multiple-18650-battery holders connect them in series; this voltage is ***TOO HIGH*** for the data logger.
-* Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Resnik data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
+* Primary batteries. This is ideally a pack of 3 primary (i.e., not reusable) Alkaline (or better) AA batteries with a long shelf life. The Okapi data logger will switch to these if its rechargeable power supply shuts down. The internal electronics reduce the quiescent power consumption while under backup power (see the above list of [electronic hardware technical specifications](#electronic-hardware)) and inform the logger about which power supply is being used, allowing it to, for example, reduce or temporarily terminate data transmission.
 
 >> @bschulz1701: Solar panel supply current / size?
 
@@ -220,7 +220,7 @@ The below program is an example that you can copy and paste directly into the Ar
 #### Full program
 ```c++
 /*
- * Resnik example: connected with a Walrus pressure--temperature sensor, often
+ * Okapi example: connected with a Walrus pressure--temperature sensor, often
  * used for water-level measurements, via the Longbow I2C/RS-485 translator.
  * Written by Bobby Schulz with a few comments added by Andy Wickert.
  */
