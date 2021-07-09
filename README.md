@@ -493,6 +493,14 @@ The second LED (STAT) will have one of the colors below.
 * Ensure sensors and/or cables are not damaged, this can result is shorts or other problems
 * Make sure batteries have sufficient voltage to run the logger (>3.3 V)
 
+
+## Development namesake
+	
+Designing a large-platform, multi-power-system, and telemetry-enabled data logger is the single most complex task that our group has undertaken. Bobby Schulz, lead engineer, code-named the dev version of this work "Project Resnik", after Dr. Judy Resnik, electrical engineer and astronaut. Although we don't have to manage the complexities of space travel, we think that our design will do pretty well down here on Planet Earth.
+
+![Astronaut Dr. Judy Resnik](https://upload.wikimedia.org/wikipedia/commons/4/43/Judy_Resnik_%2817126382249%29.jpg)
+
+	
 ## Acknowledgments
 
 Support for this project provided by:
