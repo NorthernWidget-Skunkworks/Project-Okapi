@@ -243,7 +243,7 @@ void setup() {
 }
 
 void loop() {
-  Logger.Run(Update, UpdateRate);
+  Logger.run(Update, UpdateRate);
 }
 
 String Update()
@@ -336,11 +336,11 @@ The `Init()` function calls the `begin()` function, standard within each Norther
 
 ```c++
 void loop() {
-  Logger.Run(Update, UpdateRate);
+  Logger.run(Update, UpdateRate);
 }
 ```
 
-The loop calls the main function of the Okapi library, `Run()`, repeatedly. This puts the logger into a low-power sleep mode and wakes it up only when interrupted by the clock or the "LOG" button. `Update` refers to the function described immediately below. `UpdateRate` is our logging interval defined above.
+The loop calls the main function of the Okapi library, `run()`, repeatedly. This puts the logger into a low-power sleep mode and wakes it up only when interrupted by the clock or the "LOG" button. `Update` refers to the function described immediately below. `UpdateRate` is our logging interval defined above.
 
 #### `Update()` function: Gives data for the logger to record
 
@@ -495,12 +495,12 @@ The second LED (STAT) will have one of the colors below.
 
 
 ## Development namesake
-	
+
 Designing a large-platform, multi-power-system, and telemetry-enabled data logger is the single most complex task that our group has undertaken. Bobby Schulz, lead engineer, code-named the dev version of this work "Project Resnik", after Dr. Judy Resnik, electrical engineer and astronaut. Although we don't have to manage the complexities of space travel, we think that our design will do pretty well down here on Planet Earth.
 
 ![Astronaut Dr. Judy Resnik](https://upload.wikimedia.org/wikipedia/commons/4/43/Judy_Resnik_%2817126382249%29.jpg)
 
-	
+
 ## Acknowledgments
 
 Support for this project provided by:
