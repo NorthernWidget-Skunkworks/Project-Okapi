@@ -209,6 +209,8 @@ To upload the bootloader, do the following:
 
 ***Important note for Linux users:*** You must supply permissions to the Arduino IDE for it to be able to use the ICSP, or you will have to run it using `sudo`. The former option is better; the latter is easier in the moment.
 
+***Note: be sure to download and/or update drivers for your ISP***
+
 ### Installing the requisite software libraries
 
 >> @awickert: Add a full list of the requisite software to install; finish the firmware aggregator and use those directions (or the Arduino ones) to help users install that + sdfat. Include screenshots and host those directions at https://github.com/NorthernWidget-Skunkworks/Firmware-Aggregator.
