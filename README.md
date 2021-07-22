@@ -421,15 +421,15 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 ### Initialize
 1. Ensure that all connections are secure and SD card is inserted
 2. Turn battery pack on
-3. Wait for GREEN - GREEN - 5x Blue Flash.
-	- If you see this, the logger is properly recording data. To double-check, go to "Check".
-	- If you see a different flash pattern, go to "Error".
+3. Wait for GREEN - GREEN - 5x Blue Flash
+	- If you see this, the logger is properly recording data. To double-check, go to "Check"
+	- If you see a different flash pattern, go to "Error"
 
 ### Check
-1. After going through "Initialize", wait 2-3 minutes.
+1. After going through "Initialize", wait 2-3 minutes
 2. Follow the instructions in the "Download" section
-3. Check to make sure that all the data are being recorded at the proper (UTC) time.
-4. Check that valid values are being recorded for sensors.
+3. Check to make sure that all the data are being recorded at the proper (UTC) time
+4. Check that valid values are being recorded for sensors
 7. Whether or not files are properly recorded, return to "Initialize"
 	- If files are not recorded, replace the SD card, check all connections, turn the logger back
 	  on, and try again
@@ -437,16 +437,16 @@ The below suggestions encompass what we use and suggest for the housing. In the 
 	- If files are recorded properly, return to Initilaize and do not return to "Check"
 
 ### SD card swap
-1. Turn battery pack off.
-2. Remove SD card. Ensure that it is labeled. Put it somewhere safe and memorable.
-3. Replace the SD card with an equivalently labeled SD card.
+1. Turn battery pack off
+2. Remove SD card. Ensure that it is labeled. Put it somewhere safe and memorable
+3. Replace the SD card with an equivalently labeled SD card
 4. Go to "Initialize"
 
 ### Download
-1. Turn battery pack off.
-2. Remove SD card.
-3. Insert SD card in computer.
-4. Navigate in the SD card to the most recent "log" file (NW→<serial_number>→Log<number>.txt).
+1. Turn battery pack off
+2. Remove SD card
+3. Insert SD card in computer
+4. Navigate in the SD card to the most recent "log" file (NW→<serial_number>→Log<number>.txt)
 5. Save the data file in a well-labeled and organized place.
 6. Safely eject the SD card from the computer
 7. Go to "Initialize"
