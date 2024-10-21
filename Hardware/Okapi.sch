@@ -17881,7 +17881,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R57" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="R58" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="R59" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="1M" value="1M"/>
-<part name="R60" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="R61" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22306,20 +22305,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="V_LI" class="0">
 <segment>
-<pinref part="U32" gate="G$1" pin="SENSE1+"/>
-<wire x1="142.24" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
-<label x="144.78" y="144.78" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="V_LI_SENSE" class="0">
-<segment>
-<pinref part="U32" gate="G$1" pin="SENSE1-"/>
-<wire x1="142.24" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
-<label x="144.78" y="134.62" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="V_PRIME_SENSE" class="0">
-<segment>
 <pinref part="U32" gate="G$1" pin="SENSE2+"/>
 <wire x1="142.24" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <label x="144.78" y="132.08" size="0.8128" layer="95" xref="yes"/>
@@ -22327,26 +22312,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="V_PRIME" class="0">
 <segment>
-<pinref part="U32" gate="G$1" pin="SENSE2-"/>
-<wire x1="142.24" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
-<label x="144.78" y="121.92" size="0.8128" layer="95" xref="yes"/>
+<pinref part="U32" gate="G$1" pin="SENSE1-"/>
+<wire x1="142.24" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
+<label x="144.78" y="134.62" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V_SOLAR_SENSE" class="0">
-<segment>
-<pinref part="U32" gate="G$1" pin="SENSE3+"/>
-<wire x1="142.24" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
-<label x="144.78" y="119.38" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="V_SOLAR_IN" class="0">
-<segment>
-<pinref part="U32" gate="G$1" pin="SENSE3-"/>
-<wire x1="142.24" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<label x="144.78" y="109.22" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="V_BETA_SENSE" class="0">
 <segment>
 <pinref part="U32" gate="G$1" pin="SENSE4+"/>
 <wire x1="142.24" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
@@ -22355,9 +22326,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="V_BETA" class="0">
 <segment>
-<pinref part="U32" gate="G$1" pin="SENSE4-"/>
-<wire x1="142.24" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
-<label x="144.78" y="96.52" size="0.8128" layer="95" xref="yes"/>
+<pinref part="U32" gate="G$1" pin="SENSE3-"/>
+<wire x1="142.24" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
+<label x="144.78" y="109.22" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3V3_CORE" class="0">
@@ -22391,6 +22362,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R51" gate="G$1" pin="2"/>
 <pinref part="U32" gate="G$1" pin="ADDR_SEL"/>
 <wire x1="104.14" y1="124.46" x2="109.22" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V_SOLAR_IN" class="0">
+<segment>
+<pinref part="U32" gate="G$1" pin="SENSE4-"/>
+<wire x1="142.24" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
+<label x="144.78" y="96.52" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V_BETA_SENSE" class="0">
+<segment>
+<pinref part="U32" gate="G$1" pin="SENSE3+"/>
+<wire x1="142.24" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<label x="144.78" y="119.38" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V_LI_SENSE" class="0">
+<segment>
+<pinref part="U32" gate="G$1" pin="SENSE2-"/>
+<wire x1="142.24" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="144.78" y="121.92" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V_PRIME_SENSE" class="0">
+<segment>
+<pinref part="U32" gate="G$1" pin="SENSE1+"/>
+<wire x1="142.24" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
+<label x="144.78" y="144.78" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -22520,10 +22519,6 @@ GPIO3</text>
 <instance part="R59" gate="G$1" x="185.42" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="183.9214" y="34.29" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="188.722" y="34.29" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R60" gate="G$1" x="157.48" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="155.9814" y="16.51" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="160.782" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R61" gate="G$1" x="172.72" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="171.2214" y="26.67" size="1.778" layer="95" rot="R90"/>
@@ -22987,13 +22982,6 @@ GPIO3</text>
 <pinref part="U41" gate="G$1" pin="GPB1"/>
 </segment>
 </net>
-<net name="ADC_OB_ALERT" class="0">
-<segment>
-<label x="210.82" y="15.24" size="0.8128" layer="95" xref="yes"/>
-<pinref part="R60" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="15.24" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FEATHER_EN" class="0">
 <segment>
 <pinref part="U41" gate="G$1" pin="GPB7"/>
@@ -23031,8 +23019,6 @@ GPIO3</text>
 <segment>
 <pinref part="R58" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="27.94" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R60" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="25.4" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
 <label x="157.48" y="45.72" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
