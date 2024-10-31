@@ -23595,9 +23595,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="24.13" y="199.6186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.13" y="194.818" size="1.778" layer="96"/>
 </instance>
-<instance part="F2" gate="G$1" x="172.72" y="223.52" smashed="yes">
-<attribute name="NAME" x="174.625" y="226.695" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="173.99" y="220.726" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="F2" gate="G$1" x="175.26" y="223.52" smashed="yes">
+<attribute name="NAME" x="177.165" y="226.695" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="176.53" y="220.726" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="USB2" gate="G$1" x="68.58" y="228.6" smashed="yes">
 <attribute name="NAME" x="61.214" y="234.188" size="1.27" layer="95"/>
@@ -24373,8 +24373,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="F2" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="223.52" x2="182.88" y2="223.52" width="0.1524" layer="91"/>
-<label x="182.88" y="223.52" size="0.8128" layer="95" xref="yes"/>
+<wire x1="182.88" y1="223.52" x2="185.42" y2="223.52" width="0.1524" layer="91"/>
+<label x="185.42" y="223.52" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="WD_DONE" class="0">
@@ -24442,6 +24442,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="D7" gate="G$1" pin="ANODE"/>
 <wire x1="5.08" y1="205.74" x2="2.54" y2="205.74" width="0.1524" layer="91"/>
 <label x="2.54" y="205.74" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J9" gate="U1" pin="3V3@10"/>
+<pinref part="J9" gate="U1" pin="3V3@12"/>
+<wire x1="152.4" y1="231.14" x2="152.4" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="231.14" x2="154.94" y2="231.14" width="0.1524" layer="91"/>
+<junction x="152.4" y="231.14"/>
+<label x="154.94" y="231.14" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL_FEATHER" class="0">
@@ -24678,10 +24686,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="J9" gate="U1" pin="VBUS"/>
 <pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="223.52" x2="167.64" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="223.52" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
-<junction x="167.64" y="223.52"/>
-<wire x1="167.64" y1="231.14" x2="175.26" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="223.52" x2="170.18" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="223.52" x2="170.18" y2="231.14" width="0.1524" layer="91"/>
+<junction x="170.18" y="223.52"/>
+<wire x1="170.18" y1="231.14" x2="175.26" y2="231.14" width="0.1524" layer="91"/>
 <label x="175.26" y="231.14" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
