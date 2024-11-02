@@ -20744,6 +20744,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND103" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="F2" library="bschulz" deviceset="PPTC" device="1.5A"/>
 <part name="USB2" library="bschulz" deviceset="USB_MICRO" device="VERT"/>
+<part name="S6" library="bschulz" deviceset="BUTTON" device="4.2X3.2"/>
+<part name="S7" library="bschulz" deviceset="BUTTON" device="4.2X3.2"/>
+<part name="R86" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K"/>
+<part name="R87" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K"/>
+<part name="GND104" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND105" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23603,6 +23609,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="61.214" y="234.188" size="1.27" layer="95"/>
 <attribute name="VALUE" x="60.96" y="218.44" size="1.27" layer="96"/>
 </instance>
+<instance part="S6" gate="G$1" x="106.68" y="279.4" smashed="yes"/>
+<instance part="S7" gate="G$1" x="106.68" y="259.08" smashed="yes"/>
+<instance part="R86" gate="G$1" x="96.52" y="264.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.0214" y="260.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="99.822" y="260.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R87" gate="G$1" x="96.52" y="284.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.0214" y="280.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="99.822" y="280.67" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND104" gate="1" x="127" y="274.32" smashed="yes">
+<attribute name="VALUE" x="124.46" y="271.78" size="1.778" layer="96"/>
+</instance>
+<instance part="GND105" gate="1" x="127" y="254" smashed="yes">
+<attribute name="VALUE" x="124.46" y="251.46" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23835,6 +23857,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="USB2" gate="G$1" pin="GND"/>
 <wire x1="81.28" y1="226.06" x2="83.82" y2="226.06" width="0.1524" layer="91"/>
 <label x="83.82" y="226.06" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S6" gate="G$1" pin="4"/>
+<pinref part="S6" gate="G$1" pin="3"/>
+<wire x1="121.92" y1="276.86" x2="121.92" y2="279.4" width="0.1524" layer="91"/>
+<junction x="121.92" y="279.4"/>
+<wire x1="121.92" y1="279.4" x2="127" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="127" y1="279.4" x2="127" y2="276.86" width="0.1524" layer="91"/>
+<pinref part="GND104" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S7" gate="G$1" pin="4"/>
+<pinref part="S7" gate="G$1" pin="3"/>
+<wire x1="121.92" y1="256.54" x2="121.92" y2="259.08" width="0.1524" layer="91"/>
+<junction x="121.92" y="259.08"/>
+<wire x1="121.92" y1="259.08" x2="127" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="127" y1="259.08" x2="127" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="GND105" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -24451,6 +24491,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="152.4" y="231.14"/>
 <label x="154.94" y="231.14" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R87" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="289.56" x2="96.52" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="292.1" x2="91.44" y2="292.1" width="0.1524" layer="91"/>
+<label x="91.44" y="292.1" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R86" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="269.24" x2="96.52" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="271.78" x2="91.44" y2="271.78" width="0.1524" layer="91"/>
+<label x="91.44" y="271.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL_FEATHER" class="0">
 <segment>
@@ -24720,6 +24772,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="USB2" gate="G$1" pin="D-"/>
 <wire x1="55.88" y1="228.6" x2="53.34" y2="228.6" width="0.1524" layer="91"/>
 <label x="53.34" y="228.6" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="!RST" class="0">
+<segment>
+<pinref part="S7" gate="G$1" pin="1"/>
+<pinref part="S7" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="259.08" x2="106.68" y2="256.54" width="0.1524" layer="91"/>
+<junction x="106.68" y="259.08"/>
+<pinref part="R86" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="259.08" x2="106.68" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="259.08" x2="91.44" y2="259.08" width="0.1524" layer="91"/>
+<junction x="96.52" y="259.08"/>
+<label x="91.44" y="259.08" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J9" gate="U1" pin="RESET"/>
+<wire x1="152.4" y1="200.66" x2="154.94" y2="200.66" width="0.1524" layer="91"/>
+<label x="154.94" y="200.66" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="!MODE" class="0">
+<segment>
+<pinref part="S6" gate="G$1" pin="1"/>
+<pinref part="S6" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="279.4" x2="106.68" y2="276.86" width="0.1524" layer="91"/>
+<junction x="106.68" y="279.4"/>
+<pinref part="R87" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="279.4" x2="96.52" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="279.4" x2="91.44" y2="279.4" width="0.1524" layer="91"/>
+<junction x="96.52" y="279.4"/>
+<label x="91.44" y="279.4" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J9" gate="U1" pin="MODE"/>
+<wire x1="152.4" y1="203.2" x2="154.94" y2="203.2" width="0.1524" layer="91"/>
+<label x="154.94" y="203.2" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
