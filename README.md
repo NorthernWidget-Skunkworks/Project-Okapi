@@ -496,6 +496,89 @@ The second LED (STAT) will have one of the colors below.
 * Make sure batteries have sufficient voltage to run the logger (>3.3 V)
 
 
+## NW-Device-Specification schema
+
+Okapi's serial number scheme is [Schema 0](https://github.com/NorthernWidget/NW-Device-Specification) — the same 8-byte EEPROM block used by Margay, predating the formal specification. Schema 1 formalizes it as Page 0 and defines a putative Page 1 for the case where Okapi communicates its status to a higher-level device (e.g., the Particle Boron telemetry board). **Okapi has no current peripheral interface; Page 1 is hypothetical.**
+
+Over I²C this would follow the standard register-addressed read. Over UART (the current Okapi↔Boron link) a framing layer is required; see the [NW-Device-Specification transport section](https://github.com/NorthernWidget/NW-Device-Specification) for the Magic Preamble and COBS options.
+
+### Current EEPROM serial number (Schema 0)
+
+Eight bytes at `EEPROM[length−8]` through `EEPROM[length−1]`, big-endian uint16 per field, written by the setup sketch `SN Set` command — identical scheme to Margay:
+
+| Bytes | Field | Example (Okapi v1.0) |
+|-------|-------|----------------------|
+| 0–1 | Board type | `0x4F01` (`'O'` = 0x4F, revision 1) |
+| 2–3 | Group ID | operator-assigned |
+| 4–5 | Unique ID | monotonically increasing |
+| 6–7 | FirmwareID | `0x0000` (hardcoded) |
+
+### Proposed register layout (NW-Device-Specification Schema 1)
+
+**Page 0 (0x00–0x1F) — Identity (EEPROM)**
+
+```
+Block 0 (0x00–0x07)   Core identity
+  0x00        0x01                          Schema (NW-Device-Specification v1)
+  0x01–0x05   'O','k','a','p','i'           Device name (5 bytes)
+  0x06–0x07   0x00,0x00                     Reserved
+
+Block 1 (0x08–0x0F)   Version
+  0x08        HW major
+  0x09        HW minor
+  0x0A        FW patch
+  0x0B–0x0D   0x00,0x00,0x00               Unused (combined repo convention)
+  0x0E–0x0F   0x00,0x00                    Reserved
+
+Block 2 (0x10–0x17)   Serial number
+  0x10–0x11   0x4F,0x01                    Board type ('O'=0x4F, revision index)
+  0x12–0x13   [manufacture]                Group ID
+  0x14–0x15   [manufacture]                Unique ID
+  0x16–0x17   0x00,0x00                    FirmwareID (legacy, reserved)
+
+Block 3 (0x18–0x1F)   Integrity + administration
+  0x18–0x1C   0x00 ×5                      Reserved
+  0x1D        0x00                         Magic byte (reserved; purpose TBD)
+  0x1E        [computed]                   CRC-8 of bytes 0x00–0x1D
+  0x1F        0x00                         Peripheral address (unassigned;
+                                           Okapi is currently controller only)
+```
+
+**Page 1 (0x20–0x3F) — Logger status (SRAM) — HYPOTHETICAL**
+
+Okapi is currently an I²C controller communicating with the Particle Boron via UART; it has no peripheral interface. This layout is proposed for the case where Okapi reports status to the Boron (or any higher-level device) using the NW schema. A natural peripheral address would be `0x4F` (ASCII `'O'`).
+
+Okapi's dual power system (LiPo primary + solar charging + AA backup) differs from Margay. Full power monitoring signals are not yet implemented in the library (`GetPowerStats()` is reserved); fields marked TBD will be defined when that work is completed.
+
+```
+Block 0 (0x20–0x27)   System status + power
+  0x20        Status       bit 0=ready, bit 1=SD fault, bit 2=RTC fault,
+                           bit 3=onboard fault, bit 4=sensor fault,
+                           bit 5=LiPo warning, bit 6=LiPo error,
+                           bit 7=backup warning
+  0x21        LiPo %       uint8, 0–100
+  0x22–0x23   LiPo voltage uint16, 0.01 V
+  0x24–0x25   Solar input  uint16, TBD (V or mW pending GetPowerStats() impl.)
+  0x26–0x27   Backup volt  uint16, 0.01 V (AA backup rail)
+
+Block 1 (0x28–0x2F)   BME280 — onboard environment
+  0x28–0x29   Temperature  int16, 0.01 °C
+  0x2A–0x2B   Humidity     uint16, 0.01 %RH
+  0x2C–0x2F   Pressure     uint32, 0.01 hPa
+
+Block 2 (0x30–0x37)   DS3231M — RTC
+  0x30–0x33   Timestamp    uint32, Unix time (seconds since 1970-01-01 UTC)
+  0x34–0x35   Temperature  int16, 0.01 °C
+  0x36–0x37   Reserved
+
+Block 3 (0x38–0x3F)   Logger state
+  0x38–0x39   Ext interrupts  uint16, accumulated count
+  0x3A–0x3B   Log file #      uint16
+  0x3C–0x3F   Log interval    uint32, seconds
+```
+
+No Page 2. Calibration constants are hardcoded in the library.
+
 ## Development namesake
 
 Designing a large-platform, multi-power-system, and telemetry-enabled data logger is the single most complex task that our group has undertaken. Bobby Schulz, lead engineer, code-named the dev version of this work "Project Resnik", after Dr. Judy Resnik, electrical engineer and astronaut. Although we don't have to manage the complexities of space travel, we think that our design will do pretty well down here on Planet Earth.
