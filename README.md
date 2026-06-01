@@ -586,6 +586,19 @@ Designing a large-platform, multi-power-system, and telemetry-enabled data logge
 ![Astronaut Dr. Judy Resnik](https://upload.wikimedia.org/wikipedia/commons/4/43/Judy_Resnik_%2817126382249%29.jpg)
 
 
+## NW-Device-Specification — Schema 1, Page 0
+
+Implements [NW-Device-Specification](https://github.com/NorthernWidget/NW-Device-Specification) Schema 1. The 32-byte identity block (Page 0) is stored at the top of EEPROM:
+
+```
+Block 0:  Schema=0x01, Name='O','k','a','p','i',0x00,0x00
+Block 1:  HW major=[mfr], HW minor=[mfr], FW patch=[mfr], 0x00,0x00,0x00, Reserved
+Block 2:  Board type=0x4F01 ('O'=0x4F, rev 1), Group ID=[mfr], Unique ID=[mfr], FirmwareID=0x0000
+Block 3:  Reserved, Magic=0x00, CRC=[computed], I2C address=0x00 (controller; no peripheral interface)
+```
+
+Legacy deployed units carry board type `0x9950` (formerly Resnik).
+
 ## Acknowledgments
 
 Support for this project provided by:
