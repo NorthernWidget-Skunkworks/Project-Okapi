@@ -3,7 +3,7 @@
 
 ![Project Okapi Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
 
-***Okapi data logger, with a micro-SD card for local storage and a Particle Boron telemetry module.***
+***Okapi data logger (Resnik v0.4.0), with a micro-SD card for local storage and a Particle Boron telemetry module.***
 
 The **Okapi** data logger responds to the need for a robust, flexible, and power-efficient open-source option to record and transmit data from remote locations. It is programmable using the open-source standard Arduino framework via a standard micro-USB cable and supports a wide range of sensor input/output options. It connects to dual power supplies to ensure consistent recordings, and interfaces with a range of “Feather”-form-factor boards for telemetry.
 
@@ -90,7 +90,7 @@ The Okapi, a relative of the giraffe, communicates over long distances using [in
 
 ![Data logger with pins, connectors, and interactive items annotated.](Documentation/images/Resnik_v040_top_annotated_20200428.png)
 
-***Data logger with pins, connectors, and interactive items annotated.***
+***Okapi data logger (Resnik v0.4.0) with pins, connectors, and interactive items annotated.***
 
 **Pins are colored following this convention:**
 * Ground: black
@@ -131,7 +131,7 @@ The Okapi, a relative of the giraffe, communicates over long distances using [in
 
 ![Data logger with key microchips, LEDs, and switches marked.](Documentation/images/Resnik_v040_top_annotated_interior_20200428.png)
 
-***Data logger with key microchips, LEDs, and switches marked.*** *MCU: Microcontroller. RTC: Real-time clock. LED: Light-emitting diode. Bus: a subsystem for connections and data transfer.*
+***Okapi data logger (Resnik v0.4.0) with key microchips, LEDs, and switches marked.*** *MCU: Microcontroller. RTC: Real-time clock. LED: Light-emitting diode. Bus: a subsystem for connections and data transfer.*
 
 The Okapi data logger contains two buses (see above), each of which has an independent voltage. The primary bus is on the left and the secondary bus is on the right. These can be selected as 3.3V (switches slid towards the inside of the board) or 5V (switches towards the outside of the board).
 
