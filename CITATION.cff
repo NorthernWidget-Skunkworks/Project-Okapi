@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this hardware or software, please cite it as below."
+type: software
+title: "Project Okapi: Data logger with integrated solar charging and modular telemetry"
+version: 0.6.0
+date-released: "2026-06-02"
+doi: 10.5281/zenodo.3766482
+license: CC-BY-SA-4.0
+repository-code: https://github.com/NorthernWidget-Skunkworks/Project-Okapi
+authors:
+  - family-names: Schulz
+    given-names: Bobby
+    orcid: https://orcid.org/0000-0002-9272-4756
+    affiliation: "Northern Widget LLC; University of Minnesota"
+  - family-names: Wickert
+    given-names: Andrew D.
+    orcid: https://orcid.org/0000-0002-9545-3365
+    affiliation: "Northern Widget LLC; University of Minnesota"
+  - family-names: Wickert
+    given-names: Karen

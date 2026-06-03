@@ -1,0 +1,35 @@
+{
+  "upload_type": "software",
+  "license": {
+    "id": "CC-BY-SA-4.0"
+  },
+  "title": "Project Okapi: Data logger with integrated solar charging and modular telemetry",
+  "creators": [
+    {
+      "name": "Schulz, Bobby",
+      "orcid": "0000-0002-9272-4756",
+      "affiliation": "Northern Widget LLC; University of Minnesota"
+    },
+    {
+      "name": "Wickert, Andrew D.",
+      "orcid": "0000-0002-9545-3365",
+      "affiliation": "Northern Widget LLC; University of Minnesota"
+    },
+    {
+      "name": "Wickert, Karen"
+    }
+  ],
+  "keywords": [
+    "data logger",
+    "environmental monitoring",
+    "Arduino",
+    "open-source hardware",
+    "ATMega1284p",
+    "solar charging",
+    "telemetry",
+    "IoT",
+    "sensors",
+    "Northern Widget"
+  ],
+  "description": "The Okapi data logger is a robust, flexible, and power-efficient open-source platform for recording and transmitting data from remote locations. It features dual power supplies (solar-charged lithium-ion primary and alkaline AA backup), an ATMega1284p microcontroller, DS3231M real-time clock, micro-SD local storage, and support for Feather-form-factor telemetry boards. Sensors connect via dual independent I2C/SPI buses with selectable 3.3V or 5V rails."
+}
