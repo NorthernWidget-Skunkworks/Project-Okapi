@@ -4627,6 +4627,242 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Okapi-eagle-import:3V3_CORE"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#P+"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SUPPLY SYMBOL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "3V3_CORE_1_0"
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.27 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "3V3_CORE"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Okapi-eagle-import:3V3_AUX"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#P+"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SUPPLY SYMBOL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "3V3_AUX_1_0"
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.27 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "3V3_AUX"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Okapi-eagle-import:supply2_372_GND"
 			(power global)
 			(exclude_from_sim no)
@@ -7248,7 +7484,7 @@
 			)
 		)
 	)
-	(global_label "QOD"
+	(global_label "FEATHER_BAT"
 		(shape bidirectional)
 		(at 132.08 180.34 0)
 		(fields_autoplaced yes)
@@ -7704,7 +7940,7 @@
 			)
 		)
 	)
-	(global_label "QOD"
+	(global_label "FEATHER_BAT"
 		(shape bidirectional)
 		(at 132.08 203.2 0)
 		(fields_autoplaced yes)
@@ -7873,7 +8109,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_CORE")
 		(at 78.74 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -7894,7 +8130,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_CORE"
 			(at 76.2 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9200,7 +9436,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 68.58 50.8 0)
 		(unit 1)
 		(body_style 1)
@@ -9221,7 +9457,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 66.04 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10665,7 +10901,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 43.18 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -10686,7 +10922,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 40.64 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12330,7 +12566,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 60.96 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -12351,7 +12587,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 58.42 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12567,7 +12803,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 68.58 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -12588,7 +12824,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 66.04 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12910,7 +13146,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_CORE")
 		(at 182.88 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -12931,7 +13167,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_CORE"
 			(at 180.34 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12988,7 +13224,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 22.86 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -13009,7 +13245,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 20.32 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13225,7 +13461,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 22.86 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -13246,7 +13482,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 20.32 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13638,7 +13874,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 60.96 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -13659,7 +13895,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 58.42 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14985,7 +15221,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:supply1_371_VCC")
+		(lib_id "Okapi-eagle-import:3V3_AUX")
 		(at 43.18 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -15006,7 +15242,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_AUX"
 			(at 40.64 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)

@@ -7781,6 +7781,124 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Okapi-eagle-import:3V3_CORE"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "VCC Voltage Supply\n\nPositive voltage supply (traditionally for a BJT device, C=collector)."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "3V3_CORE_1_0"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 90)
+					(length 2.54)
+					(name "3V3_CORE"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Okapi-eagle-import:bschulz_passives_R-EU_R0402"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -16667,7 +16785,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:VCC")
+		(lib_id "Okapi-eagle-import:3V3_CORE")
 		(at 220.98 254 0)
 		(unit 1)
 		(body_style 1)
@@ -16688,7 +16806,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_CORE"
 			(at 220.98 251.206 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18200,7 +18318,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Okapi-eagle-import:VCC")
+		(lib_id "Okapi-eagle-import:3V3_CORE")
 		(at 271.78 261.62 0)
 		(unit 1)
 		(body_style 1)
@@ -18221,7 +18339,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "3V3_CORE"
 			(at 271.78 258.826 0)
 			(show_name no)
 			(do_not_autoplace no)
