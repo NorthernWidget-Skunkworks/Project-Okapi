@@ -1,5 +1,5 @@
 # Okapi: Data logger with integrated solar charging and modular telemetry
-[![DOI](https://zenodo.org/badge/153699511.svg)](https://zenodo.org/badge/latestdoi/153699511)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3766482.svg)](https://doi.org/10.5281/zenodo.3766482)
 
 ![Project Okapi Data Logger.](Documentation/images/Resnik_v040_FullyLoaded_perspective_20200428.png)
 
