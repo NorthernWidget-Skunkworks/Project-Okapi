@@ -1,0 +1,136 @@
+(footprint "1X10_SCREW" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "<b>PIN HEADER</b>")
+  (fp_text reference "REF**" (at -7.5692 -3.6068) (layer "F.SilkS")
+      (effects (font (size 0.51816 0.51816) (thickness 0.09144)) (justify left bottom))
+    (tstamp 845e2cce-3639-46f0-8229-78fd3fe8c712)
+  )
+  (fp_text value "1X10_SCREW" (at -7.62 4.191) (layer "F.Fab")
+      (effects (font (size 0.51816 0.51816) (thickness 0.09144)) (justify left bottom))
+    (tstamp 3f8a56e2-8443-467a-9c84-8fbb6d26da6c)
+  )
+  (fp_line (start -12.93 -3.3) (end 12.93 -3.3)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp b880b888-72f6-4e9c-915b-f16c60605bb7))
+  (fp_line (start -12.93 -2.54) (end -12.93 -3.3)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp 2d79e7c6-0d45-4d68-b84d-81867d3a3d64))
+  (fp_line (start -12.93 -2.54) (end 12.93 -2.54)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp e6ef1c6f-2418-4c8f-8868-58681211be81))
+  (fp_line (start -12.93 3.2) (end -12.93 -2.54)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp 0097aec4-0300-4437-a619-bba14f85f2ef))
+  (fp_line (start 12.93 -3.3) (end 12.93 -2.54)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp 5620082d-6846-4dc0-b5f8-00358d9a22ea))
+  (fp_line (start 12.93 -2.54) (end 12.93 3.2)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp eee2323a-aec3-45c9-9c9f-ce1b028e35bb))
+  (fp_line (start 12.93 3.2) (end -12.93 3.2)
+    (stroke (width 0.254) (type solid)) (layer "F.SilkS") (tstamp cefe763f-f3e6-43ee-b4b1-cbe84ddeb0c0))
+  (fp_poly
+    (pts
+      (xy -11.684 0.254)
+      (xy -11.176 0.254)
+      (xy -11.176 -0.254)
+      (xy -11.684 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 52457f75-20d5-472a-a079-f14ef7b4f1a4))
+  (fp_poly
+    (pts
+      (xy -9.144 0.254)
+      (xy -8.636 0.254)
+      (xy -8.636 -0.254)
+      (xy -9.144 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp b72c449f-803a-412d-8178-6dd3ff5b3361))
+  (fp_poly
+    (pts
+      (xy -6.604 0.254)
+      (xy -6.096 0.254)
+      (xy -6.096 -0.254)
+      (xy -6.604 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 1c59dbb2-9ad5-41d8-9ffb-06f6e373f80e))
+  (fp_poly
+    (pts
+      (xy -4.064 0.254)
+      (xy -3.556 0.254)
+      (xy -3.556 -0.254)
+      (xy -4.064 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 6adea707-764f-4180-9935-2e42ec0b608a))
+  (fp_poly
+    (pts
+      (xy -1.524 0.254)
+      (xy -1.016 0.254)
+      (xy -1.016 -0.254)
+      (xy -1.524 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp b5dd88e9-1330-42e3-bffe-be019457d67e))
+  (fp_poly
+    (pts
+      (xy 1.016 0.254)
+      (xy 1.524 0.254)
+      (xy 1.524 -0.254)
+      (xy 1.016 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp e2252707-d557-4507-b6d6-50e84ee7a3fe))
+  (fp_poly
+    (pts
+      (xy 3.556 0.254)
+      (xy 4.064 0.254)
+      (xy 4.064 -0.254)
+      (xy 3.556 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 1ae98a67-43e1-4595-8c27-1a5c2a7b6d42))
+  (fp_poly
+    (pts
+      (xy 6.096 0.254)
+      (xy 6.604 0.254)
+      (xy 6.604 -0.254)
+      (xy 6.096 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp a3a131b0-7550-4709-b16f-5c21da90241d))
+  (fp_poly
+    (pts
+      (xy 8.636 0.254)
+      (xy 9.144 0.254)
+      (xy 9.144 -0.254)
+      (xy 8.636 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 480eaa9f-9394-4488-a539-7f994d137e3c))
+  (fp_poly
+    (pts
+      (xy 11.176 0.254)
+      (xy 11.684 0.254)
+      (xy 11.684 -0.254)
+      (xy 11.176 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp d4bf57f3-d8eb-4c24-8ba7-cb7d53712f5c))
+  (pad "1" thru_hole circle (at -11.43 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp 2d43a7b0-dc32-4102-b4b6-65272002d22d))
+  (pad "2" thru_hole circle (at -8.89 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp fac64089-1152-49ce-bcac-7b67e68e7de3))
+  (pad "3" thru_hole circle (at -6.35 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp 9b0fa694-f59a-4e83-a4df-b2a8fc1adacc))
+  (pad "4" thru_hole circle (at -3.81 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp beda7eb8-4959-40a0-9492-1e381b47e25e))
+  (pad "5" thru_hole circle (at -1.27 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp b595b2b1-4ce4-4323-8cb3-ac4a55c338cd))
+  (pad "6" thru_hole circle (at 1.27 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp ac08c189-c2c4-42e0-9c28-f4bd2f0c09c4))
+  (pad "7" thru_hole circle (at 3.81 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp 7f70dc7d-1dbb-4ae1-ac9a-14ee459f16b6))
+  (pad "8" thru_hole circle (at 6.35 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp 8eb3e4bd-2e45-4fba-a65d-ed28ba3f63ac))
+  (pad "9" thru_hole circle (at 8.89 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp d72eee69-94e2-485e-9e9d-5805ce294001))
+  (pad "10" thru_hole circle (at 11.43 0 90) (size 1.524 1.524) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.0635) (thermal_bridge_angle 0) (tstamp 6e06f5cc-9e48-4628-9506-390bd8302886))
+)
